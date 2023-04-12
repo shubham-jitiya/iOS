@@ -32,6 +32,38 @@ class ViewController: UIViewController {
 
 // MARK: - IB Actions
 extension ViewController {
+    @IBAction private func btnAutolayoutShareScreen(_ sender: UIButton) {
+        guard let vcShareScreen = ShareScreenVC
+            .create(storyboardName: .uiAutolayout) as? ShareScreenVC else {
+            return
+        }
+        navigate(to: vcShareScreen)
+    }
+    
+    @IBAction private func btnAutolayoutPago(_ sender: UIButton) {
+        guard let vcPago = PagoVC
+            .create(storyboardName: .uiAutolayout) as? PagoVC else {
+            return
+        }
+        navigate(to: vcPago	)
+    }
+    
+    @IBAction private func btnAutolayoutSpotify(_ sender: UIButton) {
+        guard let vcSpotify = SpotifyVC
+            .create(storyboardName: .uiAutolayout) as? SpotifyVC else {
+            return
+        }
+        navigate(to: vcSpotify)
+    }
+    
+    @IBAction private func btnAutolayoutExercise(_ sender: UIButton) {
+        guard let vcExercise = ExerciseVC
+            .create(storyboardName: .uiExercise) as? ExerciseVC else {
+            return
+        }
+        navigate(to: vcExercise)
+    }
+    
     @IBAction private func btnLabel(_ sender: UIButton) {
         guard let vcLabel = LabelsVC.create(storyboardName: .uiLabel) as?
                 LabelsVC else {
@@ -287,7 +319,7 @@ extension ViewController {
         }
         navigate(to: vcTVAutorResizing)
     }
-        
+    
     @IBAction private func btnKTProject(_ sender: UIButton) {
         guard let vcScheduleMeeting = ScheduleMeetingVC
             .create(storyboardName: .uiScheduleMeeting) as? ScheduleMeetingVC else {
