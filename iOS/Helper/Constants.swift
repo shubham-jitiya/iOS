@@ -25,6 +25,10 @@ struct Constants {
         case speakerWaveThreeFilled = "speaker.wave.3.fill"
         case placeHolderLandscape = "landscape_test_image"
         case logoPlaystation = "logo.playstation"
+        case calendar = "calendar_rounded"
+        case clock = "clock"
+        case chevronUp = "chevron.up"
+        case chevronDown = "chevron.down"
         case square = "square"
         case person = "person"
         case mail = "mail"
@@ -37,7 +41,7 @@ struct Constants {
         // Aloha Waikiki
         case initialLatitude = 21.282778
         case initialLongitude = -157.829444
-         // Oahu
+        // Oahu
         case oahuLatitude = 21.4765
         case oahuLongitude = -157.9647
         case regionRadius = 1000
@@ -63,5 +67,18 @@ struct Constants {
         case footerSection = "Footer Section"
         case dateFormat = "MM/dd/yyyy"
         case googleUrl = "https://www.google.com/"
+        case less = "Less"
+        case more = "More"
+        case defaultTime = "00 hr 00 min"
+    }
+    
+    enum Colors: String {
+        case primaryColor = "primary_color"
+    }
+    
+    enum Tags: Int {
+        case frequency = 1
+        case remainder = 2
+        case duration = 3
     }
 }
