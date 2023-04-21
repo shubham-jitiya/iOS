@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date PickerVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerVC" id="Y6W-OH-hqX" customClass="DatePickerVC" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0QO-dc-bxA">
+                                <rect key="frame" x="94" y="108.33333333333333" width="234" height="34.333333333333329"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhx-It-Qz7">
+                                <rect key="frame" x="32" y="115" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DOB" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDH-Vy-OWf">
+                                <rect key="frame" x="32" y="158.66666666666666" width="329" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VDH-Vy-OWf" secondAttribute="trailing" constant="32" id="05B-wT-ie4"/>
+                            <constraint firstItem="VDH-Vy-OWf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="3k8-GB-Jfz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0QO-dc-bxA" secondAttribute="trailing" constant="65" id="PmN-MG-csI"/>
+                            <constraint firstItem="rhx-It-Qz7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="56" id="Pqb-KR-oiO"/>
+                            <constraint firstItem="rhx-It-Qz7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="QAn-Sx-wCF"/>
+                            <constraint firstItem="VDH-Vy-OWf" firstAttribute="top" secondItem="0QO-dc-bxA" secondAttribute="bottom" constant="16" id="gM0-bm-pls"/>
+                            <constraint firstItem="0QO-dc-bxA" firstAttribute="centerY" secondItem="rhx-It-Qz7" secondAttribute="centerY" id="j3h-jh-6BC"/>
+                            <constraint firstItem="0QO-dc-bxA" firstAttribute="leading" secondItem="rhx-It-Qz7" secondAttribute="trailing" constant="16" id="wD7-h3-rPy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblDOB" destination="VDH-Vy-OWf" id="g8u-lY-UwD"/>
+                        <outlet property="tfDateOfBirth" destination="VDH-Vy-OWf" id="yAP-je-DaZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-55.633802816901408"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

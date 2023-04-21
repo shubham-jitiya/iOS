@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Strong Reference DemoVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="StrongReferenceDemoVC" id="Y6W-OH-hqX" customClass="StrongReferenceDemoVC" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-5v-yCQ">
+                                <rect key="frame" x="153" y="115" width="87" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Animate"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHe-hb-kdz">
+                                <rect key="frame" x="153" y="182" width="87" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show"/>
+                                <connections>
+                                    <action selector="btnShowTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FPi-sq-39f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djL-j5-a4e">
+                                <rect key="frame" x="153" y="233" width="87" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Hide"/>
+                                <connections>
+                                    <action selector="btnHideTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nNs-yV-d4u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="djL-j5-a4e" firstAttribute="top" secondItem="qHe-hb-kdz" secondAttribute="bottom" constant="16" id="2R0-kc-agU"/>
+                            <constraint firstItem="qHe-hb-kdz" firstAttribute="leading" secondItem="5PG-5v-yCQ" secondAttribute="leading" id="8gl-J3-1vF"/>
+                            <constraint firstItem="qHe-hb-kdz" firstAttribute="top" secondItem="5PG-5v-yCQ" secondAttribute="bottom" constant="32" id="L3X-Cd-OeS"/>
+                            <constraint firstItem="5PG-5v-yCQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="T0s-O2-MMR"/>
+                            <constraint firstItem="djL-j5-a4e" firstAttribute="trailing" secondItem="qHe-hb-kdz" secondAttribute="trailing" id="WWd-in-1kL"/>
+                            <constraint firstItem="qHe-hb-kdz" firstAttribute="trailing" secondItem="5PG-5v-yCQ" secondAttribute="trailing" id="ZcX-Zm-ODE"/>
+                            <constraint firstItem="djL-j5-a4e" firstAttribute="leading" secondItem="qHe-hb-kdz" secondAttribute="leading" id="kdE-9n-9ad"/>
+                            <constraint firstItem="5PG-5v-yCQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="56" id="yWH-T3-GCG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAnimate" destination="5PG-5v-yCQ" id="kG2-Mi-jaS"/>
+                        <outlet property="btnHide" destination="djL-j5-a4e" id="zVY-zf-ycS"/>
+                        <outlet property="btnShow" destination="qHe-hb-kdz" id="Ujr-tN-GcB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
