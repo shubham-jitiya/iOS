@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewVC: UIViewController {
     // MARK: Variables
-    var recordsSectionOne: [Company] = []
+    var recordsSectionFirst: [Company] = []
     var recordsSectionSecond: [Company] = []
     var recordsSectionThird: [Company] = []
     
@@ -32,7 +32,7 @@ extension TableViewVC {
     private func initialise() {
         tblContents.delegate = self
         tblContents.dataSource = self
-        recordsSectionOne = Company.getCompanyDetails()
+        recordsSectionFirst = Company.getCompanyDetails()
         recordsSectionSecond = Company.getCompanyDetails()
         recordsSectionThird = Company.getCompanyDetails()
         initialiseTableHeader()
@@ -82,7 +82,7 @@ extension TableViewVC: UITableViewDataSource {
         numberOfRowsInSection section: Int) -> Int {
             switch section {
             case 0:
-                return recordsSectionOne.count
+                return recordsSectionFirst.count
             case 1:
                 return recordsSectionSecond.count
             case 2:
@@ -103,7 +103,7 @@ extension TableViewVC: UITableViewDataSource {
                         as? CompanyTableViewCell else {
                     return UITableViewCell()
                 }
-                let indexData = recordsSectionOne[indexPath.row]
+                let indexData = recordsSectionFirst[indexPath.row]
                 companyCell.configCell(data: indexData)
                 return companyCell
             case 1:
@@ -140,9 +140,9 @@ extension TableViewVC: UITableViewDelegate {
             print(indexPath)
             switch indexPath.section {
             case 0:
-                var selection = recordsSectionOne[indexPath.row]
+                var selection = recordsSectionFirst[indexPath.row]
                 selection.isSelected = !selection.isSelected
-                recordsSectionOne[indexPath.row] = selection
+                recordsSectionFirst[indexPath.row] = selection
                 tableView.reloadRows(at: [indexPath], with: .automatic)
             case 1:
                 var selection = recordsSectionSecond[indexPath.row]

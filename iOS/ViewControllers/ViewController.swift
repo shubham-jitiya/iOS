@@ -306,6 +306,14 @@ extension ViewController {
         navigate(to: vcMapView)
     }
     
+    @IBAction private func btnUINavigation(_ sender: UIButton) {
+        guard let vcNavigation = NavigationVC
+            .create(storyboardName: .uiNavigation) as? NavigationVC else {
+            return
+        }
+        navigate(to: vcNavigation)
+    }
+    
     @IBAction private func btnWeakSelfDemo(_ sender: UIButton) {
         guard let vcStrongReferenceDemo = StrongReferenceDemoVC.create(storyboardName: .uiStrongReferenceDemo) as? StrongReferenceDemoVC else {
             return

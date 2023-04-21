@@ -47,4 +47,6 @@ enum Storyboards: String {
     case uiStrongReferenceDemo = "UIStrongReferenceDemo"
     case uITVAutoResizing = "UITVAutoResizing"
     case uiScheduleMeeting = "UIScheduleMeeting"
+    case uiScreenFourthViewController = "ScreenFourthViewController"
+    case uiNavigation = "UINavigation"
 }
