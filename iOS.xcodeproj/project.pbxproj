@@ -13,6 +13,7 @@
 		5110E82B29E672B4001165DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5110E82929E672B4001165DB /* Main.storyboard */; };
 		5110E82D29E672B5001165DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5110E82C29E672B5001165DB /* Assets.xcassets */; };
 		5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5110E82E29E672B5001165DB /* LaunchScreen.storyboard */; };
+		51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5110E82C29E672B5001165DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5110E82F29E672B5001165DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5110E83129E672B5001165DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5110E82C29E672B5001165DB /* Assets.xcassets */,
 				5110E82E29E672B5001165DB /* LaunchScreen.storyboard */,
 				5110E83129E672B5001165DB /* Info.plist */,
+				51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */,
 				5110E82829E672B4001165DB /* ViewController.swift in Sources */,
 				5110E82429E672B4001165DB /* AppDelegate.swift in Sources */,
 				5110E82629E672B4001165DB /* SceneDelegate.swift in Sources */,
