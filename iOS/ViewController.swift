@@ -8,23 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    //MARK: - Outlets
-    @IBOutlet weak var btnOne: UIButton!
-    @IBOutlet weak var lblWelcome: UILabel!
-    @IBOutlet weak var lblName: CustomTextField!
-    
     //MARK: - View life cycles
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblWelcome.text = "View did load"
-        btnOne.layer.cornerRadius = 16
-        btnOne.clipsToBounds = true
-        btnOne.setTitle("BtnOne", for: .normal)
-        lblName.layer.borderColor = UIColor.blue.cgColor
-        lblName.layer.borderWidth = 1
+//        lblWelcome.text = "View did load"
+//        btnOne.layer.cornerRadius = 16
+//        btnOne.clipsToBounds = true
+//        btnOne.setTitle("BtnOne", for: .normal)
+//        lblName.layer.borderColor = UIColor.blue.cgColor
+//        lblName.layer.borderWidth = 1
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,9 +39,19 @@ class ViewController: UIViewController {
         print("View did disappear")
     }
     
-    //MARK: - IB Action
-    @IBAction func btnOne(_ sender: UIButton) {
-        print("Button one pressed")
+    //MARK: - IB Actions
+    @IBAction func btnLabel(_ sender: UIButton) {
+        guard let vcLabel = VCLabels.create(storyboardName: .uiLabel) as? VCLabels else {
+            return
+        }
+        navigate(to: vcLabel)
+    }
+    
+    @IBAction func btnButton(_ sender: UIButton) {
+        guard let vcButton = VCButton.create(storyboardName: .uiButton) as? VCButton else {
+            return
+        }
+        navigate(to: vcButton)
     }
 }
 
