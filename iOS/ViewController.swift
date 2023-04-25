@@ -11,12 +11,12 @@ class ViewController: UIViewController {
     //MARK: - View life cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-//        lblWelcome.text = "View did load"
-//        btnOne.layer.cornerRadius = 16
-//        btnOne.clipsToBounds = true
-//        btnOne.setTitle("BtnOne", for: .normal)
-//        lblName.layer.borderColor = UIColor.blue.cgColor
-//        lblName.layer.borderWidth = 1
+        //        lblWelcome.text = "View did load"
+        //        btnOne.layer.cornerRadius = 16
+        //        btnOne.clipsToBounds = true
+        //        btnOne.setTitle("BtnOne", for: .normal)
+        //        lblName.layer.borderColor = UIColor.blue.cgColor
+        //        lblName.layer.borderWidth = 1
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,6 +52,27 @@ class ViewController: UIViewController {
             return
         }
         navigate(to: vcButton)
+    }
+    
+    @IBAction func btnTextField(_ sender: UIButton) {
+        guard let vcTextField = VCTextField.create(storyboardName: .uiTextField) as? VCTextField else {
+            return
+        }
+        navigate(to: vcTextField)
+    }
+    
+    @IBAction func btnTextView(_ sender: UIButton) {
+        guard let vcTextView = VCTextView.create(storyboardName: .uiTextView) as? VCTextView else {
+            return
+        }
+        navigate(to: vcTextView)
+    }
+    
+    @IBAction func btnSwitch(_ sender: UIButton) {
+        guard let vcSwitch = VCSwitch.create(storyboardName: .uiSwitch) as? VCSwitch else {
+            return
+        }
+        navigate(to: vcSwitch)
     }
 }
 

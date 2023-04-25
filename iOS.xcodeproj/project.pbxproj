@@ -20,6 +20,13 @@
 		5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835929F65C73000C73AD /* UIViewController+Extension.swift */; };
 		5167835E29F65D34000C73AD /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835D29F65D34000C73AD /* Storyboard.swift */; };
 		5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835F29F68377000C73AD /* AttributedString+Extension.swift */; };
+		51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */; };
+		51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */; };
+		51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */; };
+		51AAB07429F7F36D00E3F8E8 /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAB07329F7F36D00E3F8E8 /* UITextView.storyboard */; };
+		51AAB07629F7F37900E3F8E8 /* VCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07529F7F37900E3F8E8 /* VCTextView.swift */; };
+		51AAB07929F7FE0A00E3F8E8 /* UISwitch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAB07829F7FE0A00E3F8E8 /* UISwitch.storyboard */; };
+		51AAB07C29F7FE2100E3F8E8 /* VCSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07B29F7FE2100E3F8E8 /* VCSwitch.swift */; };
 		51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +46,13 @@
 		5167835929F65C73000C73AD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5167835D29F65D34000C73AD /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		5167835F29F68377000C73AD /* AttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttributedString+Extension.swift"; sourceTree = "<group>"; };
+		51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
+		51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTextField.swift; sourceTree = "<group>"; };
+		51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		51AAB07329F7F36D00E3F8E8 /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
+		51AAB07529F7F37900E3F8E8 /* VCTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTextView.swift; sourceTree = "<group>"; };
+		51AAB07829F7FE0A00E3F8E8 /* UISwitch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISwitch.storyboard; sourceTree = "<group>"; };
+		51AAB07B29F7FE2100E3F8E8 /* VCSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSwitch.swift; sourceTree = "<group>"; };
 		51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +122,9 @@
 		5167835329F65641000C73AD /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				51AAB07729F7FBBB00E3F8E8 /* UISwitch */,
+				51AAB07229F7F35700E3F8E8 /* UITextView */,
+				51AAB06B29F7B01D00E3F8E8 /* UITextField */,
 				512FB3D829F692D10074CF93 /* UIButton */,
 				512FB3D729F691710074CF93 /* UILabels */,
 			);
@@ -119,6 +136,7 @@
 			children = (
 				5167835929F65C73000C73AD /* UIViewController+Extension.swift */,
 				5167835F29F68377000C73AD /* AttributedString+Extension.swift */,
+				51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,6 +147,33 @@
 				5167835D29F65D34000C73AD /* Storyboard.swift */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		51AAB06B29F7B01D00E3F8E8 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */,
+				51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		51AAB07229F7F35700E3F8E8 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				51AAB07329F7F36D00E3F8E8 /* UITextView.storyboard */,
+				51AAB07529F7F37900E3F8E8 /* VCTextView.swift */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		51AAB07729F7FBBB00E3F8E8 /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				51AAB07829F7FE0A00E3F8E8 /* UISwitch.storyboard */,
+				51AAB07B29F7FE2100E3F8E8 /* VCSwitch.swift */,
+			);
+			path = UISwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +236,11 @@
 			files = (
 				5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */,
 				5110E82D29E672B5001165DB /* Assets.xcassets in Resources */,
+				51AAB07929F7FE0A00E3F8E8 /* UISwitch.storyboard in Resources */,
 				512FB3DA29F692E80074CF93 /* UIButton.storyboard in Resources */,
+				51AAB07429F7F36D00E3F8E8 /* UITextView.storyboard in Resources */,
 				5110E82B29E672B4001165DB /* Main.storyboard in Resources */,
+				51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */,
 				5167835529F65667000C73AD /* UILabels.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,11 +255,15 @@
 				5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */,
 				512FB3DE29F693920074CF93 /* VCButton.swift in Sources */,
 				51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */,
+				51AAB07C29F7FE2100E3F8E8 /* VCSwitch.swift in Sources */,
 				5110E82829E672B4001165DB /* ViewController.swift in Sources */,
+				51AAB07629F7F37900E3F8E8 /* VCTextView.swift in Sources */,
 				5167835E29F65D34000C73AD /* Storyboard.swift in Sources */,
 				5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */,
+				51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */,
 				5110E82429E672B4001165DB /* AppDelegate.swift in Sources */,
 				5110E82629E672B4001165DB /* SceneDelegate.swift in Sources */,
+				51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */,
 				5167835729F65680000C73AD /* VCLabels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,53 +25,33 @@ class VCButton: UIViewController {
     @IBOutlet weak var btnTouchDragExit: UIButton!
     @IBOutlet weak var btnTouchDragEnter: UIButton!
     @IBOutlet weak var btnTouchDownRepeat: UIButton!
+    @IBOutlet weak var btnBgImage: UIButton!
+    @IBOutlet weak var btnStates: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnTouchUpInside.layer.shadowColor = UIColor.blue.cgColor
+        btnTouchUpInside.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        btnTouchUpInside.layer.shadowOpacity = 0.8
     }
     
     //MARK: - IB Actions
     //when user tap & release
     @IBAction func btnTouchUpInside(_ sender: UIButton) {
-        if !isTouchUpInside {
-            btnTouchUpInside.tintColor = .red
-            isTouchUpInside = true
-        } else {
-            btnTouchUpInside.tintColor = .systemBlue
-            isTouchUpInside = false
-        }
+        updateButton(&isTouchUpInside, &btnTouchUpInside)
     }
     //when user click & move move finger outside
     @IBAction func btnTouchUpOutside(_ sender: UIButton) {
-        if !isTouchOutside {
-            btnTouchUpOutside.tintColor = .red
-            isTouchOutside = true
-        } else {
-            btnTouchUpOutside.tintColor = .systemBlue
-            isTouchOutside = false
-        }
+        updateButton(&isTouchOutside, &btnTouchUpOutside)
     }
     // This event will get called repeatedly while the user is dragging their finger outside of the button
     @IBAction func btnTouchDragOutside(_ sender: UIButton) {
         print("Btn touch drag outside")
-        if !isDragTouchOutside {
-            btnTouchDragOutside.tintColor = .red
-            isDragTouchOutside = true
-        } else {
-            btnTouchDragOutside.tintColor = .systemBlue
-            isDragTouchOutside = false
-        }
+        updateButton(&isDragTouchOutside, &btnTouchDragOutside)
     }
     // Similar to above but triggers while dragging finger inside btn
     @IBAction func btnTouchDragInside(_ sender: UIButton) {
-        if !isDragTouchInside {
-            btnTouchDragInside.tintColor = .red
-            isDragTouchInside = true
-        } else {
-            btnTouchDragInside.tintColor = .systemBlue
-            isDragTouchInside = false
-        }
-        //updateButton(&isTouchDownRepeat, &btnTouchDownRepeat)
+        updateButton(&isDragTouchInside, &btnTouchDragInside)
     }
     //Drag & release outside
     @IBAction func btnTouchDragExit(_ sender: UIButton) {
@@ -88,29 +68,50 @@ class VCButton: UIViewController {
         print("Touch down repeat")
         updateButton(&isTouchDownRepeat, &btnTouchDownRepeat)
     }
-    @IBAction func btnTouchDown(_ sender: Any) {
+    @IBAction func btnTouchDown(_ sender: UIButton) {
         print("Touch down")
     }
-    @IBAction func btnTouchCancel(_ sender: Any) {
+    @IBAction func btnTouchCancel(_ sender: UIButton) {
         print("Touch cancel")
     }
-    @IBAction func btnPrimaryActionTriggered(_ sender: Any) {
+    @IBAction func btnPrimaryActionTriggered(_ sender: UIButton) {
         print("Primary action triggered")
     }
-    @IBAction func btnEditingDidEnd(_ sender: Any) {
+    @IBAction func btnEditingDidEnd(_ sender: UIButton) {
         print("btn Editing Did End")
     }
-    @IBAction func btnEditingDidBegin(_ sender: Any) {
+    @IBAction func btnEditingDidBegin(_ sender: UIButton) {
         print("btn Editing Did Begin")
     }
-    @IBAction func btnEditingChanged(_ sender: Any) {
+    @IBAction func btnEditingChanged(_ sender: UIButton) {
         print("btn Editing changed")
     }
-    @IBAction func btnDidOnExit(_ sender: Any) {
+    @IBAction func btnDidOnExit(_ sender: UIButton) {
         print("btn did on exit")
     }
-    @IBAction func btnConfigurationSelected(_ sender: Any) {
+    @IBAction func btnConfigurationSelected(_ sender: UIButton) {
         print("Btn configuration selected")
+    }
+    
+    @IBAction func btnBgImage(_ sender: UIButton) {
+        
+    }
+    @IBAction func btnStates(_ sender: UIButton) {
+        print("selected: ", btnStates.isSelected)
+        print("highlighted: ", btnStates.isHighlighted)
+        print("enabled: ", btnStates.isEnabled)
+        
+        if !btnStates.isSelected {
+            btnStates.isSelected = true
+            btnStates.backgroundColor = .orange
+        } else {
+            btnStates.isSelected = false
+            btnStates.backgroundColor = .gray
+            
+        }
+        btnStates.setTitleColor(.black, for: .selected)
+        btnStates.setTitleColor(.yellow, for: .highlighted)
+        btnStates.setTitleColor(.white, for: .normal)
     }
 }
 

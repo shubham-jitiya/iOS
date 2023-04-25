@@ -10,4 +10,7 @@ import Foundation
 enum Storyboards: String {
     case uiLabel = "UILabels"
     case uiButton = "UIButton"
+    case uiTextField = "UITextField"
+    case uiTextView = "UITextView"
+    case uiSwitch = "UISwitch"
 }
