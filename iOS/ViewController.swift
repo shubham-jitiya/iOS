@@ -74,5 +74,40 @@ class ViewController: UIViewController {
         }
         navigate(to: vcSwitch)
     }
+    
+    @IBAction func btnSlider(_ sender: UIButton) {
+        guard let vcSlider = VCSlider.create(storyboardName: .uiSlider) as? VCSlider else {
+            return
+        }
+        navigate(to: vcSlider)
+    }
+    
+    @IBAction func btnProgressView(_ sender: UIButton) {
+        guard let vcProgressView = VCProgressView.create(storyboardName: .uiProgressView) as? VCProgressView else {
+            return
+        }
+        navigate(to: vcProgressView)
+    }
+    
+    @IBAction func btnSegmentedControl(_ sender: UIButton) {
+        guard let vcSegmentedControl = VCSegmentedControl.create(storyboardName: .uiSegmentedControl) as? VCSegmentedControl else {
+            return
+        }
+        navigate(to: vcSegmentedControl)
+    }
+    
+    @IBAction func btnPageControl(_ sender: UIButton) {
+        guard let vcPageControl = VCPageControl.create(storyboardName: .uiPageControl) as? VCPageControl else {
+            return
+        }
+        navigate(to: vcPageControl)
+    }
+    
+    @IBAction func btnStepper(_ sender: UIButton) {
+        guard let vcStepper = VCStepper.create(storyboardName: .uiStepper) as? VCStepper else {
+            return
+        }
+        navigate(to: vcStepper)
+    }
 }
 

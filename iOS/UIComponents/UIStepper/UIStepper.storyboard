@@ -8,39 +8,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Switch-->
+        <!--Stepper-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="VCSwitch" id="Y6W-OH-hqX" customClass="VCSwitch" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VCStepper" id="Y6W-OH-hqX" customClass="VCStepper" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Torch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahw-6z-5ON">
-                                <rect key="frame" x="158.66666666666666" y="357" width="76" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7w-eF-6Kh">
+                                <rect key="frame" x="141" y="406.66666666666669" width="111" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="Turn on" translatesAutoresizingMaskIntoConstraints="NO" id="TtW-dn-Rsp">
-                                <rect key="frame" x="172" y="428" width="51" height="31"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9SK-pa-0Te">
+                                <rect key="frame" x="149.66666666666666" y="732" width="94" height="32"/>
                                 <connections>
-                                    <action selector="toggleSwitch:" destination="Y6W-OH-hqX" eventType="valueChanged" id="tZu-9Z-qcu"/>
+                                    <action selector="updateCounter:" destination="Y6W-OH-hqX" eventType="valueChanged" id="SPE-GQ-gyM"/>
                                 </connections>
-                            </switch>
+                            </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TtW-dn-Rsp" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3it-In-RrB"/>
-                            <constraint firstItem="ahw-6z-5ON" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="298" id="IgM-jm-Z00"/>
-                            <constraint firstItem="TtW-dn-Rsp" firstAttribute="top" secondItem="ahw-6z-5ON" secondAttribute="bottom" constant="32" id="apg-nb-778"/>
-                            <constraint firstItem="ahw-6z-5ON" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tKC-32-cN9"/>
+                            <constraint firstItem="e7w-eF-6Kh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2WX-9a-Tni"/>
+                            <constraint firstItem="9SK-pa-0Te" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="aaz-yN-2RZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9SK-pa-0Te" secondAttribute="bottom" constant="54" id="bBC-pg-pkd"/>
+                            <constraint firstItem="e7w-eF-6Kh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="y3s-t3-AvN"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lblToggleStatus" destination="ahw-6z-5ON" id="hMw-6z-ufT"/>
-                        <outlet property="switchToggle" destination="TtW-dn-Rsp" id="6aV-P8-S6T"/>
+                        <outlet property="lblCounter" destination="e7w-eF-6Kh" id="hM6-bw-d1Y"/>
+                        <outlet property="stepperIncrementCounter" destination="9SK-pa-0Te" id="BZX-u4-zAu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -8,7 +8,7 @@
 import UIKit
 
 extension UITextField {
-    //MARK: Padding
+    // Padding
     func addLeftPadding(_ padding: Double) {
         let leftView = UIView()
         
@@ -16,6 +16,7 @@ extension UITextField {
         self.leftView = leftView
         self.leftViewMode = .always
     }
+    
     func addRightPadding(_ padding: Double){
         let rightView = UIView()
         
@@ -23,6 +24,7 @@ extension UITextField {
         self.rightView = rightView
         self.rightViewMode = .always
     }
+    
     func addPadding(left: Double, right: Double){
         let leftView = UIView(), rightView = UIView()
         
@@ -33,6 +35,7 @@ extension UITextField {
         self.rightViewMode = .always
         self.leftViewMode = .always
     }
+    
     func addPaddingToImageLeft(_ padding: Double, src: String){
         let leftView = UIView(), imgView = UIImageView.init(image: UIImage.init(systemName: src))
         
@@ -42,5 +45,24 @@ extension UITextField {
         leftView.addSubview(imgView)
         self.leftView = leftView
         self.leftViewMode = .always
+    }
+    
+    // Dismiss keyboard
+    func dismissKeyboard() {
+        let toolbar = UIToolbar()
+        let itemDoneButton = UIBarButtonItem(
+            title: "Done",
+            style: .done,
+            target: self,
+            action: #selector(doneButtonTapped))
+        let itemFlexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolbar.items = [itemFlexSpace, itemDoneButton]
+        toolbar.sizeToFit()
+        self.inputAccessoryView = toolbar
+        
+    }
+    @objc func doneButtonTapped() {
+        //dismiss keyboard on tapping done button
+        self.resignFirstResponder()
     }
 }

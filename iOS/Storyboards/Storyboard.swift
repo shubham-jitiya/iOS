@@ -13,4 +13,9 @@ enum Storyboards: String {
     case uiTextField = "UITextField"
     case uiTextView = "UITextView"
     case uiSwitch = "UISwitch"
+    case uiSlider = "UISlider"
+    case uiProgressView = "UIProgressView"
+    case uiSegmentedControl = "UISegmentedControl"
+    case uiPageControl = "UIPageControl"
+    case uiStepper = "UIStepper"
 }

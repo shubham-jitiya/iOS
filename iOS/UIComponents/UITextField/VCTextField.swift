@@ -21,11 +21,10 @@ class VCTextField: UIViewController, UITextFieldDelegate {
         //txtUsername.delegate = self
         //txtEmailAddress.delegate = self
         addPadding()
-        txtUsername.addPaddingToImageLeft(26.0, src: "person")
-        txtEmailAddress.addPaddingToImageLeft(26.0, src: "mail")
-        txtPhoneNumber.addPaddingToImageLeft(26.0, src: "phone")
-        txtPassword.addPaddingToImageLeft(26.0, src: "lock")
+        addDoneButton()
+        setLeadingIcons()
         txtUsername.becomeFirstResponder()
+        
     }
     
     //MARK: Delegation methods
@@ -128,10 +127,27 @@ class VCTextField: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: Functions
-    func addPadding() {
+}
+
+extension VCTextField {
+    private func addDoneButton() {
+        txtUsername.dismissKeyboard()
+        txtEmailAddress.dismissKeyboard()
+        txtPassword.dismissKeyboard()
+        txtPhoneNumber.dismissKeyboard()
+    }
+    
+    private func addPadding() {
         txtUsername.addPadding(left: 4.0, right: 4.0)
         txtEmailAddress.addPadding(left: 4.0, right: 4.0)
         txtPhoneNumber.addPadding(left: 4.0, right: 4.0)
         txtPassword.addPadding(left: 4.0, right: 4.0)
+    }
+    
+    private func setLeadingIcons() {
+        txtUsername.addPaddingToImageLeft(26.0, src: "person")
+        txtEmailAddress.addPaddingToImageLeft(26.0, src: "mail")
+        txtPhoneNumber.addPaddingToImageLeft(26.0, src: "phone")
+        txtPassword.addPaddingToImageLeft(26.0, src: "lock")
     }
 }

@@ -20,6 +20,16 @@
 		5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835929F65C73000C73AD /* UIViewController+Extension.swift */; };
 		5167835E29F65D34000C73AD /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835D29F65D34000C73AD /* Storyboard.swift */; };
 		5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835F29F68377000C73AD /* AttributedString+Extension.swift */; };
+		5180AD1629F9187D008687FC /* UISlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AD1529F9187D008687FC /* UISlider.storyboard */; };
+		5180AD1829F91892008687FC /* VCSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD1729F91892008687FC /* VCSlider.swift */; };
+		5180AD1B29F92562008687FC /* UIProgressView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AD1A29F92562008687FC /* UIProgressView.storyboard */; };
+		5180AD1D29F92573008687FC /* VCProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD1C29F92573008687FC /* VCProgressView.swift */; };
+		5180AD2429F92DDD008687FC /* UISegmentedControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AD2329F92DDD008687FC /* UISegmentedControl.storyboard */; };
+		5180AD2629F92E0D008687FC /* VCSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD2529F92E0D008687FC /* VCSegmentedControl.swift */; };
+		5180AD2929F93737008687FC /* UIPageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AD2829F93737008687FC /* UIPageControl.storyboard */; };
+		5180AD2C29F93755008687FC /* VCPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD2B29F93755008687FC /* VCPageControl.swift */; };
+		5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AD2F29F94102008687FC /* UIStepper.storyboard */; };
+		5180AD3229F9410F008687FC /* VCStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD3129F9410F008687FC /* VCStepper.swift */; };
 		51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */; };
 		51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */; };
 		51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */; };
@@ -46,6 +56,16 @@
 		5167835929F65C73000C73AD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		5167835D29F65D34000C73AD /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		5167835F29F68377000C73AD /* AttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttributedString+Extension.swift"; sourceTree = "<group>"; };
+		5180AD1529F9187D008687FC /* UISlider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISlider.storyboard; sourceTree = "<group>"; };
+		5180AD1729F91892008687FC /* VCSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSlider.swift; sourceTree = "<group>"; };
+		5180AD1A29F92562008687FC /* UIProgressView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIProgressView.storyboard; sourceTree = "<group>"; };
+		5180AD1C29F92573008687FC /* VCProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCProgressView.swift; sourceTree = "<group>"; };
+		5180AD2329F92DDD008687FC /* UISegmentedControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISegmentedControl.storyboard; sourceTree = "<group>"; };
+		5180AD2529F92E0D008687FC /* VCSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSegmentedControl.swift; sourceTree = "<group>"; };
+		5180AD2829F93737008687FC /* UIPageControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPageControl.storyboard; sourceTree = "<group>"; };
+		5180AD2B29F93755008687FC /* VCPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPageControl.swift; sourceTree = "<group>"; };
+		5180AD2F29F94102008687FC /* UIStepper.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIStepper.storyboard; sourceTree = "<group>"; };
+		5180AD3129F9410F008687FC /* VCStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCStepper.swift; sourceTree = "<group>"; };
 		51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
 		51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTextField.swift; sourceTree = "<group>"; };
 		51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -122,6 +142,11 @@
 		5167835329F65641000C73AD /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				5180AD2E29F940F4008687FC /* UIStepper */,
+				5180AD2729F9371E008687FC /* UIPageControl */,
+				5180AD2229F92DC4008687FC /* UISegmentedControl */,
+				5180AD1929F9251B008687FC /* UIProgressView */,
+				5180AD1229F917E2008687FC /* UISlider */,
 				51AAB07729F7FBBB00E3F8E8 /* UISwitch */,
 				51AAB07229F7F35700E3F8E8 /* UITextView */,
 				51AAB06B29F7B01D00E3F8E8 /* UITextField */,
@@ -147,6 +172,51 @@
 				5167835D29F65D34000C73AD /* Storyboard.swift */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5180AD1229F917E2008687FC /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				5180AD1529F9187D008687FC /* UISlider.storyboard */,
+				5180AD1729F91892008687FC /* VCSlider.swift */,
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
+		5180AD1929F9251B008687FC /* UIProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				5180AD1A29F92562008687FC /* UIProgressView.storyboard */,
+				5180AD1C29F92573008687FC /* VCProgressView.swift */,
+			);
+			path = UIProgressView;
+			sourceTree = "<group>";
+		};
+		5180AD2229F92DC4008687FC /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				5180AD2329F92DDD008687FC /* UISegmentedControl.storyboard */,
+				5180AD2529F92E0D008687FC /* VCSegmentedControl.swift */,
+			);
+			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
+		5180AD2729F9371E008687FC /* UIPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				5180AD2829F93737008687FC /* UIPageControl.storyboard */,
+				5180AD2B29F93755008687FC /* VCPageControl.swift */,
+			);
+			path = UIPageControl;
+			sourceTree = "<group>";
+		};
+		5180AD2E29F940F4008687FC /* UIStepper */ = {
+			isa = PBXGroup;
+			children = (
+				5180AD2F29F94102008687FC /* UIStepper.storyboard */,
+				5180AD3129F9410F008687FC /* VCStepper.swift */,
+			);
+			path = UIStepper;
 			sourceTree = "<group>";
 		};
 		51AAB06B29F7B01D00E3F8E8 /* UITextField */ = {
@@ -234,10 +304,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5180AD1629F9187D008687FC /* UISlider.storyboard in Resources */,
+				5180AD2429F92DDD008687FC /* UISegmentedControl.storyboard in Resources */,
 				5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */,
 				5110E82D29E672B5001165DB /* Assets.xcassets in Resources */,
 				51AAB07929F7FE0A00E3F8E8 /* UISwitch.storyboard in Resources */,
+				5180AD1B29F92562008687FC /* UIProgressView.storyboard in Resources */,
+				5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */,
 				512FB3DA29F692E80074CF93 /* UIButton.storyboard in Resources */,
+				5180AD2929F93737008687FC /* UIPageControl.storyboard in Resources */,
 				51AAB07429F7F36D00E3F8E8 /* UITextView.storyboard in Resources */,
 				5110E82B29E672B4001165DB /* Main.storyboard in Resources */,
 				51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */,
@@ -260,11 +335,16 @@
 				51AAB07629F7F37900E3F8E8 /* VCTextView.swift in Sources */,
 				5167835E29F65D34000C73AD /* Storyboard.swift in Sources */,
 				5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */,
+				5180AD1D29F92573008687FC /* VCProgressView.swift in Sources */,
+				5180AD2629F92E0D008687FC /* VCSegmentedControl.swift in Sources */,
+				5180AD2C29F93755008687FC /* VCPageControl.swift in Sources */,
 				51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */,
 				5110E82429E672B4001165DB /* AppDelegate.swift in Sources */,
 				5110E82629E672B4001165DB /* SceneDelegate.swift in Sources */,
 				51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */,
 				5167835729F65680000C73AD /* VCLabels.swift in Sources */,
+				5180AD3229F9410F008687FC /* VCStepper.swift in Sources */,
+				5180AD1829F91892008687FC /* VCSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

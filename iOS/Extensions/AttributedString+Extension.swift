@@ -8,7 +8,7 @@
 import UIKit
 
 extension NSMutableAttributedString {
-    //MARK: - Computed properties
+    // Computed properties
     var fontSize: CGFloat { return 18 }
     var boldFont: UIFont {
         return UIFont(name: "AvenirNext-Bold", size : fontSize) ?? UIFont.boldSystemFont(ofSize: fontSize)
@@ -17,7 +17,7 @@ extension NSMutableAttributedString {
         return UIFont(name: "AvenirNext-Regular", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
     }
     
-    //MARK: - Functions
+    // Functions
     func bold(_ value: String, _ textColor: UIColor = UIColor.black) -> NSMutableAttributedString {
         let attributes: [NSAttributedString.Key : Any] = [
             .font : boldFont,

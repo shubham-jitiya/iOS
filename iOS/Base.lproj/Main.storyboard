@@ -23,43 +23,103 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="999-Ms-PIg">
-                                <rect key="frame" x="24" y="193.33333333333334" width="345" height="35"/>
+                                <rect key="frame" x="24" y="193.33333333333334" width="345" height="32.666666666666657"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Label"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Label">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="btnLabel:" destination="vr3-QX-sFP" eventType="touchUpInside" id="5Ww-mB-LpQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk3-hq-AtH">
-                                <rect key="frame" x="24" y="236.33333333333334" width="345" height="35.000000000000028"/>
+                                <rect key="frame" x="24" y="234" width="345" height="32.666666666666686"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="btnButton:" destination="vr3-QX-sFP" eventType="touchUpInside" id="dvG-E4-hlO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yri-kg-auF">
-                                <rect key="frame" x="24" y="279.33333333333331" width="345" height="35"/>
+                                <rect key="frame" x="24" y="274.66666666666669" width="345" height="32.666666666666686"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Text field"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Text field">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="btnTextField:" destination="vr3-QX-sFP" eventType="touchUpInside" id="8tt-Br-TEU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfE-E0-0XL">
-                                <rect key="frame" x="24" y="322.33333333333331" width="345" height="35"/>
+                                <rect key="frame" x="24" y="315.33333333333331" width="345" height="32.666666666666686"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Text view"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Text view">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="btnTextView:" destination="vr3-QX-sFP" eventType="touchUpInside" id="fT1-QF-VGa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poO-nE-JkM">
-                                <rect key="frame" x="24" y="365.33333333333331" width="345" height="35"/>
+                                <rect key="frame" x="24" y="356" width="345" height="32.666666666666686"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Switch"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Switch">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="btnSwitch:" destination="vr3-QX-sFP" eventType="touchUpInside" id="OqA-3y-AaT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eu0-ux-Gll">
+                                <rect key="frame" x="24" y="396.66666666666669" width="345" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Slider">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSlider:" destination="vr3-QX-sFP" eventType="touchUpInside" id="Xxh-rL-dKI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uda-HM-Uy7">
+                                <rect key="frame" x="24" y="438.66666666666669" width="345" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Progress view">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnProgressView:" destination="vr3-QX-sFP" eventType="touchUpInside" id="TUq-Tt-She"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gy-fv-BCo">
+                                <rect key="frame" x="24" y="480.66666666666669" width="345" height="34.000000000000057"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Segmented control">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSegmentedControl:" destination="vr3-QX-sFP" eventType="touchUpInside" id="WfI-Ee-kk5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-95-w2T">
+                                <rect key="frame" x="24" y="522.66666666666663" width="345" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Page Control">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnPageControl:" destination="vr3-QX-sFP" eventType="touchUpInside" id="pNY-5h-ouy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbf-Eb-ctK">
+                                <rect key="frame" x="24" y="564.66666666666663" width="345" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Stepper">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnStepper:" destination="vr3-QX-sFP" eventType="touchUpInside" id="3wb-av-aEi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,19 +130,34 @@
                             <constraint firstItem="poO-nE-JkM" firstAttribute="leading" secondItem="jfE-E0-0XL" secondAttribute="leading" id="4BD-eg-Yed"/>
                             <constraint firstItem="Yri-kg-auF" firstAttribute="trailing" secondItem="Bk3-hq-AtH" secondAttribute="trailing" id="91T-Ll-EKy"/>
                             <constraint firstItem="poO-nE-JkM" firstAttribute="trailing" secondItem="jfE-E0-0XL" secondAttribute="trailing" id="HD8-Tt-bDt"/>
+                            <constraint firstItem="1Gy-fv-BCo" firstAttribute="leading" secondItem="uda-HM-Uy7" secondAttribute="leading" id="J92-OK-Mj2"/>
+                            <constraint firstItem="pbf-Eb-ctK" firstAttribute="top" secondItem="sTT-95-w2T" secondAttribute="bottom" constant="8" id="NV7-6y-B4x"/>
                             <constraint firstItem="jfE-E0-0XL" firstAttribute="trailing" secondItem="Yri-kg-auF" secondAttribute="trailing" id="Ocv-Rs-2cC"/>
+                            <constraint firstItem="uda-HM-Uy7" firstAttribute="top" secondItem="eu0-ux-Gll" secondAttribute="bottom" constant="8" id="P1m-Bs-Ibs"/>
+                            <constraint firstItem="pbf-Eb-ctK" firstAttribute="trailing" secondItem="sTT-95-w2T" secondAttribute="trailing" id="PVf-7W-Slo"/>
+                            <constraint firstItem="eu0-ux-Gll" firstAttribute="leading" secondItem="poO-nE-JkM" secondAttribute="leading" id="PgI-sh-bXr"/>
                             <constraint firstItem="gNb-Tx-Qo3" firstAttribute="trailing" secondItem="1ta-Hg-6eZ" secondAttribute="trailing" constant="24" id="Xcy-xE-vY2"/>
                             <constraint firstItem="jfE-E0-0XL" firstAttribute="leading" secondItem="Yri-kg-auF" secondAttribute="leading" id="XsB-95-2WC"/>
+                            <constraint firstItem="pbf-Eb-ctK" firstAttribute="leading" secondItem="sTT-95-w2T" secondAttribute="leading" id="ZKA-1l-tTr"/>
+                            <constraint firstItem="1Gy-fv-BCo" firstAttribute="top" secondItem="uda-HM-Uy7" secondAttribute="bottom" constant="8" id="Zp3-10-WS5"/>
                             <constraint firstItem="Yri-kg-auF" firstAttribute="leading" secondItem="Bk3-hq-AtH" secondAttribute="leading" id="a27-BZ-sjx"/>
                             <constraint firstItem="Bk3-hq-AtH" firstAttribute="trailing" secondItem="999-Ms-PIg" secondAttribute="trailing" id="bQb-fv-7lr"/>
                             <constraint firstItem="999-Ms-PIg" firstAttribute="leading" secondItem="1ta-Hg-6eZ" secondAttribute="leading" id="dSu-Sg-mmK"/>
                             <constraint firstItem="Bk3-hq-AtH" firstAttribute="leading" secondItem="999-Ms-PIg" secondAttribute="leading" id="eIc-I9-86C"/>
+                            <constraint firstItem="sTT-95-w2T" firstAttribute="trailing" secondItem="1Gy-fv-BCo" secondAttribute="trailing" id="gPD-0I-ixz"/>
                             <constraint firstItem="Yri-kg-auF" firstAttribute="top" secondItem="Bk3-hq-AtH" secondAttribute="bottom" constant="8" id="gS8-lm-y9T"/>
+                            <constraint firstItem="eu0-ux-Gll" firstAttribute="top" secondItem="poO-nE-JkM" secondAttribute="bottom" constant="8" id="jxM-Zz-aWa"/>
                             <constraint firstItem="999-Ms-PIg" firstAttribute="top" secondItem="1ta-Hg-6eZ" secondAttribute="bottom" constant="36" id="lkj-3s-oaL"/>
                             <constraint firstItem="Bk3-hq-AtH" firstAttribute="top" secondItem="999-Ms-PIg" secondAttribute="bottom" constant="8" id="pfk-Qr-gOl"/>
+                            <constraint firstItem="uda-HM-Uy7" firstAttribute="leading" secondItem="eu0-ux-Gll" secondAttribute="leading" id="pnw-yM-tdy"/>
+                            <constraint firstItem="sTT-95-w2T" firstAttribute="leading" secondItem="1Gy-fv-BCo" secondAttribute="leading" id="qHT-XC-BJe"/>
                             <constraint firstItem="1ta-Hg-6eZ" firstAttribute="top" secondItem="gNb-Tx-Qo3" secondAttribute="top" constant="24" id="rH1-LO-yvr"/>
                             <constraint firstItem="poO-nE-JkM" firstAttribute="top" secondItem="jfE-E0-0XL" secondAttribute="bottom" constant="8" id="sbb-u2-6UR"/>
                             <constraint firstItem="jfE-E0-0XL" firstAttribute="top" secondItem="Yri-kg-auF" secondAttribute="bottom" constant="8" id="tzj-t0-gFq"/>
+                            <constraint firstItem="1Gy-fv-BCo" firstAttribute="trailing" secondItem="uda-HM-Uy7" secondAttribute="trailing" id="ubb-C9-SJN"/>
+                            <constraint firstItem="uda-HM-Uy7" firstAttribute="trailing" secondItem="eu0-ux-Gll" secondAttribute="trailing" id="xhR-9D-gTT"/>
+                            <constraint firstItem="sTT-95-w2T" firstAttribute="top" secondItem="1Gy-fv-BCo" secondAttribute="bottom" constant="8" id="yU6-nC-g63"/>
+                            <constraint firstItem="eu0-ux-Gll" firstAttribute="trailing" secondItem="poO-nE-JkM" secondAttribute="trailing" id="yfs-zE-azv"/>
                             <constraint firstItem="999-Ms-PIg" firstAttribute="trailing" secondItem="1ta-Hg-6eZ" secondAttribute="trailing" id="z8O-L8-ZOV"/>
                         </constraints>
                     </view>
