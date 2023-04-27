@@ -38,76 +38,115 @@ class ViewController: UIViewController {
         super.viewDidDisappear(animated)
         print("View did disappear")
     }
-    
-    //MARK: - IB Actions
+}
+
+// MARK: - IB Actions
+extension ViewController {
     @IBAction func btnLabel(_ sender: UIButton) {
-        guard let vcLabel = VCLabels.create(storyboardName: .uiLabel) as? VCLabels else {
+        guard let vcLabel = VCLabels.create(storyboardName: .uiLabel) as?
+                VCLabels else {
             return
         }
         navigate(to: vcLabel)
     }
     
     @IBAction func btnButton(_ sender: UIButton) {
-        guard let vcButton = VCButton.create(storyboardName: .uiButton) as? VCButton else {
+        guard let vcButton = VCButton.create(storyboardName: .uiButton) as?
+                VCButton else {
             return
         }
         navigate(to: vcButton)
     }
     
     @IBAction func btnTextField(_ sender: UIButton) {
-        guard let vcTextField = VCTextField.create(storyboardName: .uiTextField) as? VCTextField else {
+        guard let vcTextField = VCTextField.create(storyboardName: .uiTextField) as?
+                VCTextField else {
             return
         }
         navigate(to: vcTextField)
     }
     
     @IBAction func btnTextView(_ sender: UIButton) {
-        guard let vcTextView = VCTextView.create(storyboardName: .uiTextView) as? VCTextView else {
+        guard let vcTextView = VCTextView.create(storyboardName: .uiTextView) as?
+                VCTextView else {
             return
         }
         navigate(to: vcTextView)
     }
     
     @IBAction func btnSwitch(_ sender: UIButton) {
-        guard let vcSwitch = VCSwitch.create(storyboardName: .uiSwitch) as? VCSwitch else {
+        guard let vcSwitch = VCSwitch.create(storyboardName: .uiSwitch) as?
+                VCSwitch else {
             return
         }
         navigate(to: vcSwitch)
     }
     
     @IBAction func btnSlider(_ sender: UIButton) {
-        guard let vcSlider = VCSlider.create(storyboardName: .uiSlider) as? VCSlider else {
+        guard let vcSlider = VCSlider
+            .create(storyboardName: .uiSlider) as?
+                VCSlider else {
             return
         }
         navigate(to: vcSlider)
     }
     
     @IBAction func btnProgressView(_ sender: UIButton) {
-        guard let vcProgressView = VCProgressView.create(storyboardName: .uiProgressView) as? VCProgressView else {
+        guard let vcProgressView = VCProgressView
+            .create(storyboardName: .uiProgressView) as?
+                VCProgressView else {
             return
         }
         navigate(to: vcProgressView)
     }
     
     @IBAction func btnSegmentedControl(_ sender: UIButton) {
-        guard let vcSegmentedControl = VCSegmentedControl.create(storyboardName: .uiSegmentedControl) as? VCSegmentedControl else {
+        guard let vcSegmentedControl = VCSegmentedControl
+            .create(storyboardName: .uiSegmentedControl) as?
+                VCSegmentedControl else {
             return
         }
         navigate(to: vcSegmentedControl)
     }
     
     @IBAction func btnPageControl(_ sender: UIButton) {
-        guard let vcPageControl = VCPageControl.create(storyboardName: .uiPageControl) as? VCPageControl else {
+        guard let vcPageControl = VCPageControl
+            .create(storyboardName: .uiPageControl) as?
+                VCPageControl else {
             return
         }
         navigate(to: vcPageControl)
     }
     
     @IBAction func btnStepper(_ sender: UIButton) {
-        guard let vcStepper = VCStepper.create(storyboardName: .uiStepper) as? VCStepper else {
+        guard let vcStepper = VCStepper
+            .create(storyboardName: .uiStepper) as?
+                VCStepper else {
             return
         }
         navigate(to: vcStepper)
+    }
+    
+    @IBAction func btnScrollView(_ sender: UIButton) {
+        guard let vcScrollView = VCScrollView
+            .create(storyboardName: .uiScrollView) as?
+                VCScrollView else {
+            return
+        }
+        navigate(to: vcScrollView)
+    }
+    
+    @IBAction func btnImagePicker(_ sender: UIButton) {
+        guard let vcImagePicker = VCImagePicker
+            .create(storyboardName: .uiImagePicker) as?
+                VCImagePicker else {
+            return
+        }
+        navigate(to: vcImagePicker)
+    }
+    
+    @IBAction func btnTableView(_ sender: UIButton) {
+      
     }
 }
 

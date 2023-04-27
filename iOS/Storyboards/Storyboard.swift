@@ -18,4 +18,7 @@ enum Storyboards: String {
     case uiSegmentedControl = "UISegmentedControl"
     case uiPageControl = "UIPageControl"
     case uiStepper = "UIStepper"
+    case uiScrollView = "UIScrollView"
+    case uiImagePicker = "UIImagePicker"
+    case uiTableView = "UITableView"
 }

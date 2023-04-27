@@ -30,6 +30,10 @@
 		5180AD2C29F93755008687FC /* VCPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD2B29F93755008687FC /* VCPageControl.swift */; };
 		5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AD2F29F94102008687FC /* UIStepper.storyboard */; };
 		5180AD3229F9410F008687FC /* VCStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD3129F9410F008687FC /* VCStepper.swift */; };
+		5191363329FA75EE000D9AFC /* UIImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191363229FA75EE000D9AFC /* UIImagePicker.storyboard */; };
+		5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5191363429FA760D000D9AFC /* VCImagePicker.swift */; };
+		5191363829FAA597000D9AFC /* UITableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191363729FAA597000D9AFC /* UITableView.storyboard */; };
+		5191363A29FAA5A7000D9AFC /* VCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5191363929FAA5A7000D9AFC /* VCTableView.swift */; };
 		51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */; };
 		51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */; };
 		51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */; };
@@ -37,6 +41,8 @@
 		51AAB07629F7F37900E3F8E8 /* VCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07529F7F37900E3F8E8 /* VCTextView.swift */; };
 		51AAB07929F7FE0A00E3F8E8 /* UISwitch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAB07829F7FE0A00E3F8E8 /* UISwitch.storyboard */; };
 		51AAB07C29F7FE2100E3F8E8 /* VCSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07B29F7FE2100E3F8E8 /* VCSwitch.swift */; };
+		51AD16FB29FA3E1800C985FA /* UIScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AD16FA29FA3E1800C985FA /* UIScrollView.storyboard */; };
+		51AD16FD29FA3E2400C985FA /* VCScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AD16FC29FA3E2400C985FA /* VCScrollView.swift */; };
 		51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +72,10 @@
 		5180AD2B29F93755008687FC /* VCPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPageControl.swift; sourceTree = "<group>"; };
 		5180AD2F29F94102008687FC /* UIStepper.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIStepper.storyboard; sourceTree = "<group>"; };
 		5180AD3129F9410F008687FC /* VCStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCStepper.swift; sourceTree = "<group>"; };
+		5191363229FA75EE000D9AFC /* UIImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIImagePicker.storyboard; sourceTree = "<group>"; };
+		5191363429FA760D000D9AFC /* VCImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCImagePicker.swift; sourceTree = "<group>"; };
+		5191363729FAA597000D9AFC /* UITableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITableView.storyboard; sourceTree = "<group>"; };
+		5191363929FAA5A7000D9AFC /* VCTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTableView.swift; sourceTree = "<group>"; };
 		51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
 		51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTextField.swift; sourceTree = "<group>"; };
 		51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -73,6 +83,8 @@
 		51AAB07529F7F37900E3F8E8 /* VCTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTextView.swift; sourceTree = "<group>"; };
 		51AAB07829F7FE0A00E3F8E8 /* UISwitch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISwitch.storyboard; sourceTree = "<group>"; };
 		51AAB07B29F7FE2100E3F8E8 /* VCSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSwitch.swift; sourceTree = "<group>"; };
+		51AD16FA29FA3E1800C985FA /* UIScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIScrollView.storyboard; sourceTree = "<group>"; };
+		51AD16FC29FA3E2400C985FA /* VCScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCScrollView.swift; sourceTree = "<group>"; };
 		51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +154,9 @@
 		5167835329F65641000C73AD /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				5191363629FAA585000D9AFC /* UITableView */,
+				5191363129FA75CD000D9AFC /* UIImagePicker */,
+				51AD16F929FA3E0400C985FA /* UIScrollView */,
 				5180AD2E29F940F4008687FC /* UIStepper */,
 				5180AD2729F9371E008687FC /* UIPageControl */,
 				5180AD2229F92DC4008687FC /* UISegmentedControl */,
@@ -219,6 +234,24 @@
 			path = UIStepper;
 			sourceTree = "<group>";
 		};
+		5191363129FA75CD000D9AFC /* UIImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				5191363229FA75EE000D9AFC /* UIImagePicker.storyboard */,
+				5191363429FA760D000D9AFC /* VCImagePicker.swift */,
+			);
+			path = UIImagePicker;
+			sourceTree = "<group>";
+		};
+		5191363629FAA585000D9AFC /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				5191363729FAA597000D9AFC /* UITableView.storyboard */,
+				5191363929FAA5A7000D9AFC /* VCTableView.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		51AAB06B29F7B01D00E3F8E8 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +277,15 @@
 				51AAB07B29F7FE2100E3F8E8 /* VCSwitch.swift */,
 			);
 			path = UISwitch;
+			sourceTree = "<group>";
+		};
+		51AD16F929FA3E0400C985FA /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				51AD16FA29FA3E1800C985FA /* UIScrollView.storyboard */,
+				51AD16FC29FA3E2400C985FA /* VCScrollView.swift */,
+			);
+			path = UIScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,16 +348,19 @@
 			files = (
 				5180AD1629F9187D008687FC /* UISlider.storyboard in Resources */,
 				5180AD2429F92DDD008687FC /* UISegmentedControl.storyboard in Resources */,
+				5191363329FA75EE000D9AFC /* UIImagePicker.storyboard in Resources */,
 				5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */,
 				5110E82D29E672B5001165DB /* Assets.xcassets in Resources */,
 				51AAB07929F7FE0A00E3F8E8 /* UISwitch.storyboard in Resources */,
 				5180AD1B29F92562008687FC /* UIProgressView.storyboard in Resources */,
 				5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */,
 				512FB3DA29F692E80074CF93 /* UIButton.storyboard in Resources */,
+				51AD16FB29FA3E1800C985FA /* UIScrollView.storyboard in Resources */,
 				5180AD2929F93737008687FC /* UIPageControl.storyboard in Resources */,
 				51AAB07429F7F36D00E3F8E8 /* UITextView.storyboard in Resources */,
 				5110E82B29E672B4001165DB /* Main.storyboard in Resources */,
 				51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */,
+				5191363829FAA597000D9AFC /* UITableView.storyboard in Resources */,
 				5167835529F65667000C73AD /* UILabels.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,8 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5191363A29FAA5A7000D9AFC /* VCTableView.swift in Sources */,
 				5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */,
 				512FB3DE29F693920074CF93 /* VCButton.swift in Sources */,
+				51AD16FD29FA3E2400C985FA /* VCScrollView.swift in Sources */,
 				51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */,
 				51AAB07C29F7FE2100E3F8E8 /* VCSwitch.swift in Sources */,
 				5110E82829E672B4001165DB /* ViewController.swift in Sources */,
@@ -342,6 +389,7 @@
 				5110E82429E672B4001165DB /* AppDelegate.swift in Sources */,
 				5110E82629E672B4001165DB /* SceneDelegate.swift in Sources */,
 				51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */,
+				5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */,
 				5167835729F65680000C73AD /* VCLabels.swift in Sources */,
 				5180AD3229F9410F008687FC /* VCStepper.swift in Sources */,
 				5180AD1829F91892008687FC /* VCSlider.swift in Sources */,

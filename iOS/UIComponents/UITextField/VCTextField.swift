@@ -7,27 +7,25 @@
 
 import UIKit
 
-class VCTextField: UIViewController, UITextFieldDelegate {
-    
+class VCTextField: UIViewController {
     //MARK: - Outlets
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtEmailAddress: UITextField!
     @IBOutlet weak var txtPhoneNumber: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
+    // MARK: Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Another way
-        //txtUsername.delegate = self
-        //txtEmailAddress.delegate = self
         addPadding()
         addDoneButton()
         setLeadingIcons()
         txtUsername.becomeFirstResponder()
-        
     }
-    
-    //MARK: Delegation methods
+}
+
+// MARK: Delegation methods
+extension VCTextField: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         print("Text field should begin editing", textField.text ?? "")
         //return false //Disable editing
@@ -39,34 +37,10 @@ class VCTextField: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField == txtUsername {
-            if let username = textField.text {
-                if username.count < 4 {
-                    print("User name mustbe greater than 4")
-                }
-            }
+        guard let userInput = textField.text else {
+            return
         }
-        if textField == txtEmailAddress {
-            if let emailId = textField.text {
-                if !emailId.contains("@") || !emailId.contains(".") {
-                    print("Invalid email address")
-                }
-            }
-        }
-        if textField == txtPhoneNumber {
-            if let phoneNumber = textField.text {
-                if phoneNumber.count < 10 {
-                    print("Phone number must be of 10 digit")
-                }
-            }
-        }
-        if textField == txtPassword {
-            if let pswd = textField.text {
-                if pswd.count < 8 {
-                    print("Your password must be 8 character long")
-                }
-            }
-        }
+        validateUserInput(textField, userInput)
     }
     
     //restrict user input | validation
@@ -125,10 +99,9 @@ class VCTextField: UIViewController, UITextFieldDelegate {
         }
         return true
     }
-    
-    //MARK: Functions
 }
 
+// MARK: Functions
 extension VCTextField {
     private func addDoneButton() {
         txtUsername.dismissKeyboard()
@@ -149,5 +122,27 @@ extension VCTextField {
         txtEmailAddress.addPaddingToImageLeft(26.0, src: "mail")
         txtPhoneNumber.addPaddingToImageLeft(26.0, src: "phone")
         txtPassword.addPaddingToImageLeft(26.0, src: "lock")
+    }
+    
+    private func validateUserInput(_ textField: UITextField, _ userInput: String) {
+        switch textField {
+        case txtUsername :
+            if userInput.count < 4 {
+                print("User name must be greater than 4")
+            }
+        case txtEmailAddress :
+            if !userInput.contains("@") || !userInput.contains(".") {
+                print("Invalid email address")
+            }
+        case txtPhoneNumber:
+            if userInput.count < 10 {
+                print("Phone number must be of 10 digit")
+            }
+        case txtPassword:
+            if userInput.count < 8 {
+                print("Your password must be 8 character long")
+            }
+        default: print(" ")
+        }
     }
 }
