@@ -42,7 +42,7 @@ class ViewController: UIViewController {
 
 // MARK: - IB Actions
 extension ViewController {
-    @IBAction func btnLabel(_ sender: UIButton) {
+    @IBAction private func btnLabel(_ sender: UIButton) {
         guard let vcLabel = VCLabels.create(storyboardName: .uiLabel) as?
                 VCLabels else {
             return
@@ -50,7 +50,7 @@ extension ViewController {
         navigate(to: vcLabel)
     }
     
-    @IBAction func btnButton(_ sender: UIButton) {
+    @IBAction private func btnButton(_ sender: UIButton) {
         guard let vcButton = VCButton.create(storyboardName: .uiButton) as?
                 VCButton else {
             return
@@ -58,7 +58,7 @@ extension ViewController {
         navigate(to: vcButton)
     }
     
-    @IBAction func btnTextField(_ sender: UIButton) {
+    @IBAction private func btnTextField(_ sender: UIButton) {
         guard let vcTextField = VCTextField.create(storyboardName: .uiTextField) as?
                 VCTextField else {
             return
@@ -66,7 +66,7 @@ extension ViewController {
         navigate(to: vcTextField)
     }
     
-    @IBAction func btnTextView(_ sender: UIButton) {
+    @IBAction private func btnTextView(_ sender: UIButton) {
         guard let vcTextView = VCTextView.create(storyboardName: .uiTextView) as?
                 VCTextView else {
             return
@@ -74,7 +74,7 @@ extension ViewController {
         navigate(to: vcTextView)
     }
     
-    @IBAction func btnSwitch(_ sender: UIButton) {
+    @IBAction private func btnSwitch(_ sender: UIButton) {
         guard let vcSwitch = VCSwitch.create(storyboardName: .uiSwitch) as?
                 VCSwitch else {
             return
@@ -82,7 +82,7 @@ extension ViewController {
         navigate(to: vcSwitch)
     }
     
-    @IBAction func btnSlider(_ sender: UIButton) {
+    @IBAction private func btnSlider(_ sender: UIButton) {
         guard let vcSlider = VCSlider
             .create(storyboardName: .uiSlider) as?
                 VCSlider else {
@@ -91,7 +91,7 @@ extension ViewController {
         navigate(to: vcSlider)
     }
     
-    @IBAction func btnProgressView(_ sender: UIButton) {
+    @IBAction private func btnProgressView(_ sender: UIButton) {
         guard let vcProgressView = VCProgressView
             .create(storyboardName: .uiProgressView) as?
                 VCProgressView else {
@@ -100,7 +100,7 @@ extension ViewController {
         navigate(to: vcProgressView)
     }
     
-    @IBAction func btnSegmentedControl(_ sender: UIButton) {
+    @IBAction private func btnSegmentedControl(_ sender: UIButton) {
         guard let vcSegmentedControl = VCSegmentedControl
             .create(storyboardName: .uiSegmentedControl) as?
                 VCSegmentedControl else {
@@ -109,7 +109,7 @@ extension ViewController {
         navigate(to: vcSegmentedControl)
     }
     
-    @IBAction func btnPageControl(_ sender: UIButton) {
+    @IBAction private func btnPageControl(_ sender: UIButton) {
         guard let vcPageControl = VCPageControl
             .create(storyboardName: .uiPageControl) as?
                 VCPageControl else {
@@ -118,7 +118,7 @@ extension ViewController {
         navigate(to: vcPageControl)
     }
     
-    @IBAction func btnStepper(_ sender: UIButton) {
+    @IBAction private func btnStepper(_ sender: UIButton) {
         guard let vcStepper = VCStepper
             .create(storyboardName: .uiStepper) as?
                 VCStepper else {
@@ -127,7 +127,7 @@ extension ViewController {
         navigate(to: vcStepper)
     }
     
-    @IBAction func btnScrollView(_ sender: UIButton) {
+    @IBAction private func btnScrollView(_ sender: UIButton) {
         guard let vcScrollView = VCScrollView
             .create(storyboardName: .uiScrollView) as?
                 VCScrollView else {
@@ -136,7 +136,7 @@ extension ViewController {
         navigate(to: vcScrollView)
     }
     
-    @IBAction func btnImagePicker(_ sender: UIButton) {
+    @IBAction private func btnImagePicker(_ sender: UIButton) {
         guard let vcImagePicker = VCImagePicker
             .create(storyboardName: .uiImagePicker) as?
                 VCImagePicker else {
@@ -145,8 +145,13 @@ extension ViewController {
         navigate(to: vcImagePicker)
     }
     
-    @IBAction func btnTableView(_ sender: UIButton) {
-      
+    @IBAction private func btnTableView(_ sender: UIButton) {
+        guard let vcTableView = VCTableView
+            .create(storyboardName: .uiTableView) as?
+                VCTableView else {
+            return
+        }
+        navigate(to: vcTableView)
     }
 }
 

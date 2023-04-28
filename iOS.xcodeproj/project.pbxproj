@@ -34,6 +34,10 @@
 		5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5191363429FA760D000D9AFC /* VCImagePicker.swift */; };
 		5191363829FAA597000D9AFC /* UITableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191363729FAA597000D9AFC /* UITableView.storyboard */; };
 		5191363A29FAA5A7000D9AFC /* VCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5191363929FAA5A7000D9AFC /* VCTableView.swift */; };
+		51A8FB0D29FBA0E000A41B8D /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8FB0B29FBA0DF00A41B8D /* IndexTableViewCell.swift */; };
+		51A8FB0E29FBA0E000A41B8D /* IndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A8FB0C29FBA0E000A41B8D /* IndexTableViewCell.xib */; };
+		51A8FB1129FBBFF000A41B8D /* EvenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8FB0F29FBBFF000A41B8D /* EvenTableViewCell.swift */; };
+		51A8FB1229FBBFF000A41B8D /* EvenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A8FB1029FBBFF000A41B8D /* EvenTableViewCell.xib */; };
 		51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */; };
 		51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */; };
 		51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */; };
@@ -43,6 +47,9 @@
 		51AAB07C29F7FE2100E3F8E8 /* VCSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07B29F7FE2100E3F8E8 /* VCSwitch.swift */; };
 		51AD16FB29FA3E1800C985FA /* UIScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AD16FA29FA3E1800C985FA /* UIScrollView.storyboard */; };
 		51AD16FD29FA3E2400C985FA /* VCScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AD16FC29FA3E2400C985FA /* VCScrollView.swift */; };
+		51E2B91929FBDCAD00846904 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2B91729FBDCAD00846904 /* CompanyTableViewCell.swift */; };
+		51E2B91A29FBDCAD00846904 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E2B91829FBDCAD00846904 /* CompanyTableViewCell.xib */; };
+		51E2B91D29FBE9FB00846904 /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2B91C29FBE9FB00846904 /* CompanyModel.swift */; };
 		51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +83,10 @@
 		5191363429FA760D000D9AFC /* VCImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCImagePicker.swift; sourceTree = "<group>"; };
 		5191363729FAA597000D9AFC /* UITableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITableView.storyboard; sourceTree = "<group>"; };
 		5191363929FAA5A7000D9AFC /* VCTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTableView.swift; sourceTree = "<group>"; };
+		51A8FB0B29FBA0DF00A41B8D /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
+		51A8FB0C29FBA0E000A41B8D /* IndexTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexTableViewCell.xib; sourceTree = "<group>"; };
+		51A8FB0F29FBBFF000A41B8D /* EvenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenTableViewCell.swift; sourceTree = "<group>"; };
+		51A8FB1029FBBFF000A41B8D /* EvenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EvenTableViewCell.xib; sourceTree = "<group>"; };
 		51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
 		51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTextField.swift; sourceTree = "<group>"; };
 		51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -85,6 +96,9 @@
 		51AAB07B29F7FE2100E3F8E8 /* VCSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSwitch.swift; sourceTree = "<group>"; };
 		51AD16FA29FA3E1800C985FA /* UIScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIScrollView.storyboard; sourceTree = "<group>"; };
 		51AD16FC29FA3E2400C985FA /* VCScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCScrollView.swift; sourceTree = "<group>"; };
+		51E2B91729FBDCAD00846904 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		51E2B91829FBDCAD00846904 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
+		51E2B91C29FBE9FB00846904 /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
 		51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,10 +260,25 @@
 		5191363629FAA585000D9AFC /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				51E2B91B29FBE9EF00846904 /* Model */,
+				51A8FB0A29FB9EBE00A41B8D /* Cell */,
 				5191363729FAA597000D9AFC /* UITableView.storyboard */,
 				5191363929FAA5A7000D9AFC /* VCTableView.swift */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		51A8FB0A29FB9EBE00A41B8D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				51A8FB0B29FBA0DF00A41B8D /* IndexTableViewCell.swift */,
+				51A8FB0C29FBA0E000A41B8D /* IndexTableViewCell.xib */,
+				51A8FB0F29FBBFF000A41B8D /* EvenTableViewCell.swift */,
+				51A8FB1029FBBFF000A41B8D /* EvenTableViewCell.xib */,
+				51E2B91729FBDCAD00846904 /* CompanyTableViewCell.swift */,
+				51E2B91829FBDCAD00846904 /* CompanyTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		51AAB06B29F7B01D00E3F8E8 /* UITextField */ = {
@@ -286,6 +315,14 @@
 				51AD16FC29FA3E2400C985FA /* VCScrollView.swift */,
 			);
 			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		51E2B91B29FBE9EF00846904 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51E2B91C29FBE9FB00846904 /* CompanyModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5180AD1629F9187D008687FC /* UISlider.storyboard in Resources */,
+				51E2B91A29FBDCAD00846904 /* CompanyTableViewCell.xib in Resources */,
 				5180AD2429F92DDD008687FC /* UISegmentedControl.storyboard in Resources */,
 				5191363329FA75EE000D9AFC /* UIImagePicker.storyboard in Resources */,
 				5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */,
@@ -355,7 +393,9 @@
 				5180AD1B29F92562008687FC /* UIProgressView.storyboard in Resources */,
 				5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */,
 				512FB3DA29F692E80074CF93 /* UIButton.storyboard in Resources */,
+				51A8FB0E29FBA0E000A41B8D /* IndexTableViewCell.xib in Resources */,
 				51AD16FB29FA3E1800C985FA /* UIScrollView.storyboard in Resources */,
+				51A8FB1229FBBFF000A41B8D /* EvenTableViewCell.xib in Resources */,
 				5180AD2929F93737008687FC /* UIPageControl.storyboard in Resources */,
 				51AAB07429F7F36D00E3F8E8 /* UITextView.storyboard in Resources */,
 				5110E82B29E672B4001165DB /* Main.storyboard in Resources */,
@@ -374,15 +414,19 @@
 			files = (
 				5191363A29FAA5A7000D9AFC /* VCTableView.swift in Sources */,
 				5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */,
+				51A8FB0D29FBA0E000A41B8D /* IndexTableViewCell.swift in Sources */,
 				512FB3DE29F693920074CF93 /* VCButton.swift in Sources */,
 				51AD16FD29FA3E2400C985FA /* VCScrollView.swift in Sources */,
+				51A8FB1129FBBFF000A41B8D /* EvenTableViewCell.swift in Sources */,
 				51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */,
+				51E2B91929FBDCAD00846904 /* CompanyTableViewCell.swift in Sources */,
 				51AAB07C29F7FE2100E3F8E8 /* VCSwitch.swift in Sources */,
 				5110E82829E672B4001165DB /* ViewController.swift in Sources */,
 				51AAB07629F7F37900E3F8E8 /* VCTextView.swift in Sources */,
 				5167835E29F65D34000C73AD /* Storyboard.swift in Sources */,
 				5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */,
 				5180AD1D29F92573008687FC /* VCProgressView.swift in Sources */,
+				51E2B91D29FBE9FB00846904 /* CompanyModel.swift in Sources */,
 				5180AD2629F92E0D008687FC /* VCSegmentedControl.swift in Sources */,
 				5180AD2C29F93755008687FC /* VCPageControl.swift in Sources */,
 				51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */,
