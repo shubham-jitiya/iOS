@@ -26,16 +26,17 @@ class VCTextField: UIViewController {
 
 // MARK: Delegation methods
 extension VCTextField: UITextFieldDelegate {
+    // Enable & disable editing
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         print("Text field should begin editing", textField.text ?? "")
-        //return false //Disable editing
-        return true //Enable editing
+        return true
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("Text field did begin editing", textField.text ?? "")
     }
     
+    // Validate user input
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let userInput = textField.text else {
             return
@@ -104,10 +105,10 @@ extension VCTextField: UITextFieldDelegate {
 // MARK: Functions
 extension VCTextField {
     private func addDoneButton() {
-        txtUsername.dismissKeyboard()
-        txtEmailAddress.dismissKeyboard()
-        txtPassword.dismissKeyboard()
-        txtPhoneNumber.dismissKeyboard()
+        txtUsername.keyboardBtnDone()
+        txtEmailAddress.keyboardBtnDone()
+        txtPassword.keyboardBtnDone()
+        txtPhoneNumber.keyboardBtnDone()
     }
     
     private func addPadding() {

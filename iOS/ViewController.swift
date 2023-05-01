@@ -153,5 +153,15 @@ extension ViewController {
         }
         navigate(to: vcTableView)
     }
+    
+    @IBAction private func btnTableViewProject(_ sender: UIButton) {
+        guard let vcListContacts = VCListContacts
+            .create(storyboardName: .uiListContacts) as?
+                VCListContacts else {
+            return
+        }
+        navigate(to: vcListContacts)
+    }
+    
 }
 

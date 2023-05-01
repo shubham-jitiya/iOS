@@ -25,6 +25,12 @@ class VCTableView: UIViewController {
     }
 }
 
+// MARK: IB actions
+extension VCTableView {
+    @IBAction func btnSubmit(_ sender: UIButton) {
+        print(records.filter{ $0.isSelected == true }.count)
+    }
+}
 
 // MARK: Functions
 extension VCTableView {
@@ -33,8 +39,10 @@ extension VCTableView {
         tblContents.dataSource = self
         initialiseTableHeader()
         initialiseTableFooter()
+        initialiseSectionHeader()
         registerCells()
     }
+    
     private func initialiseTableHeader() {
         viewTblHeader.frame =  CGRect(
             x: 0,
@@ -43,6 +51,7 @@ extension VCTableView {
             height: 50)
         tblContents.tableHeaderView = viewTblHeader
     }
+    
     private func initialiseTableFooter() {
         viewTblFooter.frame =  CGRect(
             x: 0,
@@ -51,11 +60,28 @@ extension VCTableView {
             height: 50)
         tblContents.tableFooterView = viewTblFooter
     }
+     
+    private func initialiseSectionHeader() {
+        guard let customSectionHeader = tblContents.dequeueReusableCell(
+            withIdentifier: "CustomSectionHeaderView") as? CustomSectionHeaderView else {
+            return
+        }
+    }
+    
+    private func initialiseSectionFooter() {
+       
+    }
+    
     private func registerCells() {
         registerCell(table: tblContents, id: "IndexTableViewCell")
         registerCell(table: tblContents, id: "EvenTableViewCell")
         registerCell(table: tblContents, id: "CompanyTableViewCell")
+        registerCell(table: tblContents, id: "CustomSectionHeaderView")
+        tblContents.register(
+            UINib(nibName: "CustomSectionHeaderView", bundle: nil),
+            forHeaderFooterViewReuseIdentifier: "CustomSectionHeaderView")
     }
+    
     private func registerCell(table: UITableView, id: String) {
         table.register(UINib(nibName: id, bundle: nil), forCellReuseIdentifier: id)
     }
@@ -130,20 +156,12 @@ extension VCTableView: UITableViewDelegate {
             records[indexPath.row] = selection
             tblContents.reloadData()
             // tableView.reload
-            
         }
     
     func tableView(
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath) -> CGFloat {
             return UITableView.automaticDimension
-        }
-    
-    func tableView(
-        _ tableView: UITableView,
-        titleForHeaderInSection section: Int) -> String? {
-            print("Section title \(section)")
-            return "Section: \(section)"
         }
     
     func tableView(
@@ -155,11 +173,22 @@ extension VCTableView: UITableViewDelegate {
     func tableView(
         _ tableView: UITableView,
         viewForHeaderInSection section: Int) -> UIView? {
-            //        let sectionHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: tblContents.frame.size.width, height: 40))
-            //        sectionHeaderView.backgroundColor = UIColor(red: 0, green: 0, blue: 0.5, alpha: 0.8)
-            return nil // sectionHeaderView
+            guard let customSectionHeader = tblContents.dequeueReusableHeaderFooterView(
+                withIdentifier: "CustomSectionHeaderView") as? CustomSectionHeaderView else {
+                return nil
+            }
+            customSectionHeader.lblSectionHeader.text = "Section: \(section + 1)"
+            customSectionHeader.lblSectionHeader.textColor = .systemRed
+            return customSectionHeader
         }
-    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        "Footer section"
+    
+    func tableView(
+        _ tableView: UITableView,
+        titleForFooterInSection section: Int) -> String? {
+            "Footer section"
+        }
+    
+    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+        print("Begin editing")
     }
 }
