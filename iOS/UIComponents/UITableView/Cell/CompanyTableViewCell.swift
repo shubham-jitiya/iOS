@@ -8,7 +8,6 @@
 import UIKit
 
 class CompanyTableViewCell: UITableViewCell {
-
     // MARK: IB outlets
     @IBOutlet weak var imgLogo: UIImageView!
     @IBOutlet weak var lblCompanyName: UILabel!
@@ -16,7 +15,7 @@ class CompanyTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imgSelect.layer.cornerRadius = imgSelect.frame.size.height / 2.0
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

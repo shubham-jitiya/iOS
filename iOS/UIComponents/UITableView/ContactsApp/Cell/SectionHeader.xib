@@ -10,12 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomSectionHeaderView" customModule="iOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionHeader" customModule="iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section : 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0f-TW-5SH">
-                    <rect key="frame" x="16" y="8" width="79" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBF-gY-N08">
+                    <rect key="frame" x="16" y="8" width="361" height="36"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -24,15 +24,16 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="P0f-TW-5SH" secondAttribute="bottom" constant="8" id="57H-xf-JI6"/>
-                <constraint firstItem="P0f-TW-5SH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Nif-YK-Eec"/>
-                <constraint firstItem="P0f-TW-5SH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="R81-Pq-Dut"/>
+                <constraint firstItem="ZBF-gY-N08" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="2OE-dg-nkH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZBF-gY-N08" secondAttribute="bottom" constant="8" id="XKc-wA-AIx"/>
+                <constraint firstItem="ZBF-gY-N08" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="mzI-NH-PkE"/>
+                <constraint firstAttribute="trailing" secondItem="ZBF-gY-N08" secondAttribute="trailing" constant="16" id="tR2-fB-255"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="lblSectionHeader" destination="P0f-TW-5SH" id="fGr-fi-aKG"/>
+                <outlet property="lblSectionHeader" destination="ZBF-gY-N08" id="cbE-ZP-aPl"/>
             </connections>
-            <point key="canvasLocation" x="344.27480916030532" y="-36.619718309859159"/>
+            <point key="canvasLocation" x="-95.419847328244273" y="-273.94366197183098"/>
         </view>
     </objects>
     <resources>

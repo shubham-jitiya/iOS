@@ -19,6 +19,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FU4-vt-Yz9">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="3O2-n7-owS"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="KVv-kU-m7P"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -30,6 +34,9 @@
                             <constraint firstItem="FU4-vt-Yz9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="s1g-ag-vul"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblContacts" destination="FU4-vt-Yz9" id="cvS-fG-PrE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -65,7 +65,7 @@
                                     <constraint firstAttribute="width" constant="20" id="51N-SX-GeC"/>
                                     <constraint firstAttribute="height" constant="20" id="KQQ-Yr-VOA"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" systemColor="tertiaryLabelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="camera.fill" catalog="system"/>
                                 <connections>
@@ -115,8 +115,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

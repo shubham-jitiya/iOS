@@ -11,7 +11,7 @@ class VCAddContacts: UIViewController {
     // MARK: Variables
     private var userInfo: UserModel = UserModel()
     weak var userData: UserDataDelegate?
-
+    
     // MARK: IB outlets
     @IBOutlet weak var imgProfileImage: UIImageView!
     @IBOutlet weak var tfFirstName: UITextField!
@@ -23,14 +23,16 @@ class VCAddContacts: UIViewController {
         super.viewDidLoad()
         initialiseTextfields()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
+        
         tfFirstName.becomeFirstResponder()
     }
 }
 
 // MARK: Protocol delegate
 protocol UserDataDelegate: AnyObject {
-    func userInfo(data: UserModel)
+    func userInfo(_ data: UserModel)
 }
 
 // MARK: IB actions
@@ -38,11 +40,18 @@ extension VCAddContacts {
     @IBAction private func btnUpdateProfileImage() {
         initialiseImagePicker()
     }
+    
     @IBAction private func btnSubmit() {
-        //addDummyData()
-        //print(userData)
-        userData?.userInfo(data: userInfo)
-        print("User data saved successfully!!")
+        if let firstName = tfFirstName.text,  let lastName = tfLastName.text, let age  = tfAge.text {
+            let data = UserModel(imgProfile: imgProfileImage.image, fName: firstName, lName: lastName, age: age)
+            if isValidInfo(data) {
+                userData?.userInfo(data)
+                print("User data saved successfully!!")
+                navigationController?.popViewController(animated: true)
+            } else {
+              print("Invalid data entered")
+            }
+        }
     }
 }
 
@@ -95,35 +104,21 @@ extension VCAddContacts {
         tfAge.keyboardBtnDone()
     }
     
-    private func saveUserInfo(_ textField: UITextField) {
-        switch textField {
-        case tfFirstName:
-            userInfo.fName = tfFirstName.text ?? "NA"
-        case tfLastName:
-            userInfo.lName = tfLastName.text ?? "NA"
-        case tfAge:
-            userInfo.age = tfAge.text ?? "NA"
-        default:
-            print("Something went wrong while submiting data")
+    private func isValidInfo( _ userData: UserModel) -> Bool {
+        guard let userFirstName = userData.fName,
+              let userLastName = userData.lName,
+              let userAge = userData.age else {
+            return false
         }
-        print("User info saved")
-    }
-    
-    private func validateUserInfo(_ textField: UITextField, _ userInput: String) {
-        switch textField {
-        case tfFirstName :
-            if userInput.count < 2 {
-                print("First name must be greater than 2")
-            }
-        case tfLastName:
-            if userInput.count < 2 {
-                print("Last name must be greater than 2")
-            }
-        case tfAge:
-            if userInput.count > 2 {
-                print("Age should be less than 100")
-            }
-        default: print(" ")
+        if userFirstName.count > 2 && userLastName.count > 2 && userAge.count <= 2 {
+            let validNumbers = CharacterSet(charactersIn: Constants.validNumbers.rawValue)
+            let validCharacters = CharacterSet(charactersIn: Constants.validCharacters.rawValue)
+            print("Validation checking")
+            return userFirstName.rangeOfCharacter(from: validCharacters.inverted) == nil
+            && userLastName.rangeOfCharacter(from: validCharacters.inverted) == nil
+            && userAge.rangeOfCharacter(from: validNumbers.inverted) == nil
+        } else {
+            return false
         }
     }
 }
@@ -133,15 +128,15 @@ extension VCAddContacts: UIImagePickerControllerDelegate, UINavigationController
     func imagePickerController(
         _ picker: UIImagePickerController,
         didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let isSelected = info[.editedImage] as? UIImage {
-            imgProfileImage.image = isSelected
-            userInfo.imgProfile = isSelected
-        } else {
-            imgProfileImage.image = UIImage(systemName: "person.crop.circle.fill")
-            userInfo.imgProfile = UIImage(systemName: "person.crop.circle.fill")
+            if let isSelected = info[.editedImage] as? UIImage {
+                imgProfileImage.image = isSelected
+                userInfo.imgProfile = isSelected
+            } else {
+                imgProfileImage.image = UIImage(systemName: "person.crop.circle.fill")
+                userInfo.imgProfile = UIImage(systemName: "person.crop.circle.fill")
+            }
+            picker.dismiss(animated: true)
         }
-        picker.dismiss(animated: true)
-    }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true)
@@ -149,11 +144,5 @@ extension VCAddContacts: UIImagePickerControllerDelegate, UINavigationController
 }
 
 extension VCAddContacts: UITextFieldDelegate {
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        guard let userInput = textField.text else {
-            return
-        }
-        validateUserInfo(textField, userInput)
-        saveUserInfo(textField)
-    }
+ 
 }

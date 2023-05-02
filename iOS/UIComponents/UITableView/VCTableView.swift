@@ -188,7 +188,9 @@ extension VCTableView: UITableViewDelegate {
             "Footer section"
         }
     
-    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+    func tableView(
+        _ tableView: UITableView,
+        willBeginEditingRowAt indexPath: IndexPath) {
         print("Begin editing")
     }
 }
