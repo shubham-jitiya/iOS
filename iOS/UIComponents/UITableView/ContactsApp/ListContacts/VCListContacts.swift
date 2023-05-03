@@ -7,9 +7,18 @@
 
 import UIKit
 
+// MARK: Protocol - User data
+extension VCListContacts: UserDataDelegate {
+    func userInfo(_ data: UserModel) {
+        usersList.newlyAdded.append(data)
+        usersList.newlyAdded.sort(by: { $0.fName ?? "" < $1.fName ?? ""} )
+        tblContacts.reloadData()
+    }
+}
+
 class VCListContacts: UIViewController {
     // MARK: Variables
-    private var usersList: (Array<UserModel>, Array<UserModel>) = ([], [])
+    private var usersList: (newlyAdded: Array<UserModel>, recentlyDeleted: Array<UserModel>) = ([], [])
     
     // MARK: IB outlets
     @IBOutlet weak var tblContacts: UITableView!
@@ -17,20 +26,21 @@ class VCListContacts: UIViewController {
     // MARK: Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        initialiseNavigationController()
-        registerCells()
-        if #available(iOS 15.0, *) {
-            tblContacts.sectionHeaderTopPadding = 0
-        }
-//        tblContacts.automaticallyAdjustsScrollIndicatorInsets = false
-//        tblContacts.contentInsetAdjustmentBehavior = .never
-        //dummyData()
+        initialSetup()
+        // dummyData()
     }
 }
 
 // MARK: Functions
 extension VCListContacts {
+    private func initialSetup() {
+        tblContacts.sectionHeaderTopPadding = 0
+        initialiseNavigationController()
+        registerCells()
+    }
+    
     private func initialiseNavigationController() {
+        // add btn
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,
@@ -49,28 +59,47 @@ extension VCListContacts {
     
     private func registerCells() {
         tblContacts.register(
-            UINib(nibName: Constants.USER_DATA_CELL.rawValue, bundle: nil),
-            forCellReuseIdentifier: "UserDataCell")
+            UINib(nibName: Constants.Cells.USER_DATA_CELL.rawValue, bundle: nil),
+            forCellReuseIdentifier: Constants.Cells.USER_DATA_CELL.rawValue)
         //custom section header-footer
         tblContacts.register(
-            UINib(nibName: Constants.SECTION_HEADER.rawValue, bundle: nil),
-            forHeaderFooterViewReuseIdentifier: Constants.SECTION_HEADER.rawValue)
+            UINib(nibName: Constants.Cells.SECTION_HEADER.rawValue, bundle: nil),
+            forHeaderFooterViewReuseIdentifier: Constants.Cells.SECTION_HEADER.rawValue)
         tblContacts.register(
-            UINib(nibName: Constants.SECTION_FOOTER.rawValue, bundle: nil),
-            forHeaderFooterViewReuseIdentifier: Constants.SECTION_FOOTER.rawValue)
+            UINib(nibName: Constants.Cells.SECTION_FOOTER.rawValue, bundle: nil),
+            forHeaderFooterViewReuseIdentifier: Constants.Cells.SECTION_FOOTER.rawValue)
     }
     
     private func dummyData() {
-        let newlyAdded = [
+        let newUsers = [
             UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Shubham", lName: "Jitiya", age: "21"),
             UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Ankit", lName: "Verma", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Ankit", lName: "Verma", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Ankit", lName: "Verma", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Ankit", lName: "Verma", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Ankit", lName: "Verma", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Ankit", lName: "Verma", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Ankit", lName: "Verma", age: "21"),
         ]
-        let recentlyDeleted = [
+        let deletedUsers = [
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
+            UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
             UserModel(imgProfile: UIImage(systemName: "person.crop.circle.fill"), fName: "Tirth", lName: "Purohit", age: "21"),
         ]
-        
-        usersList.0 = newlyAdded
-        usersList.1 = recentlyDeleted
+        usersList.newlyAdded = newUsers
+        usersList.recentlyDeleted = deletedUsers
     }
 }
 
@@ -83,10 +112,13 @@ extension VCListContacts: UITableViewDataSource {
     func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-            if section == 0 {
-                return usersList.0.count
-            } else {
-                return usersList.1.count
+            switch section {
+            case 0:
+                return usersList.newlyAdded.count
+            case 1:
+                return usersList.recentlyDeleted.count
+            default:
+                return 0
             }
         }
     
@@ -94,19 +126,22 @@ extension VCListContacts: UITableViewDataSource {
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             guard let userDataCell = tblContacts.dequeueReusableCell(
-                withIdentifier: Constants.USER_DATA_CELL.rawValue) as? UserDataCell else {
+                withIdentifier: Constants.Cells.USER_DATA_CELL.rawValue) as? UserDataCell else {
                 return UITableViewCell()
             }
             userDataCell.imgProfile.layer.cornerRadius = userDataCell
                 .imgProfile
                 .frame
                 .size.height / 2.0
-            
+            // Disabled selection for recently deleted
+    
             if indexPath.section == 0 {
-                let data = usersList.0[indexPath.row]
+                let data = usersList.newlyAdded[indexPath.row]
+                userDataCell.selectionStyle = .default
                 userDataCell.configCell(data: data)
             } else if indexPath.section == 1 {
-                let data = usersList.1[indexPath.row]
+                let data = usersList.recentlyDeleted[indexPath.row]
+                userDataCell.selectionStyle = .none
                 userDataCell.configCell(data: data)
             }
             return userDataCell
@@ -116,38 +151,58 @@ extension VCListContacts: UITableViewDataSource {
         _ tableView: UITableView,
         viewForHeaderInSection section: Int) -> UIView? {
             guard let customSectionHeader = tblContacts.dequeueReusableHeaderFooterView(
-                withIdentifier: Constants.SECTION_HEADER.rawValue) as? SectionHeader else {
+                withIdentifier: Constants.Cells.SECTION_HEADER.rawValue) as? SectionHeader else {
                 return nil
             }
-            
-            if section == 0 && usersList.0.count != 0 {
+            customSectionHeader.lblSectionHeader.textColor = .white
+            if section == 0 && !usersList.newlyAdded.isEmpty {
                 customSectionHeader.lblSectionHeader.text = "Newly added"
-            } else {
-                customSectionHeader.lblSectionHeader.text = ""
+                return customSectionHeader
             }
-            if section == 1 && usersList.1.count != 0 {
+            if section == 1 && !usersList.recentlyDeleted.isEmpty{
                 customSectionHeader.lblSectionHeader.text = "Recently deleted"
+                return customSectionHeader
             }
-            return customSectionHeader
+            return nil
         }
+    
+    func tableView(
+        _ tableView: UITableView,
+        heightForHeaderInSection section: Int) -> CGFloat {
+            if section == 0 && usersList.newlyAdded.isEmpty {
+            return 0
+        }
+        if section == 1 && usersList.recentlyDeleted.isEmpty {
+            return 0
+        }
+        return UITableView.automaticDimension
+    }
 }
 
 extension VCListContacts: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+    func tableView(
+        _ tableView: UITableView,
+        editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         if indexPath == IndexPath(row: indexPath.row, section: 0) {
             return .delete
         } else {
             return .none
-            
         }
     }
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(
+        _ tableView: UITableView,
+        commit editingStyle: UITableViewCell.EditingStyle,
+        forRowAt indexPath: IndexPath) {
         tableView.beginUpdates()
-        let deletedItem = usersList.0.remove(at: indexPath.row)
+        let deletedItem = usersList.newlyAdded.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .fade)
         tableView.endUpdates()
-        usersList.1.append(deletedItem)
-        tblContacts.reloadData()
+        usersList.recentlyDeleted.append(deletedItem)
+        tblContacts.insertRows(at: [IndexPath(row: 0, section: 1)], with: .left)
+        print(usersList.newlyAdded)
+        print(usersList.recentlyDeleted)
+        print(indexPath)
+        //tblContacts.reloadData()
     }
     
     func tableView(
@@ -157,18 +212,5 @@ extension VCListContacts: UITableViewDelegate {
     }
 }
 
-// MARK: Protocol - User data
-extension VCListContacts: UserDataDelegate {
-    func userInfo(_ data: UserModel) {
-        usersList.0.append(data)
-        usersList.0.sort(by: {$0.fName ?? "" < $1.fName ?? ""})
-//        usersList.0.sort(by: {
-//            guard let elementFirst = $0.fName, let elementSecond = $1.fName else {
-//                return false
-//            }
-//            return elementFirst < elementSecond
-//        })
-        tblContacts.reloadData()
-    }
-}
+
 

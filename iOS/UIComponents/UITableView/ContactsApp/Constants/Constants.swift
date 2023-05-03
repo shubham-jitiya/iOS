@@ -7,14 +7,15 @@
 
 import Foundation
 
-enum Constants: String {
-    //Validation
-    case validCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    case validNumbers = "123456789"
+struct Constants {
+    enum Cells: String {
+        case USER_DATA_CELL = "UserDataCell"
+        case SECTION_HEADER = "SectionHeader"
+        case SECTION_FOOTER = "SectionFooter"
+    }
     
-    //Cells nib
-    case USER_DATA_CELL = "UserDataCell"
-    case SECTION_HEADER = "SectionHeader"
-    case SECTION_FOOTER = "SectionFooter"
-    
+    enum Images: String {
+        // System images
+        case PERSON_FILLED = "person.crop.circle.fill"
+    }
 }

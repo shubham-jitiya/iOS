@@ -7,57 +7,53 @@
 
 import UIKit
 
+// MARK: Protocol delegate
+protocol UserDataDelegate: AnyObject {
+    func userInfo(_ data: UserModel)
+}
+
 class VCAddContacts: UIViewController {
     // MARK: Variables
     private var userInfo: UserModel = UserModel()
     weak var userData: UserDataDelegate?
     
     // MARK: IB outlets
-    @IBOutlet weak var imgProfileImage: UIImageView!
-    @IBOutlet weak var tfFirstName: UITextField!
-    @IBOutlet weak var tfLastName: UITextField!
-    @IBOutlet weak var tfAge: UITextField!
+    @IBOutlet private weak var imgProfileImage: UIImageView!
+    @IBOutlet private weak var tfFirstName: UITextField!
+    @IBOutlet private weak var tfLastName: UITextField!
+    @IBOutlet private weak var tfAge: UITextField!
     
     // MARK: Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         initialiseTextfields()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-        tfFirstName.becomeFirstResponder()
-    }
-}
-
-// MARK: Protocol delegate
-protocol UserDataDelegate: AnyObject {
-    func userInfo(_ data: UserModel)
 }
 
 // MARK: IB actions
 extension VCAddContacts {
     @IBAction private func btnUpdateProfileImage() {
-        initialiseImagePicker()
+        setupImagePickerController()
     }
     
     @IBAction private func btnSubmit() {
-        if let firstName = tfFirstName.text,  let lastName = tfLastName.text, let age  = tfAge.text {
-            let data = UserModel(imgProfile: imgProfileImage.image, fName: firstName, lName: lastName, age: age)
-            if isValidInfo(data) {
-                userData?.userInfo(data)
-                print("User data saved successfully!!")
-                navigationController?.popViewController(animated: true)
-            } else {
-              print("Invalid data entered")
-            }
+        guard let firstName = tfFirstName.text, let lastName = tfLastName.text, let age = tfAge.text else {
+            return
+        }
+        let data = UserModel(imgProfile: imgProfileImage.image, fName: firstName, lName: lastName, age: age)
+        if isValidInfo(data) {
+            userData?.userInfo(data)
+            print("User data saved successfully!!")
+            navigationController?.popViewController(animated: true)
+        } else {
+            print("Invalid data entered")
         }
     }
 }
 
 // MARK: Functions
 extension VCAddContacts {
-    private func initialiseImagePicker() {
+    private func setupImagePickerController() {
         let alertController = UIAlertController(
             title: nil,
             message: nil,
@@ -74,7 +70,7 @@ extension VCAddContacts {
             style: .default
         ) { _ in
             print("Opening libarary")
-            self.updateImage(sourceType: .photoLibrary)
+            self.getImage(sourceType: .photoLibrary)
         }
         let actionCancel = UIAlertAction(
             title: "Cancel",
@@ -87,7 +83,7 @@ extension VCAddContacts {
         imgProfileImage.layer.cornerRadius = imgProfileImage.frame.size.height / 2
     }
     
-    private func updateImage(sourceType: UIImagePickerController.SourceType) {
+    private func getImage(sourceType: UIImagePickerController.SourceType) {
         guard UIImagePickerController.isSourceTypeAvailable(sourceType) else {
             return
         }
@@ -99,21 +95,22 @@ extension VCAddContacts {
     }
     
     private func initialiseTextfields() {
-        tfFirstName.keyboardBtnDone()
-        tfLastName.keyboardBtnDone()
-        tfAge.keyboardBtnDone()
+        tfFirstName.addKeyboardBtnDone()
+        tfLastName.addKeyboardBtnDone()
+        tfAge.addKeyboardBtnDone()
     }
     
     private func isValidInfo( _ userData: UserModel) -> Bool {
+        let validCharacters = CharacterSet(
+            charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        )
+        let validNumbers = CharacterSet(charactersIn: "0123456789")
         guard let userFirstName = userData.fName,
               let userLastName = userData.lName,
               let userAge = userData.age else {
             return false
         }
-        if userFirstName.count > 2 && userLastName.count > 2 && userAge.count <= 2 {
-            let validNumbers = CharacterSet(charactersIn: Constants.validNumbers.rawValue)
-            let validCharacters = CharacterSet(charactersIn: Constants.validCharacters.rawValue)
-            print("Validation checking")
+        if userFirstName.count > 2 && userLastName.count > 2 && userAge.count <= 2 && Int(userAge) != 0 {
             return userFirstName.rangeOfCharacter(from: validCharacters.inverted) == nil
             && userLastName.rangeOfCharacter(from: validCharacters.inverted) == nil
             && userAge.rangeOfCharacter(from: validNumbers.inverted) == nil
@@ -132,8 +129,8 @@ extension VCAddContacts: UIImagePickerControllerDelegate, UINavigationController
                 imgProfileImage.image = isSelected
                 userInfo.imgProfile = isSelected
             } else {
-                imgProfileImage.image = UIImage(systemName: "person.crop.circle.fill")
-                userInfo.imgProfile = UIImage(systemName: "person.crop.circle.fill")
+                imgProfileImage.image = UIImage(systemName: Constants.Images.PERSON_FILLED.rawValue)
+                userInfo.imgProfile = UIImage(systemName: Constants.Images.PERSON_FILLED.rawValue)
             }
             picker.dismiss(animated: true)
         }
@@ -141,8 +138,4 @@ extension VCAddContacts: UIImagePickerControllerDelegate, UINavigationController
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true)
     }
-}
-
-extension VCAddContacts: UITextFieldDelegate {
- 
 }

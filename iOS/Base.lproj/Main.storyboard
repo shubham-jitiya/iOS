@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UI Components" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ta-Hg-6eZ">
-                                <rect key="frame" x="24" y="126.99999999999999" width="345" height="30.333333333333329"/>
+                                <rect key="frame" x="16" y="126.99999999999999" width="353" height="30.333333333333329"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="999-Ms-PIg">
-                                <rect key="frame" x="24" y="193.33333333333334" width="345" height="32.666666666666657"/>
+                                <rect key="frame" x="16" y="193.33333333333334" width="172.66666666666666" height="32.666666666666657"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Label">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk3-hq-AtH">
-                                <rect key="frame" x="24" y="234" width="345" height="32.666666666666686"/>
+                                <rect key="frame" x="16" y="234" width="172.66666666666666" height="32.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yri-kg-auF">
-                                <rect key="frame" x="24" y="274.66666666666669" width="345" height="32.666666666666686"/>
+                                <rect key="frame" x="16" y="274.66666666666669" width="172.66666666666666" height="32.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Text field">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfE-E0-0XL">
-                                <rect key="frame" x="24" y="315.33333333333331" width="345" height="32.666666666666686"/>
+                                <rect key="frame" x="16" y="315.33333333333331" width="172.66666666666666" height="32.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Text view">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poO-nE-JkM">
-                                <rect key="frame" x="24" y="356" width="345" height="32.666666666666686"/>
+                                <rect key="frame" x="16" y="356" width="172.66666666666666" height="32.666666666666686"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Switch">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eu0-ux-Gll">
-                                <rect key="frame" x="24" y="396.66666666666669" width="345" height="34"/>
+                                <rect key="frame" x="16" y="396.66666666666669" width="172.66666666666666" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Slider">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uda-HM-Uy7">
-                                <rect key="frame" x="24" y="438.66666666666669" width="345" height="34"/>
+                                <rect key="frame" x="16" y="438.66666666666669" width="172.66666666666666" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Progress view">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -93,7 +93,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gy-fv-BCo">
-                                <rect key="frame" x="24" y="480.66666666666669" width="345" height="34.000000000000057"/>
+                                <rect key="frame" x="16" y="480.66666666666669" width="172.66666666666666" height="34.000000000000057"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Segmented control">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -103,7 +103,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-95-w2T">
-                                <rect key="frame" x="24" y="522.66666666666663" width="345" height="34"/>
+                                <rect key="frame" x="16" y="522.66666666666663" width="172.66666666666666" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Page Control">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -113,7 +113,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbf-Eb-ctK">
-                                <rect key="frame" x="24" y="564.66666666666663" width="345" height="34"/>
+                                <rect key="frame" x="16" y="564.66666666666663" width="172.66666666666666" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Stepper">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -123,7 +123,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuH-gO-D4v">
-                                <rect key="frame" x="24" y="606.66666666666663" width="345" height="34"/>
+                                <rect key="frame" x="16" y="606.66666666666663" width="172.66666666666666" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Scroll view">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -133,7 +133,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCR-jm-tHg">
-                                <rect key="frame" x="24" y="648.66666666666663" width="345" height="34"/>
+                                <rect key="frame" x="16" y="648.66666666666663" width="172.66666666666666" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Image picker">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -143,7 +143,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npu-3q-Aih">
-                                <rect key="frame" x="24" y="690.66666666666663" width="345" height="34"/>
+                                <rect key="frame" x="16" y="690.66666666666663" width="172.66666666666666" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Table view">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -153,7 +153,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmX-vL-gmU">
-                                <rect key="frame" x="24" y="732.66666666666663" width="345" height="34"/>
+                                <rect key="frame" x="16" y="732.66666666666663" width="172.66666666666666" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Table view - Project">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
@@ -162,15 +162,27 @@
                                     <action selector="btnTableViewProject:" destination="vr3-QX-sFP" eventType="touchUpInside" id="SmI-5U-WuQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAe-g4-s3t">
+                                <rect key="frame" x="196.66666666666663" y="193" width="180.33333333333337" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Collection view">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnViewLifeCycle:" destination="vr3-QX-sFP" eventType="touchUpInside" id="kWC-cq-MaY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gNb-Tx-Qo3"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="1ta-Hg-6eZ" firstAttribute="leading" secondItem="gNb-Tx-Qo3" secondAttribute="leading" constant="24" id="1Gg-AF-fbG"/>
+                            <constraint firstItem="1ta-Hg-6eZ" firstAttribute="leading" secondItem="gNb-Tx-Qo3" secondAttribute="leading" constant="16" id="1Gg-AF-fbG"/>
                             <constraint firstItem="Npu-3q-Aih" firstAttribute="trailing" secondItem="PCR-jm-tHg" secondAttribute="trailing" id="2I8-Pd-O7i"/>
                             <constraint firstItem="poO-nE-JkM" firstAttribute="leading" secondItem="jfE-E0-0XL" secondAttribute="leading" id="4BD-eg-Yed"/>
                             <constraint firstItem="Yri-kg-auF" firstAttribute="trailing" secondItem="Bk3-hq-AtH" secondAttribute="trailing" id="91T-Ll-EKy"/>
                             <constraint firstItem="dmX-vL-gmU" firstAttribute="top" secondItem="Npu-3q-Aih" secondAttribute="bottom" constant="8" id="95d-Fb-4p2"/>
+                            <constraint firstItem="CAe-g4-s3t" firstAttribute="top" secondItem="1ta-Hg-6eZ" secondAttribute="bottom" constant="35.666666666666686" id="AMp-rY-3iH"/>
+                            <constraint firstItem="CAe-g4-s3t" firstAttribute="leading" secondItem="1ta-Hg-6eZ" secondAttribute="centerX" constant="4" id="COG-ZB-tAL"/>
                             <constraint firstItem="poO-nE-JkM" firstAttribute="trailing" secondItem="jfE-E0-0XL" secondAttribute="trailing" id="HD8-Tt-bDt"/>
                             <constraint firstItem="ZuH-gO-D4v" firstAttribute="trailing" secondItem="pbf-Eb-ctK" secondAttribute="trailing" id="IdT-ey-uzs"/>
                             <constraint firstItem="1Gy-fv-BCo" firstAttribute="leading" secondItem="uda-HM-Uy7" secondAttribute="leading" id="J92-OK-Mj2"/>
@@ -179,6 +191,7 @@
                             <constraint firstItem="uda-HM-Uy7" firstAttribute="top" secondItem="eu0-ux-Gll" secondAttribute="bottom" constant="8" id="P1m-Bs-Ibs"/>
                             <constraint firstItem="pbf-Eb-ctK" firstAttribute="trailing" secondItem="sTT-95-w2T" secondAttribute="trailing" id="PVf-7W-Slo"/>
                             <constraint firstItem="eu0-ux-Gll" firstAttribute="leading" secondItem="poO-nE-JkM" secondAttribute="leading" id="PgI-sh-bXr"/>
+                            <constraint firstItem="gNb-Tx-Qo3" firstAttribute="trailing" secondItem="CAe-g4-s3t" secondAttribute="trailing" constant="16" id="Ts3-6W-arX"/>
                             <constraint firstItem="gNb-Tx-Qo3" firstAttribute="trailing" secondItem="1ta-Hg-6eZ" secondAttribute="trailing" constant="24" id="Xcy-xE-vY2"/>
                             <constraint firstItem="jfE-E0-0XL" firstAttribute="leading" secondItem="Yri-kg-auF" secondAttribute="leading" id="XsB-95-2WC"/>
                             <constraint firstItem="pbf-Eb-ctK" firstAttribute="leading" secondItem="sTT-95-w2T" secondAttribute="leading" id="ZKA-1l-tTr"/>
@@ -210,7 +223,7 @@
                             <constraint firstItem="uda-HM-Uy7" firstAttribute="trailing" secondItem="eu0-ux-Gll" secondAttribute="trailing" id="xhR-9D-gTT"/>
                             <constraint firstItem="sTT-95-w2T" firstAttribute="top" secondItem="1Gy-fv-BCo" secondAttribute="bottom" constant="8" id="yU6-nC-g63"/>
                             <constraint firstItem="eu0-ux-Gll" firstAttribute="trailing" secondItem="poO-nE-JkM" secondAttribute="trailing" id="yfs-zE-azv"/>
-                            <constraint firstItem="999-Ms-PIg" firstAttribute="trailing" secondItem="1ta-Hg-6eZ" secondAttribute="trailing" id="z8O-L8-ZOV"/>
+                            <constraint firstItem="999-Ms-PIg" firstAttribute="trailing" secondItem="1ta-Hg-6eZ" secondAttribute="centerX" constant="-4" id="z8O-L8-ZOV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FgC-Rh-kLH"/>

@@ -155,7 +155,6 @@ extension VCTableView: UITableViewDelegate {
             selection.isSelected = !selection.isSelected
             records[indexPath.row] = selection
             tblContents.reloadData()
-            // tableView.reload
         }
     
     func tableView(

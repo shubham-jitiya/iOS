@@ -48,7 +48,7 @@ extension UITextField {
     }
     
     // Dismiss keyboard
-    func keyboardBtnDone() {
+    func addKeyboardBtnDone() {
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         let itemDoneButton = UIBarButtonItem(
             title: "Done",

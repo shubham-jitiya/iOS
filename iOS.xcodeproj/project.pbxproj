@@ -47,6 +47,11 @@
 		51A8FB0E29FBA0E000A41B8D /* IndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A8FB0C29FBA0E000A41B8D /* IndexTableViewCell.xib */; };
 		51A8FB1129FBBFF000A41B8D /* EvenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8FB0F29FBBFF000A41B8D /* EvenTableViewCell.swift */; };
 		51A8FB1229FBBFF000A41B8D /* EvenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A8FB1029FBBFF000A41B8D /* EvenTableViewCell.xib */; };
+		51A94B612A026F9200CE076D /* UICollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A94B602A026F9200CE076D /* UICollectionView.storyboard */; };
+		51A94B632A026FB000CE076D /* VCCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A94B622A026FB000CE076D /* VCCollectionView.swift */; };
+		51A94B662A02745800CE076D /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A94B652A02745800CE076D /* DemoCollectionViewCell.swift */; };
+		51A94B6F2A0287CD00CE076D /* VCProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A94B6E2A0287CD00CE076D /* VCProductDetails.swift */; };
+		51A94B712A0287E100CE076D /* UIProductDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A94B702A0287E100CE076D /* UIProductDetails.storyboard */; };
 		51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */; };
 		51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */; };
 		51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */; };
@@ -108,6 +113,11 @@
 		51A8FB0C29FBA0E000A41B8D /* IndexTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexTableViewCell.xib; sourceTree = "<group>"; };
 		51A8FB0F29FBBFF000A41B8D /* EvenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenTableViewCell.swift; sourceTree = "<group>"; };
 		51A8FB1029FBBFF000A41B8D /* EvenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EvenTableViewCell.xib; sourceTree = "<group>"; };
+		51A94B602A026F9200CE076D /* UICollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UICollectionView.storyboard; sourceTree = "<group>"; };
+		51A94B622A026FB000CE076D /* VCCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCollectionView.swift; sourceTree = "<group>"; };
+		51A94B652A02745800CE076D /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		51A94B6E2A0287CD00CE076D /* VCProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCProductDetails.swift; sourceTree = "<group>"; };
+		51A94B702A0287E100CE076D /* UIProductDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIProductDetails.storyboard; sourceTree = "<group>"; };
 		51AAB06C29F7B03800E3F8E8 /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
 		51AAB06E29F7B04B00E3F8E8 /* VCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTextField.swift; sourceTree = "<group>"; };
 		51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -192,6 +202,8 @@
 		5167835329F65641000C73AD /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				51A94B6D2A0287B300CE076D /* Product */,
+				51A94B562A025D8E00CE076D /* UICollectionView */,
 				5191363629FAA585000D9AFC /* UITableView */,
 				5191363129FA75CD000D9AFC /* UIImagePicker */,
 				51AD16F929FA3E0400C985FA /* UIScrollView */,
@@ -365,6 +377,33 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		51A94B562A025D8E00CE076D /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				51A94B642A02743300CE076D /* Cell */,
+				51A94B602A026F9200CE076D /* UICollectionView.storyboard */,
+				51A94B622A026FB000CE076D /* VCCollectionView.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		51A94B642A02743300CE076D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				51A94B652A02745800CE076D /* DemoCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		51A94B6D2A0287B300CE076D /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				51A94B6E2A0287CD00CE076D /* VCProductDetails.swift */,
+				51A94B702A0287E100CE076D /* UIProductDetails.storyboard */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		51AAB06B29F7B01D00E3F8E8 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,12 +524,14 @@
 				51AAB07929F7FE0A00E3F8E8 /* UISwitch.storyboard in Resources */,
 				51B04EED2A010BEE00C2209F /* SectionHeader.xib in Resources */,
 				5180AD1B29F92562008687FC /* UIProgressView.storyboard in Resources */,
+				51A94B612A026F9200CE076D /* UICollectionView.storyboard in Resources */,
 				5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */,
 				512FB3DA29F692E80074CF93 /* UIButton.storyboard in Resources */,
 				51453EDA29FFAC6200B82915 /* UIListContacts.storyboard in Resources */,
 				51A8FB0E29FBA0E000A41B8D /* IndexTableViewCell.xib in Resources */,
 				5194551729FFE9D10089E055 /* UserDataCell.xib in Resources */,
 				51AD16FB29FA3E1800C985FA /* UIScrollView.storyboard in Resources */,
+				51A94B712A0287E100CE076D /* UIProductDetails.storyboard in Resources */,
 				51A8FB1229FBBFF000A41B8D /* EvenTableViewCell.xib in Resources */,
 				5180AD2929F93737008687FC /* UIPageControl.storyboard in Resources */,
 				51AAB07429F7F36D00E3F8E8 /* UITextView.storyboard in Resources */,
@@ -512,6 +553,7 @@
 				5191363A29FAA5A7000D9AFC /* VCTableView.swift in Sources */,
 				5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */,
 				51A8FB0D29FBA0E000A41B8D /* IndexTableViewCell.swift in Sources */,
+				51A94B632A026FB000CE076D /* VCCollectionView.swift in Sources */,
 				5194551229FFC87D0089E055 /* UserModel.swift in Sources */,
 				51453EDC29FFAC8800B82915 /* VCListContacts.swift in Sources */,
 				512FB3DE29F693920074CF93 /* VCButton.swift in Sources */,
@@ -532,11 +574,13 @@
 				5180AD2C29F93755008687FC /* VCPageControl.swift in Sources */,
 				51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */,
 				51769CDE29FF8F5800A3AE29 /* CustomSectionHeaderView.swift in Sources */,
+				51A94B6F2A0287CD00CE076D /* VCProductDetails.swift in Sources */,
 				5110E82429E672B4001165DB /* AppDelegate.swift in Sources */,
 				51769CE729FF97C300A3AE29 /* VCAddContacts.swift in Sources */,
 				5110E82629E672B4001165DB /* SceneDelegate.swift in Sources */,
 				51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */,
 				5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */,
+				51A94B662A02745800CE076D /* DemoCollectionViewCell.swift in Sources */,
 				5194551629FFE9D10089E055 /* UserDataCell.swift in Sources */,
 				5167835729F65680000C73AD /* VCLabels.swift in Sources */,
 				5180AD3229F9410F008687FC /* VCStepper.swift in Sources */,

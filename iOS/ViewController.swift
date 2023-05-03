@@ -21,22 +21,22 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("View will appear")
+        //print("View will appear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("View did appear")
+       // print("View did appear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("View will disappear")
+       // print("View will disappear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("View did disappear")
+       // print("View did disappear")
     }
 }
 
@@ -153,7 +153,7 @@ extension ViewController {
         }
         navigate(to: vcTableView)
     }
-    
+
     @IBAction private func btnTableViewProject(_ sender: UIButton) {
         guard let vcListContacts = VCListContacts
             .create(storyboardName: .uiListContacts) as?
@@ -161,6 +161,15 @@ extension ViewController {
             return
         }
         navigate(to: vcListContacts)
+    }
+    
+    @IBAction private func btnViewLifeCycle(_ sender: UIButton) {
+        guard let vcCollectionView = VCCollectionView
+            .create(storyboardName: .uiCollectionView) as?
+                VCCollectionView else {
+            return
+        }
+        navigate(to: vcCollectionView)
     }
     
 }

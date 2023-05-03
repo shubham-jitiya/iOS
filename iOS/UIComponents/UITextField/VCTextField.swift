@@ -105,10 +105,10 @@ extension VCTextField: UITextFieldDelegate {
 // MARK: Functions
 extension VCTextField {
     private func addDoneButton() {
-        txtUsername.keyboardBtnDone()
-        txtEmailAddress.keyboardBtnDone()
-        txtPassword.keyboardBtnDone()
-        txtPhoneNumber.keyboardBtnDone()
+        txtUsername.addKeyboardBtnDone()
+        txtEmailAddress.addKeyboardBtnDone()
+        txtPassword.addKeyboardBtnDone()
+        txtPhoneNumber.addKeyboardBtnDone()
     }
     
     private func addPadding() {
