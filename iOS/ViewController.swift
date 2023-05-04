@@ -172,5 +172,21 @@ extension ViewController {
         navigate(to: vcCollectionView)
     }
     
+    @IBAction private func btnCollectionViewBasic(_ sender: UIButton) {
+        guard let vcCollectionViewBasic = VCBasicCollectionView
+            .create(storyboardName: .uiCollectionViewBasic) as?
+                VCBasicCollectionView else {
+            return
+        }
+        navigate(to: vcCollectionViewBasic)
+    }
+    
+    @IBAction private func btnCollectionProject(_sender: UIButton) {
+        guard let vcCollectionProject = VCOrange.create(storyboardName: .uiOrange) as? VCOrange else {
+            return
+        }
+        navigate(to: vcCollectionProject)
+    }
+    
 }
 

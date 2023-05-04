@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderSectionTitle" id="U6b-Vx-4bR" customClass="HeaderSectionTitle" customModule="iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nvy-38-Qgc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzG-8F-XDo">
+                            <rect key="frame" x="8" y="8" width="304" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstItem="OzG-8F-XDo" firstAttribute="leading" secondItem="Nvy-38-Qgc" secondAttribute="leading" constant="8" id="HRi-pP-ubU"/>
+                        <constraint firstAttribute="trailing" secondItem="OzG-8F-XDo" secondAttribute="trailing" constant="8" id="N4l-lP-ziF"/>
+                        <constraint firstAttribute="height" constant="40" id="OQ3-dD-BmV"/>
+                        <constraint firstAttribute="bottom" secondItem="OzG-8F-XDo" secondAttribute="bottom" constant="8" id="bnP-FE-v5C"/>
+                        <constraint firstItem="OzG-8F-XDo" firstAttribute="top" secondItem="Nvy-38-Qgc" secondAttribute="top" constant="8" id="dBf-mn-chW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Nvy-38-Qgc" secondAttribute="trailing" id="4bz-2T-phS"/>
+                <constraint firstItem="Nvy-38-Qgc" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Bhe-qb-yMG"/>
+                <constraint firstItem="Nvy-38-Qgc" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="h8n-uR-nTX"/>
+            </constraints>
+            <connections>
+                <outlet property="lblSectionTitle" destination="OzG-8F-XDo" id="6vh-QZ-oIg"/>
+            </connections>
+            <point key="canvasLocation" x="-58.015267175572518" y="-17.253521126760564"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

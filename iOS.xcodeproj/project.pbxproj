@@ -64,6 +64,18 @@
 		51B04EE92A00FB8800C2209F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B04EE82A00FB8800C2209F /* Constants.swift */; };
 		51B04EEB2A010BDE00C2209F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B04EEA2A010BDE00C2209F /* SectionHeader.swift */; };
 		51B04EED2A010BEE00C2209F /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B04EEC2A010BEE00C2209F /* SectionHeader.xib */; };
+		51B29E982A03C8200024CADA /* CVRecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B29E962A03C8200024CADA /* CVRecommendationCell.swift */; };
+		51B29E992A03C8200024CADA /* CVRecommendationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B29E972A03C8200024CADA /* CVRecommendationCell.xib */; };
+		51B8251A2A0372AD0048E1AC /* UIBasicCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B825192A0372AD0048E1AC /* UIBasicCollectionView.storyboard */; };
+		51B8251C2A0373090048E1AC /* VCBasicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8251B2A0373090048E1AC /* VCBasicCollectionView.swift */; };
+		51B825202A0384560048E1AC /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8251E2A0384560048E1AC /* HeaderCollectionViewCell.swift */; };
+		51B825212A0384560048E1AC /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B8251F2A0384560048E1AC /* HeaderCollectionViewCell.xib */; };
+		51B8252F2A03A8140048E1AC /* HeaderSectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8252D2A03A8140048E1AC /* HeaderSectionTitle.swift */; };
+		51B825302A03A8140048E1AC /* HeaderSectionTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B8252E2A03A8140048E1AC /* HeaderSectionTitle.xib */; };
+		51B825332A03B9000048E1AC /* UIOrange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B825322A03B9000048E1AC /* UIOrange.storyboard */; };
+		51B825352A03B9200048E1AC /* VCOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B825342A03B9200048E1AC /* VCOrange.swift */; };
+		51B8253D2A03C1A30048E1AC /* RecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8253B2A03C1A30048E1AC /* RecommendationCell.swift */; };
+		51B8253E2A03C1A30048E1AC /* RecommendationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B8253C2A03C1A30048E1AC /* RecommendationCell.xib */; };
 		51E2B91929FBDCAD00846904 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2B91729FBDCAD00846904 /* CompanyTableViewCell.swift */; };
 		51E2B91A29FBDCAD00846904 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E2B91829FBDCAD00846904 /* CompanyTableViewCell.xib */; };
 		51E2B91D29FBE9FB00846904 /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2B91C29FBE9FB00846904 /* CompanyModel.swift */; };
@@ -130,6 +142,18 @@
 		51B04EE82A00FB8800C2209F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		51B04EEA2A010BDE00C2209F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		51B04EEC2A010BEE00C2209F /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
+		51B29E962A03C8200024CADA /* CVRecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVRecommendationCell.swift; sourceTree = "<group>"; };
+		51B29E972A03C8200024CADA /* CVRecommendationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVRecommendationCell.xib; sourceTree = "<group>"; };
+		51B825192A0372AD0048E1AC /* UIBasicCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIBasicCollectionView.storyboard; sourceTree = "<group>"; };
+		51B8251B2A0373090048E1AC /* VCBasicCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCBasicCollectionView.swift; sourceTree = "<group>"; };
+		51B8251E2A0384560048E1AC /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		51B8251F2A0384560048E1AC /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		51B8252D2A03A8140048E1AC /* HeaderSectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionTitle.swift; sourceTree = "<group>"; };
+		51B8252E2A03A8140048E1AC /* HeaderSectionTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSectionTitle.xib; sourceTree = "<group>"; };
+		51B825322A03B9000048E1AC /* UIOrange.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIOrange.storyboard; sourceTree = "<group>"; };
+		51B825342A03B9200048E1AC /* VCOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCOrange.swift; sourceTree = "<group>"; };
+		51B8253B2A03C1A30048E1AC /* RecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationCell.swift; sourceTree = "<group>"; };
+		51B8253C2A03C1A30048E1AC /* RecommendationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationCell.xib; sourceTree = "<group>"; };
 		51E2B91729FBDCAD00846904 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		51E2B91829FBDCAD00846904 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
 		51E2B91C29FBE9FB00846904 /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
@@ -380,6 +404,8 @@
 		51A94B562A025D8E00CE076D /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				51B825312A03B8370048E1AC /* StreamingApp */,
+				51B8250E2A0370090048E1AC /* BasicProject */,
 				51A94B642A02743300CE076D /* Cell */,
 				51A94B602A026F9200CE076D /* UICollectionView.storyboard */,
 				51A94B622A026FB000CE076D /* VCCollectionView.swift */,
@@ -446,6 +472,48 @@
 				51B04EE82A00FB8800C2209F /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		51B8250E2A0370090048E1AC /* BasicProject */ = {
+			isa = PBXGroup;
+			children = (
+				51B8251D2A0383F70048E1AC /* Cell */,
+				51B825192A0372AD0048E1AC /* UIBasicCollectionView.storyboard */,
+				51B8251B2A0373090048E1AC /* VCBasicCollectionView.swift */,
+			);
+			path = BasicProject;
+			sourceTree = "<group>";
+		};
+		51B8251D2A0383F70048E1AC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				51B8251E2A0384560048E1AC /* HeaderCollectionViewCell.swift */,
+				51B8251F2A0384560048E1AC /* HeaderCollectionViewCell.xib */,
+				51B8252D2A03A8140048E1AC /* HeaderSectionTitle.swift */,
+				51B8252E2A03A8140048E1AC /* HeaderSectionTitle.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		51B825312A03B8370048E1AC /* StreamingApp */ = {
+			isa = PBXGroup;
+			children = (
+				51B825362A03C0ED0048E1AC /* Cell */,
+				51B825322A03B9000048E1AC /* UIOrange.storyboard */,
+				51B825342A03B9200048E1AC /* VCOrange.swift */,
+			);
+			path = StreamingApp;
+			sourceTree = "<group>";
+		};
+		51B825362A03C0ED0048E1AC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				51B8253B2A03C1A30048E1AC /* RecommendationCell.swift */,
+				51B8253C2A03C1A30048E1AC /* RecommendationCell.xib */,
+				51B29E962A03C8200024CADA /* CVRecommendationCell.swift */,
+				51B29E972A03C8200024CADA /* CVRecommendationCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		51E2B91B29FBE9EF00846904 /* Model */ = {
@@ -516,28 +584,34 @@
 			files = (
 				5180AD1629F9187D008687FC /* UISlider.storyboard in Resources */,
 				51E2B91A29FBDCAD00846904 /* CompanyTableViewCell.xib in Resources */,
+				51B825332A03B9000048E1AC /* UIOrange.storyboard in Resources */,
 				51769CEB29FF97F900A3AE29 /* UIAddContacts.storyboard in Resources */,
 				5180AD2429F92DDD008687FC /* UISegmentedControl.storyboard in Resources */,
 				5191363329FA75EE000D9AFC /* UIImagePicker.storyboard in Resources */,
 				5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */,
 				5110E82D29E672B5001165DB /* Assets.xcassets in Resources */,
+				51B825302A03A8140048E1AC /* HeaderSectionTitle.xib in Resources */,
 				51AAB07929F7FE0A00E3F8E8 /* UISwitch.storyboard in Resources */,
 				51B04EED2A010BEE00C2209F /* SectionHeader.xib in Resources */,
 				5180AD1B29F92562008687FC /* UIProgressView.storyboard in Resources */,
+				51B8253E2A03C1A30048E1AC /* RecommendationCell.xib in Resources */,
 				51A94B612A026F9200CE076D /* UICollectionView.storyboard in Resources */,
 				5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */,
 				512FB3DA29F692E80074CF93 /* UIButton.storyboard in Resources */,
 				51453EDA29FFAC6200B82915 /* UIListContacts.storyboard in Resources */,
 				51A8FB0E29FBA0E000A41B8D /* IndexTableViewCell.xib in Resources */,
 				5194551729FFE9D10089E055 /* UserDataCell.xib in Resources */,
+				51B8251A2A0372AD0048E1AC /* UIBasicCollectionView.storyboard in Resources */,
 				51AD16FB29FA3E1800C985FA /* UIScrollView.storyboard in Resources */,
 				51A94B712A0287E100CE076D /* UIProductDetails.storyboard in Resources */,
 				51A8FB1229FBBFF000A41B8D /* EvenTableViewCell.xib in Resources */,
+				51B29E992A03C8200024CADA /* CVRecommendationCell.xib in Resources */,
 				5180AD2929F93737008687FC /* UIPageControl.storyboard in Resources */,
 				51AAB07429F7F36D00E3F8E8 /* UITextView.storyboard in Resources */,
 				5110E82B29E672B4001165DB /* Main.storyboard in Resources */,
 				51769CE029FF8F8900A3AE29 /* CustomSectionHeaderView.xib in Resources */,
 				51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */,
+				51B825212A0384560048E1AC /* HeaderCollectionViewCell.xib in Resources */,
 				5191363829FAA597000D9AFC /* UITableView.storyboard in Resources */,
 				5167835529F65667000C73AD /* UILabels.storyboard in Resources */,
 			);
@@ -553,15 +627,20 @@
 				5191363A29FAA5A7000D9AFC /* VCTableView.swift in Sources */,
 				5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */,
 				51A8FB0D29FBA0E000A41B8D /* IndexTableViewCell.swift in Sources */,
+				51B8252F2A03A8140048E1AC /* HeaderSectionTitle.swift in Sources */,
 				51A94B632A026FB000CE076D /* VCCollectionView.swift in Sources */,
 				5194551229FFC87D0089E055 /* UserModel.swift in Sources */,
 				51453EDC29FFAC8800B82915 /* VCListContacts.swift in Sources */,
 				512FB3DE29F693920074CF93 /* VCButton.swift in Sources */,
+				51B8253D2A03C1A30048E1AC /* RecommendationCell.swift in Sources */,
 				51AD16FD29FA3E2400C985FA /* VCScrollView.swift in Sources */,
 				51A8FB1129FBBFF000A41B8D /* EvenTableViewCell.swift in Sources */,
 				51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */,
+				51B29E982A03C8200024CADA /* CVRecommendationCell.swift in Sources */,
 				51E2B91929FBDCAD00846904 /* CompanyTableViewCell.swift in Sources */,
 				51AAB07C29F7FE2100E3F8E8 /* VCSwitch.swift in Sources */,
+				51B825202A0384560048E1AC /* HeaderCollectionViewCell.swift in Sources */,
+				51B8251C2A0373090048E1AC /* VCBasicCollectionView.swift in Sources */,
 				5110E82829E672B4001165DB /* ViewController.swift in Sources */,
 				51B04EEB2A010BDE00C2209F /* SectionHeader.swift in Sources */,
 				51AAB07629F7F37900E3F8E8 /* VCTextView.swift in Sources */,
@@ -580,6 +659,7 @@
 				5110E82629E672B4001165DB /* SceneDelegate.swift in Sources */,
 				51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */,
 				5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */,
+				51B825352A03B9200048E1AC /* VCOrange.swift in Sources */,
 				51A94B662A02745800CE076D /* DemoCollectionViewCell.swift in Sources */,
 				5194551629FFE9D10089E055 /* UserDataCell.swift in Sources */,
 				5167835729F65680000C73AD /* VCLabels.swift in Sources */,
