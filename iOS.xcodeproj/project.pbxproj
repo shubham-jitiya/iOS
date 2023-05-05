@@ -43,6 +43,11 @@
 		5194551229FFC87D0089E055 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194551129FFC87D0089E055 /* UserModel.swift */; };
 		5194551629FFE9D10089E055 /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194551429FFE9D10089E055 /* UserDataCell.swift */; };
 		5194551729FFE9D10089E055 /* UserDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5194551529FFE9D10089E055 /* UserDataCell.xib */; };
+		519D9A4F2A04CBCA00F2E277 /* MoviesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A4E2A04CBCA00F2E277 /* MoviesData.swift */; };
+		519D9A552A04D05D00F2E277 /* TvShowsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A542A04D05D00F2E277 /* TvShowsTableViewCell.swift */; };
+		519D9A582A04D54E00F2E277 /* TvShowsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A572A04D54E00F2E277 /* TvShowsCollectionViewCell.swift */; };
+		519D9A5A2A04E15300F2E277 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A592A04E15300F2E277 /* Movie.swift */; };
+		519D9A5D2A04F28800F2E277 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 519D9A5C2A04F28800F2E277 /* Kingfisher */; };
 		51A8FB0D29FBA0E000A41B8D /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8FB0B29FBA0DF00A41B8D /* IndexTableViewCell.swift */; };
 		51A8FB0E29FBA0E000A41B8D /* IndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A8FB0C29FBA0E000A41B8D /* IndexTableViewCell.xib */; };
 		51A8FB1129FBBFF000A41B8D /* EvenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8FB0F29FBBFF000A41B8D /* EvenTableViewCell.swift */; };
@@ -121,6 +126,10 @@
 		5194551129FFC87D0089E055 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		5194551429FFE9D10089E055 /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
 		5194551529FFE9D10089E055 /* UserDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataCell.xib; sourceTree = "<group>"; };
+		519D9A4E2A04CBCA00F2E277 /* MoviesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesData.swift; sourceTree = "<group>"; };
+		519D9A542A04D05D00F2E277 /* TvShowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsTableViewCell.swift; sourceTree = "<group>"; };
+		519D9A572A04D54E00F2E277 /* TvShowsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsCollectionViewCell.swift; sourceTree = "<group>"; };
+		519D9A592A04E15300F2E277 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		51A8FB0B29FBA0DF00A41B8D /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
 		51A8FB0C29FBA0E000A41B8D /* IndexTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexTableViewCell.xib; sourceTree = "<group>"; };
 		51A8FB0F29FBBFF000A41B8D /* EvenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenTableViewCell.swift; sourceTree = "<group>"; };
@@ -165,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				519D9A5D2A04F28800F2E277 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +398,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		519D9A4D2A04CAF600F2E277 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				519D9A4E2A04CBCA00F2E277 /* MoviesData.swift */,
+				519D9A592A04E15300F2E277 /* Movie.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		519D9A562A04D15700F2E277 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		51A8FB0A29FB9EBE00A41B8D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,6 +524,8 @@
 		51B825312A03B8370048E1AC /* StreamingApp */ = {
 			isa = PBXGroup;
 			children = (
+				519D9A562A04D15700F2E277 /* Models */,
+				519D9A4D2A04CAF600F2E277 /* Data */,
 				51B825362A03C0ED0048E1AC /* Cell */,
 				51B825322A03B9000048E1AC /* UIOrange.storyboard */,
 				51B825342A03B9200048E1AC /* VCOrange.swift */,
@@ -512,6 +540,8 @@
 				51B8253C2A03C1A30048E1AC /* RecommendationCell.xib */,
 				51B29E962A03C8200024CADA /* CVRecommendationCell.swift */,
 				51B29E972A03C8200024CADA /* CVRecommendationCell.xib */,
+				519D9A542A04D05D00F2E277 /* TvShowsTableViewCell.swift */,
+				519D9A572A04D54E00F2E277 /* TvShowsCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -540,6 +570,9 @@
 			dependencies = (
 			);
 			name = iOS;
+			packageProductDependencies = (
+				519D9A5C2A04F28800F2E277 /* Kingfisher */,
+			);
 			productName = iOS;
 			productReference = 5110E82029E672B4001165DB /* iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -568,6 +601,9 @@
 				Base,
 			);
 			mainGroup = 5110E81729E672B4001165DB;
+			packageReferences = (
+				519D9A5B2A04F28800F2E277 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5110E82129E672B4001165DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -626,6 +662,7 @@
 			files = (
 				5191363A29FAA5A7000D9AFC /* VCTableView.swift in Sources */,
 				5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */,
+				519D9A582A04D54E00F2E277 /* TvShowsCollectionViewCell.swift in Sources */,
 				51A8FB0D29FBA0E000A41B8D /* IndexTableViewCell.swift in Sources */,
 				51B8252F2A03A8140048E1AC /* HeaderSectionTitle.swift in Sources */,
 				51A94B632A026FB000CE076D /* VCCollectionView.swift in Sources */,
@@ -648,6 +685,7 @@
 				5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */,
 				51B04EE92A00FB8800C2209F /* Constants.swift in Sources */,
 				5180AD1D29F92573008687FC /* VCProgressView.swift in Sources */,
+				519D9A5A2A04E15300F2E277 /* Movie.swift in Sources */,
 				51E2B91D29FBE9FB00846904 /* CompanyModel.swift in Sources */,
 				5180AD2629F92E0D008687FC /* VCSegmentedControl.swift in Sources */,
 				5180AD2C29F93755008687FC /* VCPageControl.swift in Sources */,
@@ -660,10 +698,12 @@
 				51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */,
 				5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */,
 				51B825352A03B9200048E1AC /* VCOrange.swift in Sources */,
+				519D9A4F2A04CBCA00F2E277 /* MoviesData.swift in Sources */,
 				51A94B662A02745800CE076D /* DemoCollectionViewCell.swift in Sources */,
 				5194551629FFE9D10089E055 /* UserDataCell.swift in Sources */,
 				5167835729F65680000C73AD /* VCLabels.swift in Sources */,
 				5180AD3229F9410F008687FC /* VCStepper.swift in Sources */,
+				519D9A552A04D05D00F2E277 /* TvShowsTableViewCell.swift in Sources */,
 				5180AD1829F91892008687FC /* VCSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -880,6 +920,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		519D9A5B2A04F28800F2E277 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		519D9A5C2A04F28800F2E277 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 519D9A5B2A04F28800F2E277 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5110E81829E672B4001165DB /* Project object */;
 }

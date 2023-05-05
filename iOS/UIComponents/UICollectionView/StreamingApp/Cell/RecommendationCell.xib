@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rws-pG-aOT">
-                        <rect key="frame" x="8" y="8" width="304" height="159"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yYw-jh-6gN">
                             <size key="itemSize" width="128" height="128"/>
@@ -31,18 +31,18 @@
                             <outlet property="delegate" destination="KGk-i7-Jjw" id="96d-lo-ncT"/>
                         </connections>
                     </collectionView>
-                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RQK-oe-kFM">
-                        <rect key="frame" x="8" y="141" width="304" height="26"/>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="12" translatesAutoresizingMaskIntoConstraints="NO" id="RQK-oe-kFM">
+                        <rect key="frame" x="0.0" y="149" width="320" height="26"/>
                     </pageControl>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="rws-pG-aOT" secondAttribute="trailing" constant="8" id="2dh-sy-1mM"/>
-                    <constraint firstAttribute="bottom" secondItem="rws-pG-aOT" secondAttribute="bottom" constant="8" id="78R-mk-TdO"/>
-                    <constraint firstItem="rws-pG-aOT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="XvU-8r-LCi"/>
+                    <constraint firstAttribute="trailing" secondItem="rws-pG-aOT" secondAttribute="trailing" id="2dh-sy-1mM"/>
+                    <constraint firstAttribute="bottom" secondItem="rws-pG-aOT" secondAttribute="bottom" id="78R-mk-TdO"/>
+                    <constraint firstItem="rws-pG-aOT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XvU-8r-LCi"/>
                     <constraint firstItem="RQK-oe-kFM" firstAttribute="leading" secondItem="rws-pG-aOT" secondAttribute="leading" id="hit-46-sbd"/>
                     <constraint firstItem="RQK-oe-kFM" firstAttribute="bottom" secondItem="rws-pG-aOT" secondAttribute="bottom" id="iKy-HM-gG3"/>
                     <constraint firstItem="RQK-oe-kFM" firstAttribute="trailing" secondItem="rws-pG-aOT" secondAttribute="trailing" id="rox-1y-KiK"/>
-                    <constraint firstItem="rws-pG-aOT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="xaK-LJ-pne"/>
+                    <constraint firstItem="rws-pG-aOT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xaK-LJ-pne"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

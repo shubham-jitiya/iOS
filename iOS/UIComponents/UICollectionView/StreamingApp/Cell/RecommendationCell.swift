@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol SelectedDataDelegate: AnyObject {
+    func selectedItem(at item: Movie)
+}
+
 class RecommendationCell: UITableViewCell {
     // MARK: Variables
     static let identifier = "RecommendationCell"
+    private var recommendedMovies: [Movie] = []
+    weak var selectedDataDelegate: SelectedDataDelegate?
     
     // MARK: IB outlets
     @IBOutlet weak var cvRecommendation: UICollectionView!
@@ -25,13 +31,12 @@ class RecommendationCell: UITableViewCell {
     }
 }
 
-
 // MARK: Data-source
 extension RecommendationCell: UICollectionViewDataSource {
     func collectionView(
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int {
-            4
+            recommendedMovies.count
         }
     
     func collectionView(
@@ -43,23 +48,28 @@ extension RecommendationCell: UICollectionViewDataSource {
                 return UICollectionViewCell()
             }
             print("tag: ", cvRecommendation.tag)
+            // let section = cvRecommendation.tag
             recommendationCell.frame.size.width = cvRecommendation.frame.size.width
-            recommendationCell.imgView.image = UIImage(named: "HeaderImage-1")
+            let imageUrl = recommendedMovies[indexPath.row].poster ?? ""
+            recommendationCell.imgView.kf.setImage(with: URL(string: imageUrl))
+            //recommendationCell.imgView.image = UIImage(named: "HeaderImage-1")
             return recommendationCell
         }
-    
 }
 
 // MARK: Delegate methods
 extension RecommendationCell: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentPage = Int(scrollView.contentOffset.x / scrollView.frame.size.width)
+        pcRecommendation.numberOfPages = recommendedMovies.count
         pcRecommendation.currentPage = currentPage
         scrollView.showsHorizontalScrollIndicator = false
     }
     func collectionView(
         _ collectionView: UICollectionView,
         didSelectItemAt indexPath: IndexPath) {
+            // pass data to home screen to set selected image to top right corner
+            selectedDataDelegate?.selectedItem(at: recommendedMovies[indexPath.row])
             print(indexPath)
         }
 }
@@ -70,16 +80,9 @@ extension RecommendationCell: UICollectionViewDelegateFlowLayout {
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath) -> CGSize {
-            if cvRecommendation.tag == 1 || cvRecommendation.tag == 2 {
-                
-                return CGSize(
-                    width: cvRecommendation.frame.size.width / 2,
-                    height: 520
-                )
-            }
             return CGSize(
                 width: cvRecommendation.frame.size.width,
-                height: 520
+                height: cvRecommendation.frame.size.height
             )
         }
 }
@@ -92,7 +95,9 @@ extension RecommendationCell {
             CVRecommendationCell.nib(),
             forCellWithReuseIdentifier: CVRecommendationCell.identifier)
         configureFlowLayout()
+        loadJson()
     }
+    
     static func getNib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
@@ -104,9 +109,23 @@ extension RecommendationCell {
             height: 520)
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 10
         //        layout.headerReferenceSize = CGSize(
         //            width: cvRecommendation.frame.size.width,
         //            height: 0)
         cvRecommendation.collectionViewLayout = layout
+    }
+    
+    func loadJson() {
+        let decoder = JSONDecoder()
+        do {
+            let movies = try decoder.decode([Movie].self, from: jsonData)
+            for movie in movies {
+                recommendedMovies.append(movie)
+            }
+            print(movies[0])
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
