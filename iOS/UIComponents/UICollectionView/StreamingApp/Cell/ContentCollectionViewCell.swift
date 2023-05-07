@@ -18,7 +18,7 @@ class ContentCollectionViewCell: UICollectionViewCell {
 
 // MARK: Functions
 extension ContentCollectionViewCell {
-    static func nib() -> UINib {
+    static func getNib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
     

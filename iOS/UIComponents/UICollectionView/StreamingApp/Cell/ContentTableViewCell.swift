@@ -69,10 +69,18 @@ extension ContentTableViewCell {
     private func initialSetup() {
         cvTvShows.delegate = self
         cvTvShows.dataSource = self
+        cvTvShows.backgroundColor = .black
         loadJson()
+        registerCells()
     }
     
-    static func nib() -> UINib {
+    private func registerCells() {
+        cvTvShows.register(
+            ContentCollectionViewCell.getNib(),
+            forCellWithReuseIdentifier: ContentCollectionViewCell.identifier)
+    }
+    
+    static func getNib() -> UINib {
         UINib(nibName: identifier, bundle: nil)
     }
     

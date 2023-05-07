@@ -45,15 +45,14 @@ extension VCOrange: UITableViewDataSource {
                 return UITableViewCell()
             }
             //recommendationCell.cvRecommendation.tag = indexPath.section
-            tvShowsCell.selectedContentDelegate = self
             switch indexPath.section {
             case 0:
                 tvShowsCell.selectedContentDelegate = self
-                tvShowsCell.lblContentTitle.text = "Popular TV Shows"
+                tvShowsCell.lblContentTitle.text = "Watch next TV & Movies"
                 return tvShowsCell
             case 1:
                 popularMoviesCell.selectedContentDelegate = self
-                popularMoviesCell.lblContentTitle.text = "Popular Movies"
+                popularMoviesCell.lblContentTitle.text = "Telugu Movies"
                 return popularMoviesCell
             default:
                 return UITableViewCell()
@@ -86,8 +85,14 @@ extension VCOrange {
     
     private func registerCells() {
         tvHomeScreen.register(
-            RecommendationCell.getNib(),
-            forCellReuseIdentifier: RecommendationCell.identifier)
+            RecommendationTableViewCell.getNib(),
+            forCellReuseIdentifier: RecommendationTableViewCell.identifier)
+        tvHomeScreen.register(
+            ContentTableViewCell.getNib(),
+            forCellReuseIdentifier: ContentTableViewCell.identifier)
+        tvHomeScreen.register(
+            ContentCollectionViewCell.getNib(),
+            forCellReuseIdentifier: ContentCollectionViewCell.identifier)
     }
     
     private func setImageInNavigation(_ item: Movie) {
@@ -98,7 +103,7 @@ extension VCOrange {
     
     private func initialiseHeader() {
         guard let header = tvHomeScreen.dequeueReusableCell(
-            withIdentifier: RecommendationCell.identifier) as? RecommendationCell else {
+            withIdentifier: RecommendationTableViewCell.identifier) as? RecommendationTableViewCell else {
             return
         }
         header.selectedDataDelegate = self

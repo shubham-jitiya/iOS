@@ -11,9 +11,9 @@ protocol SelectedDataDelegate: AnyObject {
     func selectedItem(at item: Movie)
 }
 
-class RecommendationCell: UITableViewCell {
+class RecommendationTableViewCell: UITableViewCell {
     // MARK: Variables
-    static let identifier = "RecommendationCell"
+    static let identifier = "RecommendationTableViewCell"
     private var recommendedMovies: [Movie] = []
     weak var selectedDataDelegate: SelectedDataDelegate?
     
@@ -32,7 +32,7 @@ class RecommendationCell: UITableViewCell {
 }
 
 // MARK: Data-source
-extension RecommendationCell: UICollectionViewDataSource {
+extension RecommendationTableViewCell: UICollectionViewDataSource {
     func collectionView(
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int {
@@ -43,8 +43,8 @@ extension RecommendationCell: UICollectionViewDataSource {
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             guard let recommendationCell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: CVRecommendationCell.identifier,
-                for: indexPath) as? CVRecommendationCell else {
+                withReuseIdentifier: RecommendationCollectionViewCell.identifier,
+                for: indexPath) as? RecommendationCollectionViewCell else {
                 return UICollectionViewCell()
             }
             print("tag: ", cvRecommendation.tag)
@@ -52,13 +52,12 @@ extension RecommendationCell: UICollectionViewDataSource {
             recommendationCell.frame.size.width = cvRecommendation.frame.size.width
             let imageUrl = recommendedMovies[indexPath.row].poster ?? ""
             recommendationCell.imgView.kf.setImage(with: URL(string: imageUrl))
-            //recommendationCell.imgView.image = UIImage(named: "HeaderImage-1")
             return recommendationCell
         }
 }
 
 // MARK: Delegate methods
-extension RecommendationCell: UICollectionViewDelegate {
+extension RecommendationTableViewCell: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentPage = Int(scrollView.contentOffset.x / scrollView.frame.size.width)
         pcRecommendation.numberOfPages = recommendedMovies.count
@@ -68,14 +67,12 @@ extension RecommendationCell: UICollectionViewDelegate {
     func collectionView(
         _ collectionView: UICollectionView,
         didSelectItemAt indexPath: IndexPath) {
-            // pass data to home screen to set selected image to top right corner
             selectedDataDelegate?.selectedItem(at: recommendedMovies[indexPath.row])
-            print("Recommendation cell")
         }
 }
 
 // MARK: Delegate flowlayout
-extension RecommendationCell: UICollectionViewDelegateFlowLayout {
+extension RecommendationTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
@@ -88,12 +85,12 @@ extension RecommendationCell: UICollectionViewDelegateFlowLayout {
 }
 
 // MARK: Functions
-extension RecommendationCell {
+extension RecommendationTableViewCell {
     private func initialSetup() {
         cvRecommendation.isPagingEnabled = true
         cvRecommendation.register(
-            CVRecommendationCell.nib(),
-            forCellWithReuseIdentifier: CVRecommendationCell.identifier)
+            RecommendationCollectionViewCell.nib(),
+            forCellWithReuseIdentifier: RecommendationCollectionViewCell.identifier)
         configureFlowLayout()
         loadJson()
     }

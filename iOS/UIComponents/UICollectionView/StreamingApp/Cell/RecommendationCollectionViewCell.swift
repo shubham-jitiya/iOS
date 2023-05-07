@@ -7,9 +7,9 @@
 
 import UIKit
 
-class CVRecommendationCell: UICollectionViewCell {
+class RecommendationCollectionViewCell: UICollectionViewCell {
     // MARK: Variables
-    static let identifier = "CVRecommendationCell"
+    static let identifier = "RecommendationCollectionViewCell"
     
     // MARK: IB outlets
     @IBOutlet weak var imgView: UIImageView!
@@ -21,7 +21,7 @@ class CVRecommendationCell: UICollectionViewCell {
 }
 
 // MARK: Functions
-extension CVRecommendationCell {
+extension RecommendationCollectionViewCell {
     func setImage(with image: UIImage) {
         imgView.image = image
     }
