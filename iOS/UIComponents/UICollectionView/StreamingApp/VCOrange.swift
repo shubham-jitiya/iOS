@@ -12,7 +12,7 @@ class VCOrange: UIViewController {
     // MARK: IB outlets
     @IBOutlet weak var tvHomeScreen: UITableView!
     @IBOutlet weak var imgSelection: UIImageView!
-    
+     
     // MARK: Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +22,9 @@ class VCOrange: UIViewController {
 
 // MARK: Data-source
 extension VCOrange: UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
-    }
+    func numberOfSections(
+        in tableView: UITableView
+    ) -> Int { 2 }
     
     func tableView(
         _ tableView: UITableView,
@@ -34,29 +34,27 @@ extension VCOrange: UITableViewDataSource {
     func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            guard let recommendationCell = tvHomeScreen.dequeueReusableCell(
-                withIdentifier: "RecommendationCell") as? RecommendationCell else {
+            guard let tvShowsCell = tableView.dequeueReusableCell(
+                withIdentifier: ContentTableViewCell.identifier
+            ) as? ContentTableViewCell else {
                 return UITableViewCell()
             }
-            guard let tvShows = tableView.dequeueReusableCell(
-                withIdentifier: TvShowsTableViewCell.identifier
-            ) as? TvShowsTableViewCell else {
+            guard let popularMoviesCell = tableView.dequeueReusableCell(
+                withIdentifier: ContentTableViewCell.identifier
+            ) as? ContentTableViewCell else {
                 return UITableViewCell()
             }
             //recommendationCell.cvRecommendation.tag = indexPath.section
-            recommendationCell.selectedDataDelegate = self
-            tvShows.selectedMoviesDelegate = self
-            let section = indexPath.section
-            switch section {
+            tvShowsCell.selectedContentDelegate = self
+            switch indexPath.section {
             case 0:
-                //                tvHomeScreen.tableHeaderView = recommendationCell
-                return recommendationCell
+                tvShowsCell.selectedContentDelegate = self
+                tvShowsCell.lblContentTitle.text = "Popular TV Shows"
+                return tvShowsCell
             case 1:
-                tvShows.lblContentTitle.text = "Popular TV Shows"
-                return tvShows
-            case 2:
-                tvShows.lblContentTitle.text = "Popular Movies"
-                return tvShows
+                popularMoviesCell.selectedContentDelegate = self
+                popularMoviesCell.lblContentTitle.text = "Popular Movies"
+                return popularMoviesCell
             default:
                 return UITableViewCell()
             }
@@ -75,19 +73,6 @@ extension VCOrange: UITableViewDelegate {
     func tableView(
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath) -> CGFloat { 250 }
-    
-    //    func tableView(
-    //        _ tableView: UITableView,
-    //        viewForHeaderInSection section: Int) -> UIView? {
-    //            guard let recommendationCell = tvHomeScreen.dequeueReusableHeaderFooterView(
-    //                withIdentifier: "HeaderView") as? HeaderView else {
-    //                return UITableViewCell()
-    //            }
-    //            // recommendationCell.cvRecommendation.tag = indexPath.section
-    //            //recommendationCell.selectedDataDelegate = self
-    //            // tvHomeScreen.tableHeaderView = recommendationCell
-    //            return recommendationCell
-    //        }
 }
 
 // MARK: Functions
@@ -95,9 +80,8 @@ extension VCOrange {
     private func initialSetup() {
         tvHomeScreen.delegate = self
         tvHomeScreen.dataSource = self
-        // tvHomeScreen.isScrollEnabled = false
-        initialiseTableHeader()
         registerCells()
+        initialiseHeader()
     }
     
     private func registerCells() {
@@ -106,37 +90,30 @@ extension VCOrange {
             forCellReuseIdentifier: RecommendationCell.identifier)
     }
     
-    private func initialiseTableHeader() {
-        //        viewTblHeader.frame =  CGRect(
-        //            x: 0,
-        //            y: 0,
-        //            width: tblContents.frame.size.width,
-        //            height: 50)
-        //        guard let recommendationCell = tvHomeScreen.dequeueReusableCell(
-        //            withIdentifier: "HeaderView") as? HeaderView else {
-        //            return
-        //        }
-        //
-        //        recommendationCell.frame = CGRect(
-        //                        x: 0,
-        //                        y: 0,
-        //                        width: tvHomeScreen.frame.size.width,
-        //                        height: 50)
-        //        tvHomeScreen.tableHeaderView = recommendationCell
+    private func setImageInNavigation(_ item: Movie) {
+        let url = URL(string: item.poster ?? "")
+        imgSelection.kf.setImage(with: url)
+        imgSelection.layer.cornerRadius = imgSelection.frame.size.width / 2.0
+    }
+    
+    private func initialiseHeader() {
+        guard let header = tvHomeScreen.dequeueReusableCell(
+            withIdentifier: RecommendationCell.identifier) as? RecommendationCell else {
+            return
+        }
+        header.selectedDataDelegate = self
+        tvHomeScreen.tableHeaderView = header
     }
 }
 
 extension VCOrange: SelectedDataDelegate {
     func selectedItem(at item: Movie) {
-        // Create a circular image with Kingfisher
-        let url = URL(string: item.poster ?? "")
-        imgSelection.kf.setImage(with: url)
-        imgSelection.layer.cornerRadius = imgSelection.frame.size.width / 2.0
+        setImageInNavigation(item)
         print("Data:", item.title)
     }
 }
 
-extension VCOrange: SelectedMovieDelegate {
+extension VCOrange: SelectedContentDelegate {
     
 }
 

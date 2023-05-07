@@ -70,7 +70,7 @@ extension RecommendationCell: UICollectionViewDelegate {
         didSelectItemAt indexPath: IndexPath) {
             // pass data to home screen to set selected image to top right corner
             selectedDataDelegate?.selectedItem(at: recommendedMovies[indexPath.row])
-            print(indexPath)
+            print("Recommendation cell")
         }
 }
 
@@ -110,9 +110,6 @@ extension RecommendationCell {
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 10
-        //        layout.headerReferenceSize = CGSize(
-        //            width: cvRecommendation.frame.size.width,
-        //            height: 0)
         cvRecommendation.collectionViewLayout = layout
     }
     
