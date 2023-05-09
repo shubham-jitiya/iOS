@@ -29,7 +29,7 @@
             </collectionViewCellContentView>
             <size key="customSize" width="230" height="378"/>
             <connections>
-                <outlet property="imgViewTvShows" destination="kSm-mA-1RV" id="uMX-16-JP8"/>
+                <outlet property="imgViewContent" destination="kSm-mA-1RV" id="uMX-16-JP8"/>
             </connections>
             <point key="canvasLocation" x="-471.75572519083966" y="-323.94366197183098"/>
         </collectionViewCell>

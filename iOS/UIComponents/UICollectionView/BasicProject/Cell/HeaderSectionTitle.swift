@@ -9,7 +9,7 @@ import UIKit
 
 class HeaderSectionTitle: UICollectionReusableView {
     // MARK: Variables
-    static let identifier = "HeaderSectionTitle"
+    // static let identifier = "HeaderSectionTitle"
     
     // MARK: IB outlets
     @IBOutlet weak var lblSectionTitle: UILabel!

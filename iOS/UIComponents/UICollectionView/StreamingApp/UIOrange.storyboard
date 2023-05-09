@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Cb-Zy-wY6">
                                 <rect key="frame" x="0.0" y="59" width="393" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Xm-ux-Id6">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="1Xm-ux-Id6">
                                         <rect key="frame" x="335" y="19" width="42" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="42" id="5vO-GK-52F"/>
@@ -54,31 +54,32 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.dash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6ES-bC-Cpi">
-                                        <rect key="frame" x="16" y="19.333333333333329" width="25" height="18.666666666666671"/>
-                                        <color key="tintColor" systemColor="systemOrangeColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="4WO-Js-Di5"/>
-                                            <constraint firstAttribute="width" constant="25" id="zVg-9a-fed"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orange TV &amp; Radio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-s0-I9g">
                                         <rect key="frame" x="100.33333333333333" y="16" width="192.66666666666669" height="27"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <color key="textColor" systemColor="systemOrangeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIe-P6-F5b">
+                                        <rect key="frame" x="8" y="12" width="40" height="35"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YdL-th-Jr6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="6ES-bC-Cpi" firstAttribute="top" secondItem="8Cb-Zy-wY6" secondAttribute="top" constant="16" id="4pT-Ca-pgb"/>
                                     <constraint firstItem="kHC-TB-09m" firstAttribute="centerY" secondItem="eTQ-iF-mXk" secondAttribute="centerY" id="Dkt-ur-AsC"/>
                                     <constraint firstItem="kHC-TB-09m" firstAttribute="leading" secondItem="eTQ-iF-mXk" secondAttribute="trailing" constant="18" id="EU9-T9-e5e"/>
                                     <constraint firstItem="cVc-Qp-Php" firstAttribute="centerY" secondItem="gcd-LT-tQm" secondAttribute="centerY" id="Elh-fM-Yiz"/>
                                     <constraint firstAttribute="height" constant="80" id="F3b-pc-a5K"/>
                                     <constraint firstItem="cVc-Qp-Php" firstAttribute="leading" secondItem="gcd-LT-tQm" secondAttribute="trailing" constant="18" id="Ivd-ld-PqR"/>
+                                    <constraint firstItem="QIe-P6-F5b" firstAttribute="centerY" secondItem="kTu-s0-I9g" secondAttribute="centerY" id="J6u-S7-4n7"/>
+                                    <constraint firstItem="QIe-P6-F5b" firstAttribute="leading" secondItem="8Cb-Zy-wY6" secondAttribute="leading" constant="8" id="P3v-9O-yuB"/>
                                     <constraint firstAttribute="bottom" secondItem="eTQ-iF-mXk" secondAttribute="bottom" constant="8" id="QAP-dM-oxi"/>
-                                    <constraint firstItem="6ES-bC-Cpi" firstAttribute="leading" secondItem="8Cb-Zy-wY6" secondAttribute="leading" constant="16" id="UFV-13-yQ4"/>
                                     <constraint firstItem="kTu-s0-I9g" firstAttribute="top" secondItem="8Cb-Zy-wY6" secondAttribute="top" constant="16" id="WmI-Ds-MBc"/>
                                     <constraint firstItem="gcd-LT-tQm" firstAttribute="centerY" secondItem="kHC-TB-09m" secondAttribute="centerY" id="bbD-zG-dUF"/>
                                     <constraint firstItem="1Xm-ux-Id6" firstAttribute="centerY" secondItem="8Cb-Zy-wY6" secondAttribute="centerYWithinMargins" id="iVX-rf-abn"/>
@@ -90,7 +91,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemFillColor"/>
                         <constraints>
                             <constraint firstItem="8Cb-Zy-wY6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="04f-nX-9dX"/>
                             <constraint firstAttribute="trailing" secondItem="8Cb-Zy-wY6" secondAttribute="trailing" id="JfY-Jr-Y5G"/>
@@ -112,9 +113,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="user" width="23" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

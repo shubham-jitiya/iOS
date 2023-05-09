@@ -9,7 +9,7 @@ import UIKit
 
 class HeaderCollectionViewCell: UICollectionViewCell {
     // MARK: Variables
-    static let identifier = "HeaderCollectionViewCell"
+    // static let identifier = "HeaderCollectionViewCell"
     
     // MARK: IB outlets
     @IBOutlet weak var imgView: UIImageView!

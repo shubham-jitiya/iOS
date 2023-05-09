@@ -26,4 +26,6 @@ enum Storyboards: String {
     case uiProductDetails = "UIProductDetails"
     case uiCollectionViewBasic = "UIBasicCollectionView"
     case uiOrange = "UIOrange"
+    case uiPullToRefresh = "UIPullToRefresh"
+    case uiImageView = "UIImageView"
 }

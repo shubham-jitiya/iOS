@@ -8,21 +8,16 @@
 import UIKit
 import Kingfisher
 
-
-protocol SelectedContentDelegate: AnyObject {
-    func selectedItem(at item: Movie)
-}
-
 class ContentTableViewCell: UITableViewCell {
     // MARK: Variables
-    static let identifier = "ContentTableViewCell"
     private var availableContents: [Movie] = []
-    weak var selectedContentDelegate: SelectedContentDelegate?
+    weak var selectedContentDelegate: SelectedItemDelegate?
     
     // MARK: IB outlets
     @IBOutlet weak var lblContentTitle: UILabel!
     @IBOutlet weak var cvTvShows: UICollectionView!
     
+    // MARK: Lifecycle methods
     override func awakeFromNib() {
         super.awakeFromNib()
         initialSetup()
@@ -33,7 +28,39 @@ class ContentTableViewCell: UITableViewCell {
     }
 }
 
-// MARK: Data-source
+// MARK: Functions
+extension ContentTableViewCell {
+    private func initialSetup() {
+        cvTvShows.delegate = self
+        cvTvShows.dataSource = self
+        cvTvShows.backgroundColor = .black
+        loadJson()
+        registerCells()
+    }
+    
+    private func registerCells() {
+        cvTvShows.registerCell(type: ContentCollectionViewCell.self)
+    }
+    
+    func loadJson() {
+        let decoder = JSONDecoder()
+        do {
+            let contents = try decoder.decode([Movie].self, from: jsonData)
+            for content in contents {
+                availableContents.append(content)
+            }
+            print(contents[0])
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func configCategory(name: String) {
+        lblContentTitle.text = name
+    }
+}
+
+// MARK: Table view data-source
 extension ContentTableViewCell: UICollectionViewDataSource {
     func collectionView(
         _ collectionView: UICollectionView,
@@ -49,51 +76,16 @@ extension ContentTableViewCell: UICollectionViewDataSource {
                 for: indexPath) as? ContentCollectionViewCell else {
                 return UICollectionViewCell()
             }
-            let selectedContent = availableContents[indexPath.row]
-            tvShows.config(data: selectedContent)
+            tvShows.config(data: availableContents[indexPath.row])
             return tvShows
         }
 }
 
-// MARK: Delegate methods
+// MARK: Table view delegate methods
 extension ContentTableViewCell: UICollectionViewDelegate {
     func collectionView(
         _ collectionView: UICollectionView,
         didSelectItemAt indexPath: IndexPath) {
-        selectedContentDelegate?.selectedItem(at: availableContents[indexPath.row])
-    }
-}
-
-// MARK: Functions
-extension ContentTableViewCell {
-    private func initialSetup() {
-        cvTvShows.delegate = self
-        cvTvShows.dataSource = self
-        cvTvShows.backgroundColor = .black
-        loadJson()
-        registerCells()
-    }
-    
-    private func registerCells() {
-        cvTvShows.register(
-            ContentCollectionViewCell.getNib(),
-            forCellWithReuseIdentifier: ContentCollectionViewCell.identifier)
-    }
-    
-    static func getNib() -> UINib {
-        UINib(nibName: identifier, bundle: nil)
-    }
-    
-    func loadJson() {
-        let decoder = JSONDecoder()
-        do {
-            let contents = try decoder.decode([Movie].self, from: jsonData)
-            for content in contents {
-                availableContents.append(content)
-            }
-            print(contents[0])
-        } catch {
-            print(error.localizedDescription)
+            selectedContentDelegate?.selectedItem(at: availableContents[indexPath.row])
         }
-    }
 }

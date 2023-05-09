@@ -84,6 +84,7 @@ extension VCTableView {
     
     private func registerCell(table: UITableView, id: String) {
         table.register(UINib(nibName: id, bundle: nil), forCellReuseIdentifier: id)
+        
     }
 }
 
@@ -96,13 +97,6 @@ extension VCTableView: UITableViewDataSource {
         _ tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
             return records.count
-            //            if section == 0 {
-            //                return 10
-            //            } else if section == 2 {
-            //                return records.count
-            //            } else {
-            //                return 4
-            //            }
         }
     
     func tableView(

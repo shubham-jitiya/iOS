@@ -8,12 +8,8 @@
 import UIKit
 
 class ContentCollectionViewCell: UICollectionViewCell {
-    // MARK: Variables
-    static let identifier = "ContentCollectionViewCell"
-    
     // MARK: IB outlets
-    @IBOutlet weak var imgViewTvShows: UIImageView!
-    
+    @IBOutlet weak var imgViewContent: UIImageView!
 }
 
 // MARK: Functions
@@ -25,6 +21,6 @@ extension ContentCollectionViewCell {
     func config(data: Movie) {
         // set content poster images
         let imageUrl = data.poster ?? ""
-        imgViewTvShows.kf.setImage(with: URL(string: imageUrl))
+        imgViewContent.kf.setImage(with: URL(string: imageUrl))
     }
 }

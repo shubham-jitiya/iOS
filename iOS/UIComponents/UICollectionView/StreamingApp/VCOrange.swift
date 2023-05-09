@@ -12,7 +12,7 @@ class VCOrange: UIViewController {
     // MARK: IB outlets
     @IBOutlet weak var tvHomeScreen: UITableView!
     @IBOutlet weak var imgSelection: UIImageView!
-     
+    
     // MARK: Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,58 +20,11 @@ class VCOrange: UIViewController {
     }
 }
 
-// MARK: Data-source
-extension VCOrange: UITableViewDataSource {
-    func numberOfSections(
-        in tableView: UITableView
-    ) -> Int { 2 }
-    
-    func tableView(
-        _ tableView: UITableView,
-        numberOfRowsInSection section: Int
-    ) -> Int { 1 }
-    
-    func tableView(
-        _ tableView: UITableView,
-        cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            guard let tvShowsCell = tableView.dequeueReusableCell(
-                withIdentifier: ContentTableViewCell.identifier
-            ) as? ContentTableViewCell else {
-                return UITableViewCell()
-            }
-            guard let popularMoviesCell = tableView.dequeueReusableCell(
-                withIdentifier: ContentTableViewCell.identifier
-            ) as? ContentTableViewCell else {
-                return UITableViewCell()
-            }
-            //recommendationCell.cvRecommendation.tag = indexPath.section
-            switch indexPath.section {
-            case 0:
-                tvShowsCell.selectedContentDelegate = self
-                tvShowsCell.lblContentTitle.text = "Watch next TV & Movies"
-                return tvShowsCell
-            case 1:
-                popularMoviesCell.selectedContentDelegate = self
-                popularMoviesCell.lblContentTitle.text = "Telugu Movies"
-                return popularMoviesCell
-            default:
-                return UITableViewCell()
-            }
-        }
-}
-
-// MARK: Delegates
-extension VCOrange: UITableViewDelegate {
-    func tableView(
-        _ tableView: UITableView,
-        didSelectRowAt indexPath: IndexPath) {
-            tvHomeScreen.deselectRow(at: indexPath, animated: true)
-            print("Section: ", indexPath.section)
-        }
-    
-    func tableView(
-        _ tableView: UITableView,
-        heightForRowAt indexPath: IndexPath) -> CGFloat { 250 }
+// MARK: IB actions
+extension VCOrange {
+    @IBAction private func btnBack(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
 }
 
 // MARK: Functions
@@ -79,20 +32,14 @@ extension VCOrange {
     private func initialSetup() {
         tvHomeScreen.delegate = self
         tvHomeScreen.dataSource = self
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         registerCells()
         initialiseHeader()
     }
     
     private func registerCells() {
-        tvHomeScreen.register(
-            RecommendationTableViewCell.getNib(),
-            forCellReuseIdentifier: RecommendationTableViewCell.identifier)
-        tvHomeScreen.register(
-            ContentTableViewCell.getNib(),
-            forCellReuseIdentifier: ContentTableViewCell.identifier)
-        tvHomeScreen.register(
-            ContentCollectionViewCell.getNib(),
-            forCellReuseIdentifier: ContentCollectionViewCell.identifier)
+        tvHomeScreen.registerCell(type: RecommendationTableViewCell.self)
+        tvHomeScreen.registerCell(type: ContentTableViewCell.self)
     }
     
     private func setImageInNavigation(_ item: Movie) {
@@ -111,14 +58,57 @@ extension VCOrange {
     }
 }
 
-extension VCOrange: SelectedDataDelegate {
-    func selectedItem(at item: Movie) {
-        setImageInNavigation(item)
-        print("Data:", item.title)
+// MARK: Table view data-source
+extension VCOrange: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(
+        _ tableView: UITableView,
+        numberOfRowsInSection section: Int) -> Int {
+            return 1
+        }
+    
+    func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            switch indexPath.section {
+            case 0:
+                guard let tvShowsCell = tableView.dequeueCell(withType: ContentTableViewCell.self)
+                        as? ContentTableViewCell else {
+                    return UITableViewCell()
+                }
+                tvShowsCell.selectedContentDelegate = self
+                tvShowsCell.configCategory(name: ConstantsOrange.Strings.category_1.rawValue)
+                return tvShowsCell
+            case 1:
+                guard let popularMoviesCell = tableView.dequeueCell(withType: ContentTableViewCell.self)
+                        as? ContentTableViewCell else {
+                    return UITableViewCell()
+                }
+                popularMoviesCell.selectedContentDelegate = self
+                popularMoviesCell.configCategory(name: ConstantsOrange.Strings.category_2.rawValue)
+                return popularMoviesCell
+            default:
+                return UITableViewCell()
+            }
+        }
+}
+
+// MARK: Table view delegate methods
+extension VCOrange: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tvHomeScreen.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 250
     }
 }
 
-extension VCOrange: SelectedContentDelegate {
-    
+extension VCOrange: SelectedItemDelegate {
+    func selectedItem(at item: Movie) {
+        setImageInNavigation(item)
+    }
 }
-

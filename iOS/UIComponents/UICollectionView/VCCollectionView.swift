@@ -9,7 +9,7 @@ import UIKit
 
 class VCCollectionView: UIViewController {
     // MARK: Variables
-    let gridData = [
+    private let gridData = [
         "Title 1",
         "Title 2",
         "Title 3",
@@ -33,7 +33,7 @@ class VCCollectionView: UIViewController {
         "Title 5",
         "Title 5",
     ]
-    var refreshData: UIRefreshControl!
+    private var refreshData: UIRefreshControl!
     
     // MARK: IB outlets
     @IBOutlet weak var gridCollectionView: UICollectionView!
@@ -51,10 +51,11 @@ extension VCCollectionView {
         self.refreshData = UIRefreshControl()
         refreshData.tintColor = .white
         refreshData.addTarget(self, action: #selector(loadData), for: .valueChanged)
-        gridCollectionView.addSubview(refreshData)
+        gridCollectionView.refreshControl = refreshData
         gridCollectionView.alwaysBounceVertical = true
         gridCollectionView.bounces = true
     }
+    
     @objc private func loadData() {
         print("Loaded data")
         refreshData.endRefreshing()

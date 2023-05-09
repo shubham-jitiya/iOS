@@ -188,5 +188,18 @@ extension ViewController {
         navigate(to: vcCollectionProject)
     }
     
+    @IBAction private func btnPullToRefresh(_ sender: UIButton) {
+        guard let cvPullToRefresh = VCPullToRefresh.create(storyboardName: .uiPullToRefresh) as? VCPullToRefresh else {
+            return
+        }
+        navigate(to: cvPullToRefresh)
+    }
+    
+    @IBAction private func btnImageView(_ sender: UIButton) {
+        guard let vcImageView = VCImageView.create(storyboardName: .uiImageView) as? VCImageView else {
+            return
+        }
+        navigate(to: vcImageView)
+    }
 }
 
