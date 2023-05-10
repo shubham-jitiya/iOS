@@ -9,10 +9,13 @@ import UIKit
 
 class VCImageView: UIViewController {
     // MARK: Variables
+    private var images: [UIImage] = []
     
     // MARK: IB outlets
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var ivVolume: UIImageView!
+    @IBOutlet private weak var imgView: UIImageView!
+    @IBOutlet private weak var btnConnect: UIButton!
+    @IBOutlet private weak var ivVolume: UIImageView!
+    @IBOutlet private weak var ivLogo: UIImageView!
     
     // MARK: View lifecycle methods
     override func viewDidLoad() {
@@ -24,7 +27,13 @@ class VCImageView: UIViewController {
 // MARK: IB actions
 extension VCImageView {
     @IBAction private func connectSpeaker(_ sender: UIButton) {
-        
+        if imgView.isAnimating {
+            btnConnect.setTitle("Connect", for: .normal)
+            imgView.stopAnimating()
+        } else {
+            btnConnect.setTitle("Disconnect", for: .normal)
+            imgView.startAnimating()
+        }
     }
 }
 
@@ -37,14 +46,22 @@ extension VCImageView {
     }
     
     private func addImages() {
-   
+        guard let image_1 = UIImage(systemName: "speaker.wave.1.fill") else {
+            return
+        }
+        guard let image_2 = UIImage(systemName: "speaker.wave.2.fill") else {
+            return
+        }
+        guard let image_3 = UIImage(systemName: "speaker.wave.3.fill") else {
+            return
+        }
+        images.append(image_1)
+        images.append(image_2)
+        images.append(image_3)
     }
     
     private func animateImageView() {
-       
-    }
-    
-    private func setupImageViewAnimation() {
-      
+        imgView.animationImages = images
+        imgView.animationDuration = 1
     }
 }

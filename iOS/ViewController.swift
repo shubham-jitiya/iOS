@@ -182,24 +182,57 @@ extension ViewController {
     }
     
     @IBAction private func btnCollectionProject(_sender: UIButton) {
-        guard let vcCollectionProject = VCOrange.create(storyboardName: .uiOrange) as? VCOrange else {
+        guard let vcCollectionProject = VCOrange
+            .create(storyboardName: .uiOrange) as? VCOrange else {
             return
         }
         navigate(to: vcCollectionProject)
     }
     
     @IBAction private func btnPullToRefresh(_ sender: UIButton) {
-        guard let cvPullToRefresh = VCPullToRefresh.create(storyboardName: .uiPullToRefresh) as? VCPullToRefresh else {
+        guard let cvPullToRefresh = VCPullToRefresh
+            .create(storyboardName: .uiPullToRefresh) as? VCPullToRefresh else {
             return
         }
         navigate(to: cvPullToRefresh)
     }
     
     @IBAction private func btnImageView(_ sender: UIButton) {
-        guard let vcImageView = VCImageView.create(storyboardName: .uiImageView) as? VCImageView else {
+        guard let vcImageView = VCImageView
+            .create(storyboardName: .uiImageView) as? VCImageView else {
             return
         }
         navigate(to: vcImageView)
+    }
+    
+    @IBAction private func btnActivityIndicator(_ sender: UIButton) {
+        guard let vcActivityIndicator = VCActivityIndicator
+            .create(storyboardName: .uiActivityIndicator) as? VCActivityIndicator else {
+            return
+        }
+        navigate(to: vcActivityIndicator)
+    }
+    
+    @IBAction private func btnWebView(_ sender: UIButton) {
+        guard let vcWebView = VCWebView
+            .create(storyboardName: .uiWebView) as? VCWebView else {
+            return
+        }
+        navigate(to: vcWebView)
+    }
+    
+    @IBAction private func btnSearchBar(_ sender: UIButton) {
+        guard let vcSearchBar = VCSearchBar.create(storyboardName: .uiSearchBar) as? VCSearchBar else {
+            return
+        }
+        navigate(to: vcSearchBar)
+    }
+    
+    @IBAction private func btnUIPickerView(_ sender: UIButton) {
+        guard let vcPickerView = VCPickerView.create(storyboardName: .uiPickerView) as? VCPickerView else {
+            return
+        }
+        navigate(to: vcPickerView)
     }
 }
 

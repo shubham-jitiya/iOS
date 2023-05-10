@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="VCPickerView" id="Y6W-OH-hqX" customClass="VCPickerView" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Day" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rNl-bA-rSq">
+                                <rect key="frame" x="32" y="95" width="80" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="UEB-wO-Csm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1L3-k3-tbP">
+                                <rect key="frame" x="32" y="137" width="80" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0y-60-yJA">
+                                <rect key="frame" x="128" y="83" width="233" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5d0-DH-8Wf"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E0y-60-yJA" firstAttribute="leading" secondItem="rNl-bA-rSq" secondAttribute="trailing" constant="16" id="EXf-x5-wKm"/>
+                            <constraint firstItem="1L3-k3-tbP" firstAttribute="top" secondItem="rNl-bA-rSq" secondAttribute="bottom" constant="8" id="FGG-Xd-gwA"/>
+                            <constraint firstItem="rNl-bA-rSq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="KKS-6I-jMa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="E0y-60-yJA" secondAttribute="trailing" constant="32" id="L6u-W7-BMi"/>
+                            <constraint firstItem="E0y-60-yJA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="SI6-no-PHF"/>
+                            <constraint firstItem="1L3-k3-tbP" firstAttribute="leading" secondItem="rNl-bA-rSq" secondAttribute="leading" id="SdT-RW-Mw3"/>
+                            <constraint firstItem="rNl-bA-rSq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="36" id="U7x-Dp-D89"/>
+                            <constraint firstItem="1L3-k3-tbP" firstAttribute="trailing" secondItem="rNl-bA-rSq" secondAttribute="trailing" id="s2c-TQ-UF4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="E0y-60-yJA" id="DnV-Fj-waC"/>
+                        <outlet property="tfDay" destination="rNl-bA-rSq" id="1v6-Ph-dzK"/>
+                        <outlet property="tfMonth" destination="1L3-k3-tbP" id="XQK-Lp-uWE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-55.633802816901408"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

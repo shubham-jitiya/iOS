@@ -28,4 +28,8 @@ enum Storyboards: String {
     case uiOrange = "UIOrange"
     case uiPullToRefresh = "UIPullToRefresh"
     case uiImageView = "UIImageView"
+    case uiActivityIndicator = "UIActivityIndicator"
+    case uiWebView = "UIWebView"
+    case uiSearchBar = "UISearchBar"
+    case uiPickerView = "UIPickerView"
 }

@@ -212,11 +212,52 @@
                                     <action selector="btnImageView:" destination="vr3-QX-sFP" eventType="touchUpInside" id="EGT-IY-xqE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y2-AB-eBm">
+                                <rect key="frame" x="200.66666666666663" y="402.66666666666669" width="176.33333333333337" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Activity indicator">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnActivityIndicator:" destination="vr3-QX-sFP" eventType="touchUpInside" id="vYs-TR-Mh2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uZ-76-YDY">
+                                <rect key="frame" x="200.66666666666663" y="444.66666666666669" width="176.33333333333337" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Web view">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnWebView:" destination="vr3-QX-sFP" eventType="touchUpInside" id="zwt-Hf-KhF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpM-eL-eKZ">
+                                <rect key="frame" x="200.66666666666663" y="486.66666666666669" width="176.33333333333337" height="34.000000000000057"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Search bar">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSearchBar:" destination="vr3-QX-sFP" eventType="touchUpInside" id="MPM-VY-bgr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3b-bn-vUI">
+                                <rect key="frame" x="200.66666666666663" y="528.66666666666663" width="176.33333333333337" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Picker view">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnUIPickerView:" destination="vr3-QX-sFP" eventType="touchUpInside" id="WUh-iv-UPp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gNb-Tx-Qo3"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="w9t-mr-TmV" firstAttribute="trailing" secondItem="JCj-sr-LC7" secondAttribute="trailing" id="0EN-MQ-H0I"/>
+                            <constraint firstItem="FpM-eL-eKZ" firstAttribute="leading" secondItem="3uZ-76-YDY" secondAttribute="leading" id="0Eb-fK-Ehj"/>
                             <constraint firstItem="1ta-Hg-6eZ" firstAttribute="leading" secondItem="gNb-Tx-Qo3" secondAttribute="leading" constant="16" id="1Gg-AF-fbG"/>
                             <constraint firstItem="Npu-3q-Aih" firstAttribute="trailing" secondItem="PCR-jm-tHg" secondAttribute="trailing" id="2I8-Pd-O7i"/>
                             <constraint firstItem="poO-nE-JkM" firstAttribute="leading" secondItem="jfE-E0-0XL" secondAttribute="leading" id="4BD-eg-Yed"/>
@@ -224,18 +265,24 @@
                             <constraint firstItem="Yri-kg-auF" firstAttribute="trailing" secondItem="Bk3-hq-AtH" secondAttribute="trailing" id="91T-Ll-EKy"/>
                             <constraint firstItem="dmX-vL-gmU" firstAttribute="top" secondItem="Npu-3q-Aih" secondAttribute="bottom" constant="8" id="95d-Fb-4p2"/>
                             <constraint firstItem="CAe-g4-s3t" firstAttribute="leading" secondItem="1ta-Hg-6eZ" secondAttribute="centerX" constant="4" id="COG-ZB-tAL"/>
+                            <constraint firstItem="q3b-bn-vUI" firstAttribute="trailing" secondItem="FpM-eL-eKZ" secondAttribute="trailing" id="Crf-Oe-of3"/>
+                            <constraint firstItem="FpM-eL-eKZ" firstAttribute="trailing" secondItem="3uZ-76-YDY" secondAttribute="trailing" id="Dex-FD-4g4"/>
                             <constraint firstItem="w9t-mr-TmV" firstAttribute="top" secondItem="JCj-sr-LC7" secondAttribute="bottom" constant="8" id="Eha-BF-KNy"/>
+                            <constraint firstItem="q3b-bn-vUI" firstAttribute="top" secondItem="FpM-eL-eKZ" secondAttribute="bottom" constant="8" id="G3S-Ab-WI6"/>
                             <constraint firstItem="8c9-aD-J2i" firstAttribute="trailing" secondItem="dzW-KR-WOh" secondAttribute="trailing" id="HAR-jc-WDc"/>
                             <constraint firstItem="poO-nE-JkM" firstAttribute="trailing" secondItem="jfE-E0-0XL" secondAttribute="trailing" id="HD8-Tt-bDt"/>
                             <constraint firstItem="JCj-sr-LC7" firstAttribute="top" secondItem="CAe-g4-s3t" secondAttribute="bottom" constant="8" id="HxY-ZE-RdM"/>
                             <constraint firstItem="ZuH-gO-D4v" firstAttribute="trailing" secondItem="pbf-Eb-ctK" secondAttribute="trailing" id="IdT-ey-uzs"/>
                             <constraint firstItem="1Gy-fv-BCo" firstAttribute="leading" secondItem="uda-HM-Uy7" secondAttribute="leading" id="J92-OK-Mj2"/>
+                            <constraint firstItem="FpM-eL-eKZ" firstAttribute="top" secondItem="3uZ-76-YDY" secondAttribute="bottom" constant="8" id="L5h-RF-GDT"/>
+                            <constraint firstItem="3uZ-76-YDY" firstAttribute="leading" secondItem="1y2-AB-eBm" secondAttribute="leading" id="LwD-qI-7rS"/>
                             <constraint firstItem="8c9-aD-J2i" firstAttribute="top" secondItem="dzW-KR-WOh" secondAttribute="bottom" constant="8" id="NBt-JJ-wr1"/>
                             <constraint firstItem="pbf-Eb-ctK" firstAttribute="top" secondItem="sTT-95-w2T" secondAttribute="bottom" constant="8" id="NV7-6y-B4x"/>
                             <constraint firstItem="jfE-E0-0XL" firstAttribute="trailing" secondItem="Yri-kg-auF" secondAttribute="trailing" id="Ocv-Rs-2cC"/>
                             <constraint firstItem="uda-HM-Uy7" firstAttribute="top" secondItem="eu0-ux-Gll" secondAttribute="bottom" constant="8" id="P1m-Bs-Ibs"/>
                             <constraint firstItem="pbf-Eb-ctK" firstAttribute="trailing" secondItem="sTT-95-w2T" secondAttribute="trailing" id="PVf-7W-Slo"/>
                             <constraint firstItem="eu0-ux-Gll" firstAttribute="leading" secondItem="poO-nE-JkM" secondAttribute="leading" id="PgI-sh-bXr"/>
+                            <constraint firstItem="q3b-bn-vUI" firstAttribute="leading" secondItem="FpM-eL-eKZ" secondAttribute="leading" id="PuO-VC-zUo"/>
                             <constraint firstItem="dzW-KR-WOh" firstAttribute="leading" secondItem="w9t-mr-TmV" secondAttribute="leading" id="R8e-B6-w9z"/>
                             <constraint firstItem="gNb-Tx-Qo3" firstAttribute="trailing" secondItem="CAe-g4-s3t" secondAttribute="trailing" constant="16" id="Ts3-6W-arX"/>
                             <constraint firstItem="dzW-KR-WOh" firstAttribute="top" secondItem="w9t-mr-TmV" secondAttribute="bottom" constant="8" id="VR2-8f-Zjd"/>
@@ -243,6 +290,7 @@
                             <constraint firstItem="gNb-Tx-Qo3" firstAttribute="trailing" secondItem="1ta-Hg-6eZ" secondAttribute="trailing" constant="16" id="Xcy-xE-vY2"/>
                             <constraint firstItem="jfE-E0-0XL" firstAttribute="leading" secondItem="Yri-kg-auF" secondAttribute="leading" id="XsB-95-2WC"/>
                             <constraint firstItem="pbf-Eb-ctK" firstAttribute="leading" secondItem="sTT-95-w2T" secondAttribute="leading" id="ZKA-1l-tTr"/>
+                            <constraint firstItem="1y2-AB-eBm" firstAttribute="leading" secondItem="8c9-aD-J2i" secondAttribute="leading" id="Zo9-Nn-538"/>
                             <constraint firstItem="1Gy-fv-BCo" firstAttribute="top" secondItem="uda-HM-Uy7" secondAttribute="bottom" constant="8" id="Zp3-10-WS5"/>
                             <constraint firstItem="Yri-kg-auF" firstAttribute="leading" secondItem="Bk3-hq-AtH" secondAttribute="leading" id="a27-BZ-sjx"/>
                             <constraint firstItem="Bk3-hq-AtH" firstAttribute="trailing" secondItem="999-Ms-PIg" secondAttribute="trailing" id="bQb-fv-7lr"/>
@@ -255,12 +303,16 @@
                             <constraint firstItem="PCR-jm-tHg" firstAttribute="leading" secondItem="ZuH-gO-D4v" secondAttribute="leading" id="fcv-lt-gPq"/>
                             <constraint firstItem="sTT-95-w2T" firstAttribute="trailing" secondItem="1Gy-fv-BCo" secondAttribute="trailing" id="gPD-0I-ixz"/>
                             <constraint firstItem="Yri-kg-auF" firstAttribute="top" secondItem="Bk3-hq-AtH" secondAttribute="bottom" constant="8" id="gS8-lm-y9T"/>
+                            <constraint firstItem="1y2-AB-eBm" firstAttribute="top" secondItem="8c9-aD-J2i" secondAttribute="bottom" constant="8" id="ghm-PF-pU9"/>
+                            <constraint firstItem="3uZ-76-YDY" firstAttribute="trailing" secondItem="1y2-AB-eBm" secondAttribute="trailing" id="hLW-rt-gAV"/>
                             <constraint firstItem="w9t-mr-TmV" firstAttribute="leading" secondItem="JCj-sr-LC7" secondAttribute="leading" id="iQZ-6u-fLX"/>
                             <constraint firstItem="eu0-ux-Gll" firstAttribute="top" secondItem="poO-nE-JkM" secondAttribute="bottom" constant="8" id="jxM-Zz-aWa"/>
+                            <constraint firstItem="3uZ-76-YDY" firstAttribute="top" secondItem="1y2-AB-eBm" secondAttribute="bottom" constant="8" id="kaX-sC-xZh"/>
                             <constraint firstItem="PCR-jm-tHg" firstAttribute="top" secondItem="ZuH-gO-D4v" secondAttribute="bottom" constant="8" id="lbU-cE-NbS"/>
                             <constraint firstItem="999-Ms-PIg" firstAttribute="top" secondItem="1ta-Hg-6eZ" secondAttribute="bottom" constant="36" id="lkj-3s-oaL"/>
                             <constraint firstItem="ZuH-gO-D4v" firstAttribute="top" secondItem="pbf-Eb-ctK" secondAttribute="bottom" constant="8" id="n4f-9b-O3D"/>
                             <constraint firstItem="PCR-jm-tHg" firstAttribute="trailing" secondItem="ZuH-gO-D4v" secondAttribute="trailing" id="nSZ-Gy-xGd"/>
+                            <constraint firstItem="1y2-AB-eBm" firstAttribute="trailing" secondItem="8c9-aD-J2i" secondAttribute="trailing" id="nUa-bv-Xlm"/>
                             <constraint firstItem="dzW-KR-WOh" firstAttribute="trailing" secondItem="w9t-mr-TmV" secondAttribute="trailing" id="pAp-Zg-f8W"/>
                             <constraint firstItem="Bk3-hq-AtH" firstAttribute="top" secondItem="999-Ms-PIg" secondAttribute="bottom" constant="8" id="pfk-Qr-gOl"/>
                             <constraint firstItem="uda-HM-Uy7" firstAttribute="leading" secondItem="eu0-ux-Gll" secondAttribute="leading" id="pnw-yM-tdy"/>

@@ -13,6 +13,14 @@
 		5110E82B29E672B4001165DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5110E82929E672B4001165DB /* Main.storyboard */; };
 		5110E82D29E672B5001165DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5110E82C29E672B5001165DB /* Assets.xcassets */; };
 		5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5110E82E29E672B5001165DB /* LaunchScreen.storyboard */; };
+		5110FBA42A0B6DA800F2BB4E /* VCActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110FBA32A0B6DA800F2BB4E /* VCActivityIndicator.swift */; };
+		5110FBA62A0B6DB900F2BB4E /* UIActivityIndicator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5110FBA52A0B6DB900F2BB4E /* UIActivityIndicator.storyboard */; };
+		5110FBA92A0B766D00F2BB4E /* VCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110FBA82A0B766D00F2BB4E /* VCWebView.swift */; };
+		5110FBAB2A0B768000F2BB4E /* UIWebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5110FBAA2A0B768000F2BB4E /* UIWebView.storyboard */; };
+		5110FBAE2A0B916A00F2BB4E /* UISearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5110FBAD2A0B916A00F2BB4E /* UISearchBar.storyboard */; };
+		5110FBB02A0B917D00F2BB4E /* VCSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110FBAF2A0B917D00F2BB4E /* VCSearchBar.swift */; };
+		5110FBB32A0BBB3900F2BB4E /* UIPickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5110FBB22A0BBB3900F2BB4E /* UIPickerView.storyboard */; };
+		5110FBB52A0BBB4800F2BB4E /* VCPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110FBB42A0BBB4800F2BB4E /* VCPickerView.swift */; };
 		512FB3DA29F692E80074CF93 /* UIButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512FB3D929F692E80074CF93 /* UIButton.storyboard */; };
 		512FB3DE29F693920074CF93 /* VCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512FB3DD29F693920074CF93 /* VCButton.swift */; };
 		51453EDA29FFAC6200B82915 /* UIListContacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51453ED929FFAC6200B82915 /* UIListContacts.storyboard */; };
@@ -106,6 +114,14 @@
 		5110E82C29E672B5001165DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5110E82F29E672B5001165DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5110E83129E672B5001165DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5110FBA32A0B6DA800F2BB4E /* VCActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCActivityIndicator.swift; sourceTree = "<group>"; };
+		5110FBA52A0B6DB900F2BB4E /* UIActivityIndicator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIActivityIndicator.storyboard; sourceTree = "<group>"; };
+		5110FBA82A0B766D00F2BB4E /* VCWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWebView.swift; sourceTree = "<group>"; };
+		5110FBAA2A0B768000F2BB4E /* UIWebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIWebView.storyboard; sourceTree = "<group>"; };
+		5110FBAD2A0B916A00F2BB4E /* UISearchBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISearchBar.storyboard; sourceTree = "<group>"; };
+		5110FBAF2A0B917D00F2BB4E /* VCSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSearchBar.swift; sourceTree = "<group>"; };
+		5110FBB22A0BBB3900F2BB4E /* UIPickerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPickerView.storyboard; sourceTree = "<group>"; };
+		5110FBB42A0BBB4800F2BB4E /* VCPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPickerView.swift; sourceTree = "<group>"; };
 		512FB3D929F692E80074CF93 /* UIButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIButton.storyboard; sourceTree = "<group>"; };
 		512FB3DD29F693920074CF93 /* VCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCButton.swift; sourceTree = "<group>"; };
 		51453ED929FFAC6200B82915 /* UIListContacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIListContacts.storyboard; sourceTree = "<group>"; };
@@ -235,6 +251,42 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		5110FBA22A0B6D8100F2BB4E /* UIActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				5110FBA32A0B6DA800F2BB4E /* VCActivityIndicator.swift */,
+				5110FBA52A0B6DB900F2BB4E /* UIActivityIndicator.storyboard */,
+			);
+			path = UIActivityIndicator;
+			sourceTree = "<group>";
+		};
+		5110FBA72A0B765500F2BB4E /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				5110FBA82A0B766D00F2BB4E /* VCWebView.swift */,
+				5110FBAA2A0B768000F2BB4E /* UIWebView.storyboard */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		5110FBAC2A0B914100F2BB4E /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				5110FBAD2A0B916A00F2BB4E /* UISearchBar.storyboard */,
+				5110FBAF2A0B917D00F2BB4E /* VCSearchBar.swift */,
+			);
+			path = UISearchBar;
+			sourceTree = "<group>";
+		};
+		5110FBB12A0BBB2600F2BB4E /* UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				5110FBB22A0BBB3900F2BB4E /* UIPickerView.storyboard */,
+				5110FBB42A0BBB4800F2BB4E /* VCPickerView.swift */,
+			);
+			path = UIPickerView;
+			sourceTree = "<group>";
+		};
 		512FB3D729F691710074CF93 /* UILabels */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +308,10 @@
 		5167835329F65641000C73AD /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				5110FBB12A0BBB2600F2BB4E /* UIPickerView */,
+				5110FBAC2A0B914100F2BB4E /* UISearchBar */,
+				5110FBA72A0B765500F2BB4E /* WKWebView */,
+				5110FBA22A0B6D8100F2BB4E /* UIActivityIndicator */,
 				51B4CB762A0A26DD00FE136E /* UIImageView */,
 				51B4CB6E2A0A0EEF00FE136E /* UIPullToRefresh */,
 				51A94B6D2A0287B300CE076D /* Product */,
@@ -666,6 +722,7 @@
 			files = (
 				526E7F622A08059C00A39631 /* RecommendationCollectionViewCell.xib in Resources */,
 				5180AD1629F9187D008687FC /* UISlider.storyboard in Resources */,
+				5110FBAB2A0B768000F2BB4E /* UIWebView.storyboard in Resources */,
 				51E2B91A29FBDCAD00846904 /* CompanyTableViewCell.xib in Resources */,
 				51B825332A03B9000048E1AC /* UIOrange.storyboard in Resources */,
 				526E7F5E2A08022700A39631 /* ContentTableViewCell.xib in Resources */,
@@ -675,6 +732,8 @@
 				5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */,
 				51B4CB782A0A26F700FE136E /* UIImageView.storyboard in Resources */,
 				5110E82D29E672B5001165DB /* Assets.xcassets in Resources */,
+				5110FBA62A0B6DB900F2BB4E /* UIActivityIndicator.storyboard in Resources */,
+				5110FBB32A0BBB3900F2BB4E /* UIPickerView.storyboard in Resources */,
 				51B825302A03A8140048E1AC /* HeaderSectionTitle.xib in Resources */,
 				51AAB07929F7FE0A00E3F8E8 /* UISwitch.storyboard in Resources */,
 				51B04EED2A010BEE00C2209F /* SectionHeader.xib in Resources */,
@@ -696,6 +755,7 @@
 				51B4CB702A0A0F4600FE136E /* UIPullToRefresh.storyboard in Resources */,
 				5110E82B29E672B4001165DB /* Main.storyboard in Resources */,
 				51769CE029FF8F8900A3AE29 /* CustomSectionHeaderView.xib in Resources */,
+				5110FBAE2A0B916A00F2BB4E /* UISearchBar.storyboard in Resources */,
 				51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */,
 				51B825212A0384560048E1AC /* HeaderCollectionViewCell.xib in Resources */,
 				5191363829FAA597000D9AFC /* UITableView.storyboard in Resources */,
@@ -734,9 +794,11 @@
 				5110E82829E672B4001165DB /* ViewController.swift in Sources */,
 				51B04EEB2A010BDE00C2209F /* SectionHeader.swift in Sources */,
 				51AAB07629F7F37900E3F8E8 /* VCTextView.swift in Sources */,
+				5110FBB02A0B917D00F2BB4E /* VCSearchBar.swift in Sources */,
 				5167835E29F65D34000C73AD /* Storyboard.swift in Sources */,
 				5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */,
 				51B04EE92A00FB8800C2209F /* Constants.swift in Sources */,
+				5110FBB52A0BBB4800F2BB4E /* VCPickerView.swift in Sources */,
 				5180AD1D29F92573008687FC /* VCProgressView.swift in Sources */,
 				519D9A5A2A04E15300F2E277 /* Movie.swift in Sources */,
 				51E2B91D29FBE9FB00846904 /* CompanyModel.swift in Sources */,
@@ -751,12 +813,14 @@
 				51B4CB7C2A0A271E00FE136E /* VCImageView.swift in Sources */,
 				5110E82629E672B4001165DB /* SceneDelegate.swift in Sources */,
 				51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */,
+				5110FBA92A0B766D00F2BB4E /* VCWebView.swift in Sources */,
 				51B4CB722A0A0F6700FE136E /* VCPullToRefresh.swift in Sources */,
 				5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */,
 				51B825352A03B9200048E1AC /* VCOrange.swift in Sources */,
 				519D9A4F2A04CBCA00F2E277 /* MoviesData.swift in Sources */,
 				51A94B662A02745800CE076D /* DemoCollectionViewCell.swift in Sources */,
 				5194551629FFE9D10089E055 /* UserDataCell.swift in Sources */,
+				5110FBA42A0B6DA800F2BB4E /* VCActivityIndicator.swift in Sources */,
 				5167835729F65680000C73AD /* VCLabels.swift in Sources */,
 				5180AD3229F9410F008687FC /* VCStepper.swift in Sources */,
 				519D9A552A04D05D00F2E277 /* ContentTableViewCell.swift in Sources */,
