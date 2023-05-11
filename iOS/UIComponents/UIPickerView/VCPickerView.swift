@@ -18,7 +18,6 @@ class VCPickerView: UIViewController {
     @IBOutlet private weak var tfDay: UITextField!
     @IBOutlet private weak var tfMonth: UITextField!
     
-    
     // MARK: Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -94,6 +94,14 @@
 		51B825332A03B9000048E1AC /* UIOrange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B825322A03B9000048E1AC /* UIOrange.storyboard */; };
 		51B825352A03B9200048E1AC /* VCOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B825342A03B9200048E1AC /* VCOrange.swift */; };
 		51B8253E2A03C1A30048E1AC /* RecommendationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B8253C2A03C1A30048E1AC /* RecommendationTableViewCell.xib */; };
+		51C4443D2A0CAC220043AB5A /* UIDatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C4443C2A0CAC220043AB5A /* UIDatePicker.storyboard */; };
+		51C4443F2A0CAC2F0043AB5A /* VCDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C4443E2A0CAC2F0043AB5A /* VCDatePicker.swift */; };
+		51C444442A0CE1F60043AB5A /* UIStackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C444432A0CE1F60043AB5A /* UIStackView.storyboard */; };
+		51C444462A0CE2160043AB5A /* VCStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C444452A0CE2160043AB5A /* VCStackView.swift */; };
+		51C444492A0CF4840043AB5A /* UITabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C444482A0CF4840043AB5A /* UITabBar.storyboard */; };
+		51C4444B2A0CF4A30043AB5A /* VCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C4444A2A0CF4A30043AB5A /* VCTabBar.swift */; };
+		51C4444D2A0CFE570043AB5A /* VCHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C4444C2A0CFE570043AB5A /* VCHomeScreen.swift */; };
+		51C4444F2A0D01D30043AB5A /* VCSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C4444E2A0D01D30043AB5A /* VCSearch.swift */; };
 		51E2B91929FBDCAD00846904 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2B91729FBDCAD00846904 /* CompanyTableViewCell.swift */; };
 		51E2B91A29FBDCAD00846904 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E2B91829FBDCAD00846904 /* CompanyTableViewCell.xib */; };
 		51E2B91D29FBE9FB00846904 /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2B91C29FBE9FB00846904 /* CompanyModel.swift */; };
@@ -195,6 +203,14 @@
 		51B825342A03B9200048E1AC /* VCOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCOrange.swift; sourceTree = "<group>"; };
 		51B8253B2A03C1A30048E1AC /* RecommendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTableViewCell.swift; sourceTree = "<group>"; };
 		51B8253C2A03C1A30048E1AC /* RecommendationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationTableViewCell.xib; sourceTree = "<group>"; };
+		51C4443C2A0CAC220043AB5A /* UIDatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIDatePicker.storyboard; sourceTree = "<group>"; };
+		51C4443E2A0CAC2F0043AB5A /* VCDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDatePicker.swift; sourceTree = "<group>"; };
+		51C444432A0CE1F60043AB5A /* UIStackView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIStackView.storyboard; sourceTree = "<group>"; };
+		51C444452A0CE2160043AB5A /* VCStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCStackView.swift; sourceTree = "<group>"; };
+		51C444482A0CF4840043AB5A /* UITabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITabBar.storyboard; sourceTree = "<group>"; };
+		51C4444A2A0CF4A30043AB5A /* VCTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTabBar.swift; sourceTree = "<group>"; };
+		51C4444C2A0CFE570043AB5A /* VCHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCHomeScreen.swift; sourceTree = "<group>"; };
+		51C4444E2A0D01D30043AB5A /* VCSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSearch.swift; sourceTree = "<group>"; };
 		51E2B91729FBDCAD00846904 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		51E2B91829FBDCAD00846904 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
 		51E2B91C29FBE9FB00846904 /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
@@ -308,6 +324,9 @@
 		5167835329F65641000C73AD /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				51C444472A0CF4750043AB5A /* UITabBar */,
+				51C444422A0CE1D70043AB5A /* UIStackView */,
+				51C4443B2A0CAC050043AB5A /* UIDatePicker */,
 				5110FBB12A0BBB2600F2BB4E /* UIPickerView */,
 				5110FBAC2A0B914100F2BB4E /* UISearchBar */,
 				5110FBA72A0B765500F2BB4E /* WKWebView */,
@@ -648,6 +667,35 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		51C4443B2A0CAC050043AB5A /* UIDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				51C4443C2A0CAC220043AB5A /* UIDatePicker.storyboard */,
+				51C4443E2A0CAC2F0043AB5A /* VCDatePicker.swift */,
+			);
+			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		51C444422A0CE1D70043AB5A /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				51C444432A0CE1F60043AB5A /* UIStackView.storyboard */,
+				51C444452A0CE2160043AB5A /* VCStackView.swift */,
+			);
+			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		51C444472A0CF4750043AB5A /* UITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				51C444482A0CF4840043AB5A /* UITabBar.storyboard */,
+				51C4444A2A0CF4A30043AB5A /* VCTabBar.swift */,
+				51C4444C2A0CFE570043AB5A /* VCHomeScreen.swift */,
+				51C4444E2A0D01D30043AB5A /* VCSearch.swift */,
+			);
+			path = UITabBar;
+			sourceTree = "<group>";
+		};
 		51E2B91B29FBE9EF00846904 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -732,12 +780,14 @@
 				5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */,
 				51B4CB782A0A26F700FE136E /* UIImageView.storyboard in Resources */,
 				5110E82D29E672B5001165DB /* Assets.xcassets in Resources */,
+				51C4443D2A0CAC220043AB5A /* UIDatePicker.storyboard in Resources */,
 				5110FBA62A0B6DB900F2BB4E /* UIActivityIndicator.storyboard in Resources */,
 				5110FBB32A0BBB3900F2BB4E /* UIPickerView.storyboard in Resources */,
 				51B825302A03A8140048E1AC /* HeaderSectionTitle.xib in Resources */,
 				51AAB07929F7FE0A00E3F8E8 /* UISwitch.storyboard in Resources */,
 				51B04EED2A010BEE00C2209F /* SectionHeader.xib in Resources */,
 				5180AD1B29F92562008687FC /* UIProgressView.storyboard in Resources */,
+				51C444492A0CF4840043AB5A /* UITabBar.storyboard in Resources */,
 				51B8253E2A03C1A30048E1AC /* RecommendationTableViewCell.xib in Resources */,
 				51A94B612A026F9200CE076D /* UICollectionView.storyboard in Resources */,
 				5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */,
@@ -751,6 +801,7 @@
 				51A94B712A0287E100CE076D /* UIProductDetails.storyboard in Resources */,
 				51A8FB1229FBBFF000A41B8D /* EvenTableViewCell.xib in Resources */,
 				5180AD2929F93737008687FC /* UIPageControl.storyboard in Resources */,
+				51C444442A0CE1F60043AB5A /* UIStackView.storyboard in Resources */,
 				51AAB07429F7F36D00E3F8E8 /* UITextView.storyboard in Resources */,
 				51B4CB702A0A0F4600FE136E /* UIPullToRefresh.storyboard in Resources */,
 				5110E82B29E672B4001165DB /* Main.storyboard in Resources */,
@@ -772,6 +823,7 @@
 			files = (
 				51B4CB7F2A0A5D7500FE136E /* ConstantsOrange.swift in Sources */,
 				526904902A08166100E8DD19 /* RecommendationTableViewCell.swift in Sources */,
+				51C4443F2A0CAC2F0043AB5A /* VCDatePicker.swift in Sources */,
 				5191363A29FAA5A7000D9AFC /* VCTableView.swift in Sources */,
 				526E7F612A08059C00A39631 /* RecommendationCollectionViewCell.swift in Sources */,
 				5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */,
@@ -797,11 +849,13 @@
 				5110FBB02A0B917D00F2BB4E /* VCSearchBar.swift in Sources */,
 				5167835E29F65D34000C73AD /* Storyboard.swift in Sources */,
 				5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */,
+				51C4444B2A0CF4A30043AB5A /* VCTabBar.swift in Sources */,
 				51B04EE92A00FB8800C2209F /* Constants.swift in Sources */,
 				5110FBB52A0BBB4800F2BB4E /* VCPickerView.swift in Sources */,
 				5180AD1D29F92573008687FC /* VCProgressView.swift in Sources */,
 				519D9A5A2A04E15300F2E277 /* Movie.swift in Sources */,
 				51E2B91D29FBE9FB00846904 /* CompanyModel.swift in Sources */,
+				51C4444D2A0CFE570043AB5A /* VCHomeScreen.swift in Sources */,
 				5180AD2629F92E0D008687FC /* VCSegmentedControl.swift in Sources */,
 				5180AD2C29F93755008687FC /* VCPageControl.swift in Sources */,
 				51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */,
@@ -815,7 +869,9 @@
 				51AAB06F29F7B04B00E3F8E8 /* VCTextField.swift in Sources */,
 				5110FBA92A0B766D00F2BB4E /* VCWebView.swift in Sources */,
 				51B4CB722A0A0F6700FE136E /* VCPullToRefresh.swift in Sources */,
+				51C4444F2A0D01D30043AB5A /* VCSearch.swift in Sources */,
 				5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */,
+				51C444462A0CE2160043AB5A /* VCStackView.swift in Sources */,
 				51B825352A03B9200048E1AC /* VCOrange.swift in Sources */,
 				519D9A4F2A04CBCA00F2E277 /* MoviesData.swift in Sources */,
 				51A94B662A02745800CE076D /* DemoCollectionViewCell.swift in Sources */,

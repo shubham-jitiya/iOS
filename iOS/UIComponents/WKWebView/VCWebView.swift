@@ -42,7 +42,14 @@ extension VCWebView {
         guard let url = URL(string: "https://www.google.com/") else {
             return
         }
-        self.wkWebView.load(URLRequest(url: url))
+        
+        DispatchQueue.main.async { [weak self] in
+            guard let self else {
+                return
+            }
+            self.wkWebView.load(URLRequest(url: url))
+        }
+        
         wkWebView.allowsBackForwardNavigationGestures = true
     }
 }

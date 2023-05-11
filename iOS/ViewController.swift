@@ -222,17 +222,42 @@ extension ViewController {
     }
     
     @IBAction private func btnSearchBar(_ sender: UIButton) {
-        guard let vcSearchBar = VCSearchBar.create(storyboardName: .uiSearchBar) as? VCSearchBar else {
+        guard let vcSearchBar = VCSearchBar
+            .create(storyboardName: .uiSearchBar) as? VCSearchBar else {
             return
         }
         navigate(to: vcSearchBar)
     }
     
     @IBAction private func btnUIPickerView(_ sender: UIButton) {
-        guard let vcPickerView = VCPickerView.create(storyboardName: .uiPickerView) as? VCPickerView else {
+        guard let vcPickerView = VCPickerView
+            .create(storyboardName: .uiPickerView) as? VCPickerView else {
             return
         }
         navigate(to: vcPickerView)
+    }
+    
+    @IBAction private func btnDatePicker(_ sender: UIButton) {
+        guard let vcDatePicker = VCDatePicker
+            .create(storyboardName: .uiDatePicker) as? VCDatePicker else {
+            return
+        }
+        navigate(to: vcDatePicker)
+    }
+    
+    @IBAction private func btnStackView(_ sender: UIButton) {
+        guard let vcStackView = VCStackView
+            .create(storyboardName: .uiStackView) as? VCStackView else {
+            return
+        }
+        navigate(to: vcStackView)
+    }
+    
+    @IBAction private func btnTabBar(_ sender: UIButton) {
+        guard let vcTabBar = VCTabBar.create(storyboardName: .uiTabBar) as? VCTabBar else {
+            return
+        }
+        navigate(to: vcTabBar)
     }
 }
 

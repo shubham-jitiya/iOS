@@ -32,4 +32,7 @@ enum Storyboards: String {
     case uiWebView = "UIWebView"
     case uiSearchBar = "UISearchBar"
     case uiPickerView = "UIPickerView"
+    case uiDatePicker = "UIDatePicker"
+    case uiStackView = "UIStackView"
+    case uiTabBar = "UITabBar"
 }
