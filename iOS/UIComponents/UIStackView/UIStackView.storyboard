@@ -65,17 +65,39 @@
                                     <constraint firstAttribute="height" constant="100" id="RWe-EA-roA"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFu-r1-ewX">
+                                <rect key="frame" x="32" y="502" width="329" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ni0-Qx-PAJ">
+                                        <rect key="frame" x="16" y="16" width="297" height="268"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstItem="ni0-Qx-PAJ" firstAttribute="top" secondItem="iFu-r1-ewX" secondAttribute="top" constant="16" id="KKv-V9-AXk"/>
+                                    <constraint firstAttribute="height" constant="300" id="UMP-Yc-EdG"/>
+                                    <constraint firstAttribute="trailing" secondItem="ni0-Qx-PAJ" secondAttribute="trailing" constant="16" id="grO-v8-K1s"/>
+                                    <constraint firstAttribute="bottom" secondItem="ni0-Qx-PAJ" secondAttribute="bottom" constant="16" id="u9s-e1-iUX"/>
+                                    <constraint firstItem="ni0-Qx-PAJ" firstAttribute="leading" secondItem="iFu-r1-ewX" secondAttribute="leading" constant="16" id="zIu-8B-MNj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vzi-hh-L7C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="iFu-r1-ewX" firstAttribute="leading" secondItem="vzi-hh-L7C" secondAttribute="leading" constant="32" id="0Ch-hC-XtS"/>
                             <constraint firstItem="VMf-I3-5o4" firstAttribute="centerX" secondItem="vzi-hh-L7C" secondAttribute="centerX" id="4fx-2Y-afF"/>
+                            <constraint firstItem="vzi-hh-L7C" firstAttribute="bottom" secondItem="iFu-r1-ewX" secondAttribute="bottom" constant="16" id="K4S-Qe-5G4"/>
                             <constraint firstItem="VMf-I3-5o4" firstAttribute="top" secondItem="vzi-hh-L7C" secondAttribute="top" constant="56" id="O4q-UZ-lOl"/>
                             <constraint firstItem="vzi-hh-L7C" firstAttribute="trailing" secondItem="yWr-qq-bUO" secondAttribute="trailing" constant="32" id="PdW-62-6C3"/>
                             <constraint firstItem="yWr-qq-bUO" firstAttribute="top" secondItem="VMf-I3-5o4" secondAttribute="bottom" constant="32" id="hyP-pV-Wib"/>
+                            <constraint firstItem="vzi-hh-L7C" firstAttribute="trailing" secondItem="iFu-r1-ewX" secondAttribute="trailing" constant="32" id="riu-oN-Bpc"/>
                             <constraint firstItem="yWr-qq-bUO" firstAttribute="leading" secondItem="vzi-hh-L7C" secondAttribute="leading" constant="32" id="yOZ-5d-1Kb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackViewItems" destination="ni0-Qx-PAJ" id="ge7-ei-ATx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0BZ-uN-0ze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,6 +111,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

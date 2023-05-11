@@ -110,6 +110,8 @@
 		526E7F5E2A08022700A39631 /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526E7F5D2A08022700A39631 /* ContentTableViewCell.xib */; };
 		526E7F612A08059C00A39631 /* RecommendationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E7F5F2A08059B00A39631 /* RecommendationCollectionViewCell.swift */; };
 		526E7F622A08059C00A39631 /* RecommendationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526E7F602A08059B00A39631 /* RecommendationCollectionViewCell.xib */; };
+		529A467F2A0D6EB900283B82 /* StackItems.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529A467E2A0D6EB900283B82 /* StackItems.xib */; };
+		529A46812A0D700800283B82 /* StackItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A46802A0D700800283B82 /* StackItems.swift */; };
 		52B2062C2A0807CA001380A2 /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B2062B2A0807CA001380A2 /* ContentCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -218,6 +220,8 @@
 		526E7F5D2A08022700A39631 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
 		526E7F5F2A08059B00A39631 /* RecommendationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationCollectionViewCell.swift; sourceTree = "<group>"; };
 		526E7F602A08059B00A39631 /* RecommendationCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendationCollectionViewCell.xib; sourceTree = "<group>"; };
+		529A467E2A0D6EB900283B82 /* StackItems.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StackItems.xib; sourceTree = "<group>"; };
+		529A46802A0D700800283B82 /* StackItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackItems.swift; sourceTree = "<group>"; };
 		52B2062B2A0807CA001380A2 /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -681,6 +685,8 @@
 			children = (
 				51C444432A0CE1F60043AB5A /* UIStackView.storyboard */,
 				51C444452A0CE2160043AB5A /* VCStackView.swift */,
+				529A467E2A0D6EB900283B82 /* StackItems.xib */,
+				529A46802A0D700800283B82 /* StackItems.swift */,
 			);
 			path = UIStackView;
 			sourceTree = "<group>";
@@ -771,6 +777,7 @@
 				526E7F622A08059C00A39631 /* RecommendationCollectionViewCell.xib in Resources */,
 				5180AD1629F9187D008687FC /* UISlider.storyboard in Resources */,
 				5110FBAB2A0B768000F2BB4E /* UIWebView.storyboard in Resources */,
+				529A467F2A0D6EB900283B82 /* StackItems.xib in Resources */,
 				51E2B91A29FBDCAD00846904 /* CompanyTableViewCell.xib in Resources */,
 				51B825332A03B9000048E1AC /* UIOrange.storyboard in Resources */,
 				526E7F5E2A08022700A39631 /* ContentTableViewCell.xib in Resources */,
@@ -872,6 +879,7 @@
 				51C4444F2A0D01D30043AB5A /* VCSearch.swift in Sources */,
 				5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */,
 				51C444462A0CE2160043AB5A /* VCStackView.swift in Sources */,
+				529A46812A0D700800283B82 /* StackItems.swift in Sources */,
 				51B825352A03B9200048E1AC /* VCOrange.swift in Sources */,
 				519D9A4F2A04CBCA00F2E277 /* MoviesData.swift in Sources */,
 				51A94B662A02745800CE076D /* DemoCollectionViewCell.swift in Sources */,
