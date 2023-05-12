@@ -13,3 +13,9 @@ class StackItems: UIView {
     @IBOutlet weak var lblTitle: UILabel!
 
 }
+
+extension StackItems {
+    func config(_ data: String) {
+        lblTitle.text = data
+    }
+}

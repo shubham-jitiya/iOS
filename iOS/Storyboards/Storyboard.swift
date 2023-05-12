@@ -35,4 +35,9 @@ enum Storyboards: String {
     case uiDatePicker = "UIDatePicker"
     case uiStackView = "UIStackView"
     case uiTabBar = "UITabBar"
+    case uiPageViewController = "UIPageViewController"
+    case uiScreenFirstViewController = "ScreenFirstViewController"
+    case uiScreenSecondViewController = "ScreenSecondViewController"
+    case uiScreenThirdViewController = "ScreenThirdViewController"
+    case uiToolbar = "UIToolbar"
 }

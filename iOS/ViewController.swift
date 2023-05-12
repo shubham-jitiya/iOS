@@ -259,5 +259,21 @@ extension ViewController {
         }
         navigate(to: vcTabBar)
     }
+    
+    @IBAction private func btnPageViewController(_ sender: UIButton) {
+        guard let vcPageViewController = VCPageView
+            .create(storyboardName: .uiPageViewController) as? VCPageView else {
+            return
+        }
+        navigate(to: vcPageViewController)
+    }
+    
+    @IBAction private func btnUIToolbar(_ sender: UIButton) {
+        guard let vcToolbar = VCToolbar
+            .create(storyboardName: .uiToolbar) as? VCToolbar else {
+            return
+        }
+        navigate(to: vcToolbar)
+    }
 }
 
