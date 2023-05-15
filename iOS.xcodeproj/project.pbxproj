@@ -87,6 +87,11 @@
 		51B04EE92A00FB8800C2209F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B04EE82A00FB8800C2209F /* Constants.swift */; };
 		51B04EEB2A010BDE00C2209F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B04EEA2A010BDE00C2209F /* SectionHeader.swift */; };
 		51B04EED2A010BEE00C2209F /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B04EEC2A010BEE00C2209F /* SectionHeader.xib */; };
+		51B30C7B2A1204190047419D /* UIMapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B30C7A2A1204190047419D /* UIMapView.storyboard */; };
+		51B30C7D2A12042B0047419D /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B30C7C2A12042B0047419D /* VCMapView.swift */; };
+		51B30C7F2A1212CC0047419D /* PublicArt.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 51B30C7E2A1212CC0047419D /* PublicArt.geojson */; };
+		51B30C812A12220A0047419D /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B30C802A12220A0047419D /* Artwork.swift */; };
+		51B30C832A12466A0047419D /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B30C822A12466A0047419D /* ArtworkViews.swift */; };
 		51B4CB702A0A0F4600FE136E /* UIPullToRefresh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B4CB6F2A0A0F4600FE136E /* UIPullToRefresh.storyboard */; };
 		51B4CB722A0A0F6700FE136E /* VCPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B4CB712A0A0F6700FE136E /* VCPullToRefresh.swift */; };
 		51B4CB752A0A165700FE136E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B4CB742A0A165700FE136E /* Helper.swift */; };
@@ -207,6 +212,11 @@
 		51B04EE82A00FB8800C2209F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		51B04EEA2A010BDE00C2209F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		51B04EEC2A010BEE00C2209F /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
+		51B30C7A2A1204190047419D /* UIMapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIMapView.storyboard; sourceTree = "<group>"; };
+		51B30C7C2A12042B0047419D /* VCMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		51B30C7E2A1212CC0047419D /* PublicArt.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = PublicArt.geojson; sourceTree = "<group>"; };
+		51B30C802A12220A0047419D /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		51B30C822A12466A0047419D /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
 		51B4CB6F2A0A0F4600FE136E /* UIPullToRefresh.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPullToRefresh.storyboard; sourceTree = "<group>"; };
 		51B4CB712A0A0F6700FE136E /* VCPullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPullToRefresh.swift; sourceTree = "<group>"; };
 		51B4CB742A0A165700FE136E /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -348,6 +358,7 @@
 		5167835329F65641000C73AD /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				51B30C792A1203EC0047419D /* UIMap */,
 				51AF9C492A0E65C7006BE4C2 /* UIToolbar */,
 				51AF9C342A0E3002006BE4C2 /* UIPageViewController */,
 				51C444472A0CF4750043AB5A /* UITabBar */,
@@ -640,6 +651,18 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		51B30C792A1203EC0047419D /* UIMap */ = {
+			isa = PBXGroup;
+			children = (
+				51B30C7A2A1204190047419D /* UIMapView.storyboard */,
+				51B30C7C2A12042B0047419D /* VCMapView.swift */,
+				51B30C7E2A1212CC0047419D /* PublicArt.geojson */,
+				51B30C802A12220A0047419D /* Artwork.swift */,
+				51B30C822A12466A0047419D /* ArtworkViews.swift */,
+			);
+			path = UIMap;
+			sourceTree = "<group>";
+		};
 		51B4CB6E2A0A0EEF00FE136E /* UIPullToRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -846,6 +869,7 @@
 				51C444492A0CF4840043AB5A /* UITabBar.storyboard in Resources */,
 				51B8253E2A03C1A30048E1AC /* RecommendationTableViewCell.xib in Resources */,
 				51A94B612A026F9200CE076D /* UICollectionView.storyboard in Resources */,
+				51B30C7F2A1212CC0047419D /* PublicArt.geojson in Resources */,
 				5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */,
 				512FB3DA29F692E80074CF93 /* UIButton.storyboard in Resources */,
 				52B2062C2A0807CA001380A2 /* ContentCollectionViewCell.xib in Resources */,
@@ -868,6 +892,7 @@
 				51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */,
 				51B825212A0384560048E1AC /* HeaderCollectionViewCell.xib in Resources */,
 				5191363829FAA597000D9AFC /* UITableView.storyboard in Resources */,
+				51B30C7B2A1204190047419D /* UIMapView.storyboard in Resources */,
 				5167835529F65667000C73AD /* UILabels.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -880,11 +905,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				51B4CB7F2A0A5D7500FE136E /* ConstantsOrange.swift in Sources */,
+				51B30C7D2A12042B0047419D /* VCMapView.swift in Sources */,
 				526904902A08166100E8DD19 /* RecommendationTableViewCell.swift in Sources */,
 				51C4443F2A0CAC2F0043AB5A /* VCDatePicker.swift in Sources */,
 				5191363A29FAA5A7000D9AFC /* VCTableView.swift in Sources */,
 				526E7F612A08059C00A39631 /* RecommendationCollectionViewCell.swift in Sources */,
 				51AF9C3A2A0E3206006BE4C2 /* ScreenFirstViewController.swift in Sources */,
+				51B30C832A12466A0047419D /* ArtworkViews.swift in Sources */,
 				5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */,
 				519D9A582A04D54E00F2E277 /* ContentCollectionViewCell.swift in Sources */,
 				51A8FB0D29FBA0E000A41B8D /* IndexTableViewCell.swift in Sources */,
@@ -920,6 +947,7 @@
 				51C4444D2A0CFE570043AB5A /* VCHomeScreen.swift in Sources */,
 				5180AD2629F92E0D008687FC /* VCSegmentedControl.swift in Sources */,
 				5180AD2C29F93755008687FC /* VCPageControl.swift in Sources */,
+				51B30C812A12220A0047419D /* Artwork.swift in Sources */,
 				51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */,
 				51B4CB832A0A613700FE136E /* UICollectionView+Extension.swift in Sources */,
 				51769CDE29FF8F5800A3AE29 /* CustomSectionHeaderView.swift in Sources */,
