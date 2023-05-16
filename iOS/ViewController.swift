@@ -275,5 +275,16 @@ extension ViewController {
         }
         navigate(to: vcToolbar)
     }
+    
+    @IBAction private func btnClLocation(_ sender: UIButton) {
+       
+    }
+    
+    @IBAction private func btnMapView(_ sender: UIButton) {
+        guard let vcMapView = VCMapView
+            .create(storyboardName: .uiMapView) as? VCMapView else {
+            return
+        }
+        navigate(to: vcMapView)
+    }
 }
-

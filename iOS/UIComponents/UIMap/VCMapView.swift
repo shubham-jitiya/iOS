@@ -11,6 +11,7 @@ import MapKit
 class VCMapView: UIViewController {
     // MARK: Variables
     private var artworks: [Artwork] = []
+    private var locationManager = CLLocationManager()
     
     // MARK: IB outlets
     @IBOutlet private weak var mapView: MKMapView!
@@ -19,6 +20,7 @@ class VCMapView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
+        checkLocationAuth()
     }
 }
 
@@ -31,48 +33,65 @@ extension VCMapView {
 extension VCMapView {
     private func initialSetup() {
         mapView.delegate = self
+        clLocationSetup()
         setupInitialLocation()
-        constrainCamera()
+        // constrainCamera()
         mapView.register(
             ArtworkMarkerView.self,
-          forAnnotationViewWithReuseIdentifier:
-            MKMapViewDefaultAnnotationViewReuseIdentifier)
+            forAnnotationViewWithReuseIdentifier:
+                MKMapViewDefaultAnnotationViewReuseIdentifier)
         loadInitialData()
         mapView.addAnnotations(artworks)
     }
     
     private func setupInitialLocation() {
-        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
-        mapView.centerToLocation(initialLocation, regionRadius: 800)
+        let initialLocation = CLLocation(
+            latitude: Constants.Location.INITIAL_LATITUDE.rawValue,
+            longitude: Constants.Location.INITIAL_LONGITUDE.rawValue)
+        mapView.centerToLocation(initialLocation, regionRadius: Constants.Location.INITIAL_RANGE.rawValue)
     }
     
-    private func constrainCamera() {
-        let oahuCenter = CLLocation(latitude: 21.4765, longitude: -157.9647)
-        let region = MKCoordinateRegion(
-            center: oahuCenter.coordinate,
-            latitudinalMeters: 50000,
-            longitudinalMeters: 60000)
-        mapView.setCameraBoundary(
-            MKMapView.CameraBoundary(coordinateRegion: region),
-            animated: true)
-        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
-        mapView.setCameraZoomRange(zoomRange, animated: true)
-    }
-
-    private func loadInitialData() {
-        guard
-            let fileName = Bundle.main.url(forResource: "PublicArt", withExtension: "geojson"),
-            let artworkData = try? Data(contentsOf: fileName) else {
-            return
+    private func constrainCamera(
+        latitude: CLLocationDegrees = Constants.Location.OAHU_LATITUDE.rawValue,
+        longitude: CLLocationDegrees = Constants.Location.OAHU_LONGITUDE.rawValue) {
+            let oahuCenter = CLLocation(latitude: latitude, longitude: longitude)
+            let region = MKCoordinateRegion(
+                center: oahuCenter.coordinate,
+                latitudinalMeters: Constants.Location.CONSTRAIN_LATITUDE.rawValue,
+                longitudinalMeters: Constants.Location.CONSTRAIN_LONGITUDE.rawValue)
+            mapView.setCameraBoundary(
+                MKMapView.CameraBoundary(coordinateRegion: region),
+                animated: true)
+            let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: Constants.Location.MAX_COORDINATE.rawValue)
+            mapView.setCameraZoomRange(zoomRange, animated: true)
         }
-        do {
-            let features = try MKGeoJSONDecoder()
-                .decode(artworkData)
-                .compactMap{ $0 as? MKGeoJSONFeature }
-            let validWorks = features.compactMap(Artwork.init)
-            artworks.append(contentsOf: validWorks)
-        } catch {
-            print("Unexpected error: ", error)
+    
+    
+    private func loadInitialData() {
+        artworks.append(contentsOf: Helper.jsonDecodeArtwork(json: Helper.Json.publicArt))
+    }
+    
+    private func clLocationSetup() {
+        locationManager.delegate = self
+        //  locationManager.startUpdatingHeading()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    }
+    
+    private func checkLocationAuth() {
+        switch locationManager.authorizationStatus {
+        case .authorizedAlways:
+            mapView.showsUserLocation = true
+            print("Location always")
+        case .authorizedWhenInUse:
+            mapView.showsUserLocation = true
+            print("Location in use")
+        case .denied:
+            print("Location denied - can not be requested")
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+            print("Location not determined")
+        default:
+            print("Something went wrong")
         }
     }
 }
@@ -81,7 +100,7 @@ extension VCMapView {
 private extension MKMapView {
     func centerToLocation(
         _ location: CLLocation,
-        regionRadius: CLLocationDistance = 1000
+        regionRadius: CLLocationDistance = Constants.Location.REGION_RADIUS.rawValue
     ) {
         let coordinateRegion = MKCoordinateRegion(
             center: location.coordinate,
@@ -104,3 +123,19 @@ extension VCMapView: MKMapViewDelegate {
             artwork.mapItem?.openInMaps(launchOptions: launchOptions)
         }
 }
+
+// MARK: CL location delegate
+extension VCMapView: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let latitude = locations.last?.coordinate.latitude, let longitude = locations.last?.coordinate.longitude else {
+            return
+        }
+        constrainCamera(latitude: latitude, longitude: longitude)
+        print("Location changed")
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        checkLocationAuth()
+    }
+}
+

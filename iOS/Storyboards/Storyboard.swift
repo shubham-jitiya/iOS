@@ -40,4 +40,5 @@ enum Storyboards: String {
     case uiScreenSecondViewController = "ScreenSecondViewController"
     case uiScreenThirdViewController = "ScreenThirdViewController"
     case uiToolbar = "UIToolbar"
+    case uiMapView = "UIMapView"
 }

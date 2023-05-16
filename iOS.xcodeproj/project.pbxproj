@@ -87,6 +87,7 @@
 		51B04EE92A00FB8800C2209F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B04EE82A00FB8800C2209F /* Constants.swift */; };
 		51B04EEB2A010BDE00C2209F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B04EEA2A010BDE00C2209F /* SectionHeader.swift */; };
 		51B04EED2A010BEE00C2209F /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B04EEC2A010BEE00C2209F /* SectionHeader.xib */; };
+		51B0AA382A133DD200DF2189 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0AA372A133DD200DF2189 /* Helper.swift */; };
 		51B30C7B2A1204190047419D /* UIMapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B30C7A2A1204190047419D /* UIMapView.storyboard */; };
 		51B30C7D2A12042B0047419D /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B30C7C2A12042B0047419D /* VCMapView.swift */; };
 		51B30C7F2A1212CC0047419D /* PublicArt.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 51B30C7E2A1212CC0047419D /* PublicArt.geojson */; };
@@ -94,7 +95,7 @@
 		51B30C832A12466A0047419D /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B30C822A12466A0047419D /* ArtworkViews.swift */; };
 		51B4CB702A0A0F4600FE136E /* UIPullToRefresh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B4CB6F2A0A0F4600FE136E /* UIPullToRefresh.storyboard */; };
 		51B4CB722A0A0F6700FE136E /* VCPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B4CB712A0A0F6700FE136E /* VCPullToRefresh.swift */; };
-		51B4CB752A0A165700FE136E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B4CB742A0A165700FE136E /* Helper.swift */; };
+		51B4CB752A0A165700FE136E /* HelperOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B4CB742A0A165700FE136E /* HelperOrange.swift */; };
 		51B4CB782A0A26F700FE136E /* UIImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B4CB772A0A26F700FE136E /* UIImageView.storyboard */; };
 		51B4CB7C2A0A271E00FE136E /* VCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B4CB7B2A0A271E00FE136E /* VCImageView.swift */; };
 		51B4CB7F2A0A5D7500FE136E /* ConstantsOrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B4CB7D2A0A5B7B00FE136E /* ConstantsOrange.swift */; };
@@ -212,6 +213,7 @@
 		51B04EE82A00FB8800C2209F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		51B04EEA2A010BDE00C2209F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		51B04EEC2A010BEE00C2209F /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
+		51B0AA372A133DD200DF2189 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		51B30C7A2A1204190047419D /* UIMapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIMapView.storyboard; sourceTree = "<group>"; };
 		51B30C7C2A12042B0047419D /* VCMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		51B30C7E2A1212CC0047419D /* PublicArt.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = PublicArt.geojson; sourceTree = "<group>"; };
@@ -219,7 +221,7 @@
 		51B30C822A12466A0047419D /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
 		51B4CB6F2A0A0F4600FE136E /* UIPullToRefresh.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPullToRefresh.storyboard; sourceTree = "<group>"; };
 		51B4CB712A0A0F6700FE136E /* VCPullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPullToRefresh.swift; sourceTree = "<group>"; };
-		51B4CB742A0A165700FE136E /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		51B4CB742A0A165700FE136E /* HelperOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperOrange.swift; sourceTree = "<group>"; };
 		51B4CB772A0A26F700FE136E /* UIImageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIImageView.storyboard; sourceTree = "<group>"; };
 		51B4CB7B2A0A271E00FE136E /* VCImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCImageView.swift; sourceTree = "<group>"; };
 		51B4CB7D2A0A5B7B00FE136E /* ConstantsOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsOrange.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		5110E82229E672B4001165DB /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				51B0AA332A133BF300DF2189 /* Helper */,
 				5167835B29F65D01000C73AD /* Storyboards */,
 				5167835829F65C1F000C73AD /* Extensions */,
 				5167835329F65641000C73AD /* UIComponents */,
@@ -419,7 +422,6 @@
 		51769CE129FF970000A3AE29 /* ContactsApp */ = {
 			isa = PBXGroup;
 			children = (
-				51B04EE72A00FA3600C2209F /* Constants */,
 				5194551329FFE9A70089E055 /* Cell */,
 				5194551029FFC8620089E055 /* Model */,
 				51769CE329FF974200A3AE29 /* ListContacts */,
@@ -643,12 +645,22 @@
 			path = UIToolbar;
 			sourceTree = "<group>";
 		};
-		51B04EE72A00FA3600C2209F /* Constants */ = {
+		51B0AA332A133BF300DF2189 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				51B0AA342A133BFE00DF2189 /* Json */,
+				51B0AA372A133DD200DF2189 /* Helper.swift */,
 				51B04EE82A00FB8800C2209F /* Constants.swift */,
 			);
-			path = Constants;
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		51B0AA342A133BFE00DF2189 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				51B30C7E2A1212CC0047419D /* PublicArt.geojson */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 		51B30C792A1203EC0047419D /* UIMap */ = {
@@ -656,7 +668,6 @@
 			children = (
 				51B30C7A2A1204190047419D /* UIMapView.storyboard */,
 				51B30C7C2A12042B0047419D /* VCMapView.swift */,
-				51B30C7E2A1212CC0047419D /* PublicArt.geojson */,
 				51B30C802A12220A0047419D /* Artwork.swift */,
 				51B30C822A12466A0047419D /* ArtworkViews.swift */,
 			);
@@ -675,7 +686,7 @@
 		51B4CB732A0A164500FE136E /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				51B4CB742A0A165700FE136E /* Helper.swift */,
+				51B4CB742A0A165700FE136E /* HelperOrange.swift */,
 				51B4CB7D2A0A5B7B00FE136E /* ConstantsOrange.swift */,
 				51B4CB802A0A609700FE136E /* UITableView+Extension.swift */,
 				51B4CB822A0A613700FE136E /* UICollectionView+Extension.swift */,
@@ -929,7 +940,7 @@
 				51B4CB812A0A609700FE136E /* UITableView+Extension.swift in Sources */,
 				51AF9C3E2A0E322A006BE4C2 /* ScreenThirdViewController.swift in Sources */,
 				51B825202A0384560048E1AC /* HeaderCollectionViewCell.swift in Sources */,
-				51B4CB752A0A165700FE136E /* Helper.swift in Sources */,
+				51B4CB752A0A165700FE136E /* HelperOrange.swift in Sources */,
 				51AF9C402A0E3247006BE4C2 /* ScreenSecondViewController.swift in Sources */,
 				51B8251C2A0373090048E1AC /* VCBasicCollectionView.swift in Sources */,
 				5110E82829E672B4001165DB /* ViewController.swift in Sources */,
@@ -961,6 +972,7 @@
 				51B4CB722A0A0F6700FE136E /* VCPullToRefresh.swift in Sources */,
 				51C4444F2A0D01D30043AB5A /* VCSearch.swift in Sources */,
 				5191363529FA760D000D9AFC /* VCImagePicker.swift in Sources */,
+				51B0AA382A133DD200DF2189 /* Helper.swift in Sources */,
 				51C444462A0CE2160043AB5A /* VCStackView.swift in Sources */,
 				529A46812A0D700800283B82 /* StackItems.swift in Sources */,
 				51B825352A03B9200048E1AC /* VCOrange.swift in Sources */,

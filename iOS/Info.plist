@@ -6,6 +6,12 @@
 	<string>To update profile picture</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>To update profile picture</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To get current location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>To get current location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>To get current location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -20,7 +26,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>UIMapView</string>
+					<string>Main</string>
 				</dict>
 			</array>
 		</dict>
