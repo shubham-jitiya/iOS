@@ -20,19 +20,14 @@ class VCMapView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
-        checkLocationAuth()
     }
-}
-
-// MARK: IB actions
-extension VCMapView {
-    
 }
 
 // MARK: Functions
 extension VCMapView {
     private func initialSetup() {
         mapView.delegate = self
+        configureLocationPermission()
         clLocationSetup()
         setupInitialLocation()
         // constrainCamera()
@@ -66,18 +61,16 @@ extension VCMapView {
             mapView.setCameraZoomRange(zoomRange, animated: true)
         }
     
-    
     private func loadInitialData() {
-        artworks.append(contentsOf: Helper.jsonDecodeArtwork(json: Helper.Json.publicArt))
+        artworks = Helper.jsonDecodeArtwork(json: Helper.Json.publicArt)
     }
     
     private func clLocationSetup() {
         locationManager.delegate = self
-        //  locationManager.startUpdatingHeading()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
-    private func checkLocationAuth() {
+    private func configureLocationPermission() {
         switch locationManager.authorizationStatus {
         case .authorizedAlways:
             mapView.showsUserLocation = true
@@ -88,6 +81,7 @@ extension VCMapView {
         case .denied:
             print("Location denied - can not be requested")
         case .notDetermined:
+            // locationManager.requestAlwaysAuthorization()
             locationManager.requestWhenInUseAuthorization()
             print("Location not determined")
         default:
@@ -122,6 +116,10 @@ extension VCMapView: MKMapViewDelegate {
             let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
             artwork.mapItem?.openInMaps(launchOptions: launchOptions)
         }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        
+    }
 }
 
 // MARK: CL location delegate
@@ -135,7 +133,7 @@ extension VCMapView: CLLocationManagerDelegate {
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        checkLocationAuth()
+        configureLocationPermission()
     }
 }
 

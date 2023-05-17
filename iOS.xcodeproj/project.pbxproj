@@ -87,6 +87,8 @@
 		51B04EE92A00FB8800C2209F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B04EE82A00FB8800C2209F /* Constants.swift */; };
 		51B04EEB2A010BDE00C2209F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B04EEA2A010BDE00C2209F /* SectionHeader.swift */; };
 		51B04EED2A010BEE00C2209F /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B04EEC2A010BEE00C2209F /* SectionHeader.xib */; };
+		51B052412A14991000D3723D /* CustomCallout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B052402A14991000D3723D /* CustomCallout.xib */; };
+		51B052432A149DE400D3723D /* CustomCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B052422A149DE400D3723D /* CustomCallout.swift */; };
 		51B0AA382A133DD200DF2189 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0AA372A133DD200DF2189 /* Helper.swift */; };
 		51B30C7B2A1204190047419D /* UIMapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B30C7A2A1204190047419D /* UIMapView.storyboard */; };
 		51B30C7D2A12042B0047419D /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B30C7C2A12042B0047419D /* VCMapView.swift */; };
@@ -213,6 +215,8 @@
 		51B04EE82A00FB8800C2209F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		51B04EEA2A010BDE00C2209F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		51B04EEC2A010BEE00C2209F /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
+		51B052402A14991000D3723D /* CustomCallout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCallout.xib; sourceTree = "<group>"; };
+		51B052422A149DE400D3723D /* CustomCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCallout.swift; sourceTree = "<group>"; };
 		51B0AA372A133DD200DF2189 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		51B30C7A2A1204190047419D /* UIMapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIMapView.storyboard; sourceTree = "<group>"; };
 		51B30C7C2A12042B0047419D /* VCMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
@@ -670,6 +674,8 @@
 				51B30C7C2A12042B0047419D /* VCMapView.swift */,
 				51B30C802A12220A0047419D /* Artwork.swift */,
 				51B30C822A12466A0047419D /* ArtworkViews.swift */,
+				51B052402A14991000D3723D /* CustomCallout.xib */,
+				51B052422A149DE400D3723D /* CustomCallout.swift */,
 			);
 			path = UIMap;
 			sourceTree = "<group>";
@@ -879,6 +885,7 @@
 				51AF9C462A0E3907006BE4C2 /* ScreenThirdViewController.storyboard in Resources */,
 				51C444492A0CF4840043AB5A /* UITabBar.storyboard in Resources */,
 				51B8253E2A03C1A30048E1AC /* RecommendationTableViewCell.xib in Resources */,
+				51B052412A14991000D3723D /* CustomCallout.xib in Resources */,
 				51A94B612A026F9200CE076D /* UICollectionView.storyboard in Resources */,
 				51B30C7F2A1212CC0047419D /* PublicArt.geojson in Resources */,
 				5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */,
@@ -957,6 +964,7 @@
 				51E2B91D29FBE9FB00846904 /* CompanyModel.swift in Sources */,
 				51C4444D2A0CFE570043AB5A /* VCHomeScreen.swift in Sources */,
 				5180AD2629F92E0D008687FC /* VCSegmentedControl.swift in Sources */,
+				51B052432A149DE400D3723D /* CustomCallout.swift in Sources */,
 				5180AD2C29F93755008687FC /* VCPageControl.swift in Sources */,
 				51B30C812A12220A0047419D /* Artwork.swift in Sources */,
 				51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */,

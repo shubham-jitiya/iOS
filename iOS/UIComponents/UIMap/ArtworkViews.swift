@@ -14,19 +14,15 @@ class ArtworkMarkerView: MKAnnotationView {
             guard let artwork = newValue as? Artwork else {
                 return
             }
-            canShowCallout = true
+            // canShowCallout = true
             calloutOffset = CGPoint(x: -5, y: 5)
             let mapButton = UIButton(
                 frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 48, height: 48))
             )
-            mapButton.setBackgroundImage(UIImage(named: "Map"), for: .normal)
-            rightCalloutAccessoryView = mapButton
-            let detailLabel = UILabel()
-            detailLabel.numberOfLines = 0
-            detailLabel.font = detailLabel.font.withSize(12)
-            detailLabel.text = artwork.subtitle
-            detailCalloutAccessoryView = detailLabel
-            image =  artwork.image
+            let customCalloutView = Bundle.main.loadNibNamed("CustomCallout", owner: self, options: nil)?.first as? CustomCallout
+            customCalloutView?.configure(title: artwork.title, subtitle: artwork.subtitle, image: artwork.image)
+            image = artwork.image
+            detailCalloutAccessoryView = customCalloutView
         }
     }
 }
