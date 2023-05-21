@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SliderVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SliderVC" id="Y6W-OH-hqX" customClass="SliderVC" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="UlJ-I4-Yy0">
+                                <rect key="frame" x="30" y="423.66666666666669" width="333" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imj-s2-tSh">
+                                <rect key="frame" x="32" y="386.66666666666669" width="329" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-fx-odR">
+                                <rect key="frame" x="32" y="461.66666666666669" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYe-sH-5dr">
+                                <rect key="frame" x="329" y="461.66666666666669" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Imj-s2-tSh" firstAttribute="leading" secondItem="UlJ-I4-Yy0" secondAttribute="leading" id="5QP-ZK-Bvx"/>
+                            <constraint firstItem="Lpd-fx-odR" firstAttribute="top" secondItem="UlJ-I4-Yy0" secondAttribute="bottom" constant="8" id="Ema-B9-dZv"/>
+                            <constraint firstItem="UlJ-I4-Yy0" firstAttribute="top" secondItem="Imj-s2-tSh" secondAttribute="bottom" constant="16" id="FDo-eu-Pnd"/>
+                            <constraint firstItem="Imj-s2-tSh" firstAttribute="trailing" secondItem="UlJ-I4-Yy0" secondAttribute="trailing" id="HGt-x8-qU1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UlJ-I4-Yy0" secondAttribute="trailing" constant="32" id="Nae-zx-Jbt"/>
+                            <constraint firstItem="UlJ-I4-Yy0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="PMs-0e-o8c"/>
+                            <constraint firstItem="UlJ-I4-Yy0" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="WBp-zV-PiD"/>
+                            <constraint firstItem="QYe-sH-5dr" firstAttribute="trailing" secondItem="UlJ-I4-Yy0" secondAttribute="trailing" id="a6G-Bg-5zJ"/>
+                            <constraint firstItem="Lpd-fx-odR" firstAttribute="leading" secondItem="UlJ-I4-Yy0" secondAttribute="leading" id="ftg-cA-laR"/>
+                            <constraint firstItem="QYe-sH-5dr" firstAttribute="top" secondItem="UlJ-I4-Yy0" secondAttribute="bottom" constant="8" id="sG8-sE-VT3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblMaxValue" destination="QYe-sH-5dr" id="Be2-Bl-Ze1"/>
+                        <outlet property="lblMinValue" destination="Lpd-fx-odR" id="pZI-Av-CfT"/>
+                        <outlet property="lblVolume" destination="Imj-s2-tSh" id="hDZ-98-I49"/>
+                        <outlet property="sliderTest" destination="UlJ-I4-Yy0" id="8s6-Fg-7pR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

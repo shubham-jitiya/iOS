@@ -25,7 +25,7 @@ class CompanyTableViewCell: UITableViewCell {
 
 // MARK: Functions
 extension CompanyTableViewCell {
-    func configCell(data: CompanyModel) {
+    func configCell(data: Company) {
         imgLogo.image = UIImage(systemName: data.companyLogo ?? "speaker")
         lblCompanyName.text = data.companyName
         if data.isSelected {

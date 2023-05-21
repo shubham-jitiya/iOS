@@ -14,6 +14,53 @@ struct Helper {
 
 // MARK: Functions - Json decoder
 extension Helper {
+    static func getGridData() -> [String] {
+        return [
+            "Title 1",
+            "Title 2",
+            "Title 3",
+            "Title 4",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+            "Title 5",
+        ]
+    }
+    
+    static func getItems() -> [String] {
+        return ["Item 1", "Item 2", "Item 3",  "Item 4"]
+    }
+    
+    static func getWeekdays() -> [String] {
+        return ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    }
+    
+    static func getMonths() -> [String] {
+        return ["Jan", "Feb", "March", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
+    }
+    
+    static func getCities() -> [String] {
+        return ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
+                            "Philadelphia, PA", "Phoenix, AZ", "San Diego, CA", "San Antonio, TX",
+                            "Dallas, TX", "Detroit, MI", "San Jose, CA", "Indianapolis, IN",
+                            "Jacksonville, FL", "San Francisco, CA", "Columbus, OH", "Austin, TX",
+                            "Memphis, TN", "Baltimore, MD", "Charlotte, ND", "Fort Worth, TX"]
+    }
+    
     static func jsonDecodeArtwork(json: Json) -> [Artwork] {
         guard
             let fileName = Bundle.main.url(forResource: json.fileName, withExtension: json.fileExtension),
