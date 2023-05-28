@@ -92,3 +92,10 @@ extension Helper {
         }
     }
 }
+
+// MARK: Grocery items
+extension Helper {
+    static func getGroceryItems() -> GroceryItem {
+        return GroceryItem(imgView: UIImageView(image: UIImage(named: Constants.Images.masalaMasti.rawValue)), name: "Masala masti", weight: "10g", price: "10", btnTitle: "Add")
+    }
+}

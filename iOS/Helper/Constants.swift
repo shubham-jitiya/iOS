@@ -31,6 +31,8 @@ struct Constants {
         case phone = "phone"
         case lock = "lock"
         case map = "map"
+        // Grocery app
+        case masalaMasti = "masala_masti"
     }
     
     enum Location: Double {
