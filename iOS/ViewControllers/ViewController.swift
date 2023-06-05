@@ -287,4 +287,12 @@ extension ViewController {
         }
         navigate(to: vcTVAutorResizing)
     }
+        
+    @IBAction private func btnKTProject(_ sender: UIButton) {
+        guard let vcScheduleMeeting = ScheduleMeetingVC
+            .create(storyboardName: .uiScheduleMeeting) as? ScheduleMeetingVC else {
+            return
+        }
+        navigate(to: vcScheduleMeeting)
+    }
 }

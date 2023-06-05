@@ -26,6 +26,7 @@ class TextViewVC: UIViewController {
 // MARK: Extension function
 extension TextViewVC {
     private func initialise() {
+        txtView.becomeFirstResponder()
         properties()
     }
     private func properties() {

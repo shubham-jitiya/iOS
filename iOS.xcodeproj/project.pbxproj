@@ -25,15 +25,21 @@
 		512FB3DE29F693920074CF93 /* ButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512FB3DD29F693920074CF93 /* ButtonVC.swift */; };
 		51453EDA29FFAC6200B82915 /* UIListContacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51453ED929FFAC6200B82915 /* UIListContacts.storyboard */; };
 		51453EDC29FFAC8800B82915 /* ListContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51453EDB29FFAC8800B82915 /* ListContactsVC.swift */; };
+		5155508F2A20A52B00A7B2C6 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5155508E2A20A52B00A7B2C6 /* UILabel+Extension.swift */; };
+		515550932A20B85100A7B2C6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515550922A20B85100A7B2C6 /* UIView+Extension.swift */; };
+		515550952A20B9EF00A7B2C6 /* ScheduleMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515550942A20B9EF00A7B2C6 /* ScheduleMeeting.swift */; };
 		5167835529F65667000C73AD /* UILabels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5167835429F65667000C73AD /* UILabels.storyboard */; };
 		5167835729F65680000C73AD /* LabelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835629F65680000C73AD /* LabelsVC.swift */; };
 		5167835A29F65C73000C73AD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835929F65C73000C73AD /* UIViewController+Extension.swift */; };
 		5167835E29F65D34000C73AD /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835D29F65D34000C73AD /* Storyboard.swift */; };
 		5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5167835F29F68377000C73AD /* AttributedString+Extension.swift */; };
+		516BDEC22A1F8F020094EA2B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 516BDEC12A1F8F020094EA2B /* Kingfisher */; };
 		51769CDE29FF8F5800A3AE29 /* CustomSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51769CDD29FF8F5800A3AE29 /* CustomSectionHeaderView.swift */; };
 		51769CE029FF8F8900A3AE29 /* CustomSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51769CDF29FF8F8900A3AE29 /* CustomSectionHeaderView.xib */; };
 		51769CE729FF97C300A3AE29 /* AddContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51769CE629FF97C300A3AE29 /* AddContacts.swift */; };
 		51769CEB29FF97F900A3AE29 /* UIAddContacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51769CEA29FF97F900A3AE29 /* UIAddContacts.storyboard */; };
+		517CD01D2A2889530051F633 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD01C2A2889530051F633 /* String+Extension.swift */; };
+		517CD01F2A28BE710051F633 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CD01E2A28BE710051F633 /* CustomLabel.swift */; };
 		5180AD1629F9187D008687FC /* UISlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AD1529F9187D008687FC /* UISlider.storyboard */; };
 		5180AD1829F91892008687FC /* SliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD1729F91892008687FC /* SliderVC.swift */; };
 		5180AD1B29F92562008687FC /* UIProgressView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AD1A29F92562008687FC /* UIProgressView.storyboard */; };
@@ -44,6 +50,8 @@
 		5180AD2C29F93755008687FC /* PageControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD2B29F93755008687FC /* PageControlVC.swift */; };
 		5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5180AD2F29F94102008687FC /* UIStepper.storyboard */; };
 		5180AD3229F9410F008687FC /* StepperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5180AD3129F9410F008687FC /* StepperVC.swift */; };
+		5188F7AE2A1F2DD20082D9F0 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188F7AD2A1F2DD20082D9F0 /* UITextView+Extension.swift */; };
+		5188F7B32A1F32EE0082D9F0 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5188F7B22A1F32EE0082D9F0 /* CustomTextView.swift */; };
 		5191363329FA75EE000D9AFC /* UIImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191363229FA75EE000D9AFC /* UIImagePicker.storyboard */; };
 		5191363529FA760D000D9AFC /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5191363429FA760D000D9AFC /* ImagePickerVC.swift */; };
 		5191363829FAA597000D9AFC /* UITableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5191363729FAA597000D9AFC /* UITableView.storyboard */; };
@@ -54,7 +62,8 @@
 		519D9A552A04D05D00F2E277 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A542A04D05D00F2E277 /* ContentTableViewCell.swift */; };
 		519D9A582A04D54E00F2E277 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A572A04D54E00F2E277 /* ContentCollectionViewCell.swift */; };
 		519D9A5A2A04E15300F2E277 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A592A04E15300F2E277 /* Movie.swift */; };
-		519D9A5D2A04F28800F2E277 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 519D9A5C2A04F28800F2E277 /* Kingfisher */; };
+		51A559682A1E04DE0060156C /* UIScheduleMeeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A559672A1E04DE0060156C /* UIScheduleMeeting.storyboard */; };
+		51A5596A2A1E04FF0060156C /* ScheduleMeetingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A559692A1E04FF0060156C /* ScheduleMeetingVC.swift */; };
 		51A8FB0D29FBA0E000A41B8D /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8FB0B29FBA0DF00A41B8D /* IndexTableViewCell.swift */; };
 		51A8FB0E29FBA0E000A41B8D /* IndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A8FB0C29FBA0E000A41B8D /* IndexTableViewCell.xib */; };
 		51A8FB1129FBBFF000A41B8D /* EvenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8FB0F29FBBFF000A41B8D /* EvenTableViewCell.swift */; };
@@ -133,11 +142,11 @@
 		52A9D2BB2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9D2BA2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift */; };
 		52AFE4AF2A2D0DA4008B69EC /* UITVAutoResizing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AFE4AE2A2D0DA4008B69EC /* UITVAutoResizing.storyboard */; };
 		52AFE4B12A2D0DBD008B69EC /* TVAutoResizingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AFE4B02A2D0DBD008B69EC /* TVAutoResizingVC.swift */; };
+		52B1F0B72A298FE400E1A2C8 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B1F0B62A298FE400E1A2C8 /* UIStackView+Extension.swift */; };
 		52B2062C2A0807CA001380A2 /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B2062B2A0807CA001380A2 /* ContentCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5110E82029E672B4001165DB /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5110E82329E672B4001165DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5110E82529E672B4001165DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5110E82729E672B4001165DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +166,10 @@
 		512FB3DD29F693920074CF93 /* ButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVC.swift; sourceTree = "<group>"; };
 		51453ED929FFAC6200B82915 /* UIListContacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIListContacts.storyboard; sourceTree = "<group>"; };
 		51453EDB29FFAC8800B82915 /* ListContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactsVC.swift; sourceTree = "<group>"; };
+		5155508D2A206E3500A7B2C6 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5155508E2A20A52B00A7B2C6 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		515550922A20B85100A7B2C6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		515550942A20B9EF00A7B2C6 /* ScheduleMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleMeeting.swift; sourceTree = "<group>"; };
 		5167835429F65667000C73AD /* UILabels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabels.storyboard; sourceTree = "<group>"; };
 		5167835629F65680000C73AD /* LabelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsVC.swift; sourceTree = "<group>"; };
 		5167835929F65C73000C73AD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -166,6 +179,8 @@
 		51769CDF29FF8F8900A3AE29 /* CustomSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSectionHeaderView.xib; sourceTree = "<group>"; };
 		51769CE629FF97C300A3AE29 /* AddContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContacts.swift; sourceTree = "<group>"; };
 		51769CEA29FF97F900A3AE29 /* UIAddContacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIAddContacts.storyboard; sourceTree = "<group>"; };
+		517CD01C2A2889530051F633 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		517CD01E2A28BE710051F633 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		5180AD1529F9187D008687FC /* UISlider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISlider.storyboard; sourceTree = "<group>"; };
 		5180AD1729F91892008687FC /* SliderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderVC.swift; sourceTree = "<group>"; };
 		5180AD1A29F92562008687FC /* UIProgressView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIProgressView.storyboard; sourceTree = "<group>"; };
@@ -176,6 +191,8 @@
 		5180AD2B29F93755008687FC /* PageControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlVC.swift; sourceTree = "<group>"; };
 		5180AD2F29F94102008687FC /* UIStepper.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIStepper.storyboard; sourceTree = "<group>"; };
 		5180AD3129F9410F008687FC /* StepperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperVC.swift; sourceTree = "<group>"; };
+		5188F7AD2A1F2DD20082D9F0 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
+		5188F7B22A1F32EE0082D9F0 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		5191363229FA75EE000D9AFC /* UIImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIImagePicker.storyboard; sourceTree = "<group>"; };
 		5191363429FA760D000D9AFC /* ImagePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
 		5191363729FAA597000D9AFC /* UITableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITableView.storyboard; sourceTree = "<group>"; };
@@ -186,6 +203,8 @@
 		519D9A542A04D05D00F2E277 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
 		519D9A572A04D54E00F2E277 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		519D9A592A04E15300F2E277 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		51A559672A1E04DE0060156C /* UIScheduleMeeting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIScheduleMeeting.storyboard; sourceTree = "<group>"; };
+		51A559692A1E04FF0060156C /* ScheduleMeetingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleMeetingVC.swift; sourceTree = "<group>"; };
 		51A8FB0B29FBA0DF00A41B8D /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
 		51A8FB0C29FBA0E000A41B8D /* IndexTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexTableViewCell.xib; sourceTree = "<group>"; };
 		51A8FB0F29FBBFF000A41B8D /* EvenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenTableViewCell.swift; sourceTree = "<group>"; };
@@ -264,6 +283,7 @@
 		52A9D2BA2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferenceDemoVC.swift; sourceTree = "<group>"; };
 		52AFE4AE2A2D0DA4008B69EC /* UITVAutoResizing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITVAutoResizing.storyboard; sourceTree = "<group>"; };
 		52AFE4B02A2D0DBD008B69EC /* TVAutoResizingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAutoResizingVC.swift; sourceTree = "<group>"; };
+		52B1F0B62A298FE400E1A2C8 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		52B2062B2A0807CA001380A2 /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -272,7 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519D9A5D2A04F28800F2E277 /* Kingfisher in Frameworks */,
+				516BDEC22A1F8F020094EA2B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,16 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				5110E82229E672B4001165DB /* iOS */,
-				5110E82129E672B4001165DB /* Products */,
+				5155508D2A206E3500A7B2C6 /* iOS.app */,
 			);
-			sourceTree = "<group>";
-		};
-		5110E82129E672B4001165DB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5110E82029E672B4001165DB /* iOS.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5110E82229E672B4001165DB /* iOS */ = {
@@ -320,6 +332,11 @@
 				5167835929F65C73000C73AD /* UIViewController+Extension.swift */,
 				5167835F29F68377000C73AD /* AttributedString+Extension.swift */,
 				51AAB07029F7CE4C00E3F8E8 /* UITextField+Extension.swift */,
+				5188F7AD2A1F2DD20082D9F0 /* UITextView+Extension.swift */,
+				5155508E2A20A52B00A7B2C6 /* UILabel+Extension.swift */,
+				515550922A20B85100A7B2C6 /* UIView+Extension.swift */,
+				517CD01C2A2889530051F633 /* String+Extension.swift */,
+				52B1F0B62A298FE400E1A2C8 /* UIStackView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -330,6 +347,7 @@
 				5110E82929E672B4001165DB /* Main.storyboard */,
 				5110E82E29E672B5001165DB /* LaunchScreen.storyboard */,
 				52A9D2B82A2BA0FC00D3BC88 /* UIStrongReferenceDemo.storyboard */,
+				51A559672A1E04DE0060156C /* UIScheduleMeeting.storyboard */,
 				51B825322A03B9000048E1AC /* UIOrange.storyboard */,
 				51B825192A0372AD0048E1AC /* UIBasicCollectionView.storyboard */,
 				51A94B602A026F9200CE076D /* UICollectionView.storyboard */,
@@ -369,6 +387,16 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		5188F7AF2A1F31CF0082D9F0 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				5188F7B22A1F32EE0082D9F0 /* CustomTextView.swift */,
+				51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */,
+				517CD01E2A28BE710051F633 /* CustomLabel.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		51A8FB0A29FB9EBE00A41B8D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,7 +428,6 @@
 				51B4CB742A0A165700FE136E /* HelperOrange.swift */,
 				5167835D29F65D34000C73AD /* Storyboard.swift */,
 				51B30C822A12466A0047419D /* ArtworkViews.swift */,
-				51F7ED4E29F2894D00E6C265 /* CustomTextField.swift */,
 				51B0AA372A133DD200DF2189 /* Helper.swift */,
 				51B04EE82A00FB8800C2209F /* Constants.swift */,
 				51B0AA342A133BFE00DF2189 /* Json */,
@@ -432,6 +459,8 @@
 				5110E82729E672B4001165DB /* ViewController.swift */,
 				52A9D2BA2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift */,
 				51B825342A03B9200048E1AC /* CollectionViewProjectVC.swift */,
+				51A559692A1E04FF0060156C /* ScheduleMeetingVC.swift */,
+				51B825342A03B9200048E1AC /* OrangeVC.swift */,
 				51B8251B2A0373090048E1AC /* BasicCollectionViewVC.swift */,
 				51A94B622A026FB000CE076D /* CollectionViewVC.swift */,
 				51769CE629FF97C300A3AE29 /* AddContacts.swift */,
@@ -499,6 +528,7 @@
 				51E2B91C29FBE9FB00846904 /* Company.swift */,
 				5194551129FFC87D0089E055 /* UserModel.swift */,
 				51B30C802A12220A0047419D /* Artwork.swift */,
+				515550942A20B9EF00A7B2C6 /* ScheduleMeeting.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -506,6 +536,7 @@
 		52CECDBC2A1907180032AE48 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				5188F7AF2A1F31CF0082D9F0 /* UIComponents */,
 				52845DC62A1A53520060F88D /* CollectionHeader */,
 				52F27FEA2A19FB970015315D /* TableHeader */,
 				51A8FB0A29FB9EBE00A41B8D /* Cell */,
@@ -543,10 +574,10 @@
 			);
 			name = iOS;
 			packageProductDependencies = (
-				519D9A5C2A04F28800F2E277 /* Kingfisher */,
+				516BDEC12A1F8F020094EA2B /* Kingfisher */,
 			);
 			productName = iOS;
-			productReference = 5110E82029E672B4001165DB /* iOS.app */;
+			productReference = 5155508D2A206E3500A7B2C6 /* iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -576,7 +607,7 @@
 			packageReferences = (
 				519D9A5B2A04F28800F2E277 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
-			productRefGroup = 5110E82129E672B4001165DB /* Products */;
+			productRefGroup = 5110E81729E672B4001165DB;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -639,6 +670,7 @@
 				51AAB06D29F7B03800E3F8E8 /* UITextField.storyboard in Resources */,
 				51B825212A0384560048E1AC /* HeaderCollectionViewCell.xib in Resources */,
 				5191363829FAA597000D9AFC /* UITableView.storyboard in Resources */,
+				51A559682A1E04DE0060156C /* UIScheduleMeeting.storyboard in Resources */,
 				51B30C7B2A1204190047419D /* UIMapView.storyboard in Resources */,
 				52AFE4AF2A2D0DA4008B69EC /* UITVAutoResizing.storyboard in Resources */,
 				5167835529F65667000C73AD /* UILabels.storyboard in Resources */,
@@ -656,6 +688,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51B30C7D2A12042B0047419D /* MapViewVC.swift in Sources */,
+				517CD01D2A2889530051F633 /* String+Extension.swift in Sources */,
+				52B1F0B72A298FE400E1A2C8 /* UIStackView+Extension.swift in Sources */,
 				526904902A08166100E8DD19 /* RecommendationTableViewCell.swift in Sources */,
 				51C4443F2A0CAC2F0043AB5A /* DatePickerVC.swift in Sources */,
 				5191363A29FAA5A7000D9AFC /* TableViewVC.swift in Sources */,
@@ -675,7 +709,10 @@
 				51AF9C4D2A0E65F1006BE4C2 /* ToolbarVC.swift in Sources */,
 				51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */,
 				51E2B91929FBDCAD00846904 /* CompanyTableViewCell.swift in Sources */,
+				51A5596A2A1E04FF0060156C /* ScheduleMeetingVC.swift in Sources */,
 				51AAB07C29F7FE2100E3F8E8 /* SwitchVC.swift in Sources */,
+				515550952A20B9EF00A7B2C6 /* ScheduleMeeting.swift in Sources */,
+				5155508F2A20A52B00A7B2C6 /* UILabel+Extension.swift in Sources */,
 				51B4CB812A0A609700FE136E /* UITableView+Extension.swift in Sources */,
 				51AF9C3E2A0E322A006BE4C2 /* ScreenThirdViewController.swift in Sources */,
 				51B825202A0384560048E1AC /* HeaderCollectionViewCell.swift in Sources */,
@@ -703,6 +740,7 @@
 				52A9D2BB2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift in Sources */,
 				51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */,
 				51B4CB832A0A613700FE136E /* UICollectionView+Extension.swift in Sources */,
+				515550932A20B85100A7B2C6 /* UIView+Extension.swift in Sources */,
 				51769CDE29FF8F5800A3AE29 /* CustomSectionHeaderView.swift in Sources */,
 				51A94B6F2A0287CD00CE076D /* ProductDetailsVC.swift in Sources */,
 				5110E82429E672B4001165DB /* AppDelegate.swift in Sources */,
@@ -713,11 +751,16 @@
 				5110FBA92A0B766D00F2BB4E /* WebViewVC.swift in Sources */,
 				51B4CB722A0A0F6700FE136E /* PullToRefreshVC.swift in Sources */,
 				51C4444F2A0D01D30043AB5A /* SearchVC.swift in Sources */,
+				517CD01F2A28BE710051F633 /* CustomLabel.swift in Sources */,
 				5191363529FA760D000D9AFC /* ImagePickerVC.swift in Sources */,
 				51B0AA382A133DD200DF2189 /* Helper.swift in Sources */,
+				5188F7AE2A1F2DD20082D9F0 /* UITextView+Extension.swift in Sources */,
 				51C444462A0CE2160043AB5A /* StackViewVC.swift in Sources */,
 				529A46812A0D700800283B82 /* StackItems.swift in Sources */,
 				51B825352A03B9200048E1AC /* CollectionViewProjectVC.swift in Sources */,
+				51B825352A03B9200048E1AC /* OrangeVC.swift in Sources */,
+				5188F7B32A1F32EE0082D9F0 /* CustomTextView.swift in Sources */,
+				519D9A4F2A04CBCA00F2E277 /* MoviesData.swift in Sources */,
 				51A94B662A02745800CE076D /* DemoCollectionViewCell.swift in Sources */,
 				5194551629FFE9D10089E055 /* UserDataCell.swift in Sources */,
 				51AF9C382A0E3059006BE4C2 /* PageViewVC.swift in Sources */,
@@ -874,6 +917,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To update profile picture";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To get current location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "To get current location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To get current location";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To update profile picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -901,6 +949,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To update profile picture";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To get current location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "To get current location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To get current location";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To update profile picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -954,7 +1007,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		519D9A5C2A04F28800F2E277 /* Kingfisher */ = {
+		516BDEC12A1F8F020094EA2B /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 519D9A5B2A04F28800F2E277 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
