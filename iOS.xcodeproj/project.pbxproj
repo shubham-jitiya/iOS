@@ -59,6 +59,7 @@
 		5194551229FFC87D0089E055 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194551129FFC87D0089E055 /* UserModel.swift */; };
 		5194551629FFE9D10089E055 /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194551429FFE9D10089E055 /* UserDataCell.swift */; };
 		5194551729FFE9D10089E055 /* UserDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5194551529FFE9D10089E055 /* UserDataCell.xib */; };
+		519BCAE42A3038C9009E678B /* MoviesJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 519BCAE32A3038C9009E678B /* MoviesJson.json */; };
 		519D9A552A04D05D00F2E277 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A542A04D05D00F2E277 /* ContentTableViewCell.swift */; };
 		519D9A582A04D54E00F2E277 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A572A04D54E00F2E277 /* ContentCollectionViewCell.swift */; };
 		519D9A5A2A04E15300F2E277 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A592A04E15300F2E277 /* Movie.swift */; };
@@ -126,7 +127,6 @@
 		51C4444B2A0CF4A30043AB5A /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C4444A2A0CF4A30043AB5A /* TabBarVC.swift */; };
 		51C4444D2A0CFE570043AB5A /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C4444C2A0CFE570043AB5A /* HomeScreenVC.swift */; };
 		51C4444F2A0D01D30043AB5A /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C4444E2A0D01D30043AB5A /* SearchVC.swift */; };
-		51C4906B2A2DA5C3007AECDE /* MoviesJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 51C4906A2A2DA5C3007AECDE /* MoviesJson.json */; };
 		51E2B91929FBDCAD00846904 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2B91729FBDCAD00846904 /* CompanyTableViewCell.swift */; };
 		51E2B91A29FBDCAD00846904 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E2B91829FBDCAD00846904 /* CompanyTableViewCell.xib */; };
 		51E2B91D29FBE9FB00846904 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E2B91C29FBE9FB00846904 /* Company.swift */; };
@@ -140,10 +140,24 @@
 		529A46812A0D700800283B82 /* StackItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A46802A0D700800283B82 /* StackItems.swift */; };
 		52A9D2B92A2BA0FC00D3BC88 /* UIStrongReferenceDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A9D2B82A2BA0FC00D3BC88 /* UIStrongReferenceDemo.storyboard */; };
 		52A9D2BB2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9D2BA2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift */; };
+		52ABE6F72A2FA3F8005853F6 /* Instagram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6ED2A2FA3F7005853F6 /* Instagram.storyboard */; };
+		52ABE6F82A2FA3F8005853F6 /* PracticeBasics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6EE2A2FA3F7005853F6 /* PracticeBasics.storyboard */; };
+		52ABE6F92A2FA3F8005853F6 /* TilesScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6EF2A2FA3F7005853F6 /* TilesScene.storyboard */; };
+		52ABE6FA2A2FA3F8005853F6 /* SafeArea.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6F02A2FA3F7005853F6 /* SafeArea.storyboard */; };
+		52ABE6FB2A2FA3F8005853F6 /* Multiplier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6F12A2FA3F7005853F6 /* Multiplier.storyboard */; };
+		52ABE6FC2A2FA3F8005853F6 /* PracticeAdvance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6F22A2FA3F7005853F6 /* PracticeAdvance.storyboard */; };
+		52ABE6FD2A2FA3F8005853F6 /* SizeClass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6F32A2FA3F8005853F6 /* SizeClass.storyboard */; };
+		52ABE6FE2A2FA3F8005853F6 /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6F42A2FA3F8005853F6 /* Exercise.storyboard */; };
+		52ABE6FF2A2FA3F8005853F6 /* Projects.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6F52A2FA3F8005853F6 /* Projects.storyboard */; };
+		52ABE7002A2FA3F8005853F6 /* CenterX.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ABE6F62A2FA3F8005853F6 /* CenterX.storyboard */; };
+		52ABE7022A2FA92C005853F6 /* ShareScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ABE7012A2FA92C005853F6 /* ShareScreenVC.swift */; };
+		52ABE7042A2FA9D5005853F6 /* PagoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ABE7032A2FA9D5005853F6 /* PagoVC.swift */; };
+		52ABE7062A2FAA69005853F6 /* SpotifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ABE7052A2FAA69005853F6 /* SpotifyVC.swift */; };
 		52AFE4AF2A2D0DA4008B69EC /* UITVAutoResizing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AFE4AE2A2D0DA4008B69EC /* UITVAutoResizing.storyboard */; };
 		52AFE4B12A2D0DBD008B69EC /* TVAutoResizingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AFE4B02A2D0DBD008B69EC /* TVAutoResizingVC.swift */; };
 		52B1F0B72A298FE400E1A2C8 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B1F0B62A298FE400E1A2C8 /* UIStackView+Extension.swift */; };
 		52B2062C2A0807CA001380A2 /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B2062B2A0807CA001380A2 /* ContentCollectionViewCell.xib */; };
+		52B3A5EC2A2FB4D0002E2B72 /* ExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B3A5EB2A2FB4CF002E2B72 /* ExerciseVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -200,6 +214,7 @@
 		5194551129FFC87D0089E055 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		5194551429FFE9D10089E055 /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
 		5194551529FFE9D10089E055 /* UserDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataCell.xib; sourceTree = "<group>"; };
+		519BCAE32A3038C9009E678B /* MoviesJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MoviesJson.json; sourceTree = "<group>"; };
 		519D9A542A04D05D00F2E277 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
 		519D9A572A04D54E00F2E277 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		519D9A592A04E15300F2E277 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -269,7 +284,6 @@
 		51C4444A2A0CF4A30043AB5A /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		51C4444C2A0CFE570043AB5A /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		51C4444E2A0D01D30043AB5A /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
-		51C4906A2A2DA5C3007AECDE /* MoviesJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MoviesJson.json; path = ../../../../../../../Downloads/MoviesJson.json; sourceTree = "<group>"; };
 		51E2B91729FBDCAD00846904 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		51E2B91829FBDCAD00846904 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
 		51E2B91C29FBE9FB00846904 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -281,10 +295,24 @@
 		529A46802A0D700800283B82 /* StackItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackItems.swift; sourceTree = "<group>"; };
 		52A9D2B82A2BA0FC00D3BC88 /* UIStrongReferenceDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIStrongReferenceDemo.storyboard; sourceTree = "<group>"; };
 		52A9D2BA2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongReferenceDemoVC.swift; sourceTree = "<group>"; };
+		52ABE6ED2A2FA3F7005853F6 /* Instagram.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Instagram.storyboard; sourceTree = "<group>"; };
+		52ABE6EE2A2FA3F7005853F6 /* PracticeBasics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PracticeBasics.storyboard; sourceTree = "<group>"; };
+		52ABE6EF2A2FA3F7005853F6 /* TilesScene.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TilesScene.storyboard; sourceTree = "<group>"; };
+		52ABE6F02A2FA3F7005853F6 /* SafeArea.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SafeArea.storyboard; sourceTree = "<group>"; };
+		52ABE6F12A2FA3F7005853F6 /* Multiplier.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Multiplier.storyboard; sourceTree = "<group>"; };
+		52ABE6F22A2FA3F7005853F6 /* PracticeAdvance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PracticeAdvance.storyboard; sourceTree = "<group>"; };
+		52ABE6F32A2FA3F8005853F6 /* SizeClass.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SizeClass.storyboard; sourceTree = "<group>"; };
+		52ABE6F42A2FA3F8005853F6 /* Exercise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
+		52ABE6F52A2FA3F8005853F6 /* Projects.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Projects.storyboard; sourceTree = "<group>"; };
+		52ABE6F62A2FA3F8005853F6 /* CenterX.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CenterX.storyboard; sourceTree = "<group>"; };
+		52ABE7012A2FA92C005853F6 /* ShareScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareScreenVC.swift; sourceTree = "<group>"; };
+		52ABE7032A2FA9D5005853F6 /* PagoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoVC.swift; sourceTree = "<group>"; };
+		52ABE7052A2FAA69005853F6 /* SpotifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyVC.swift; sourceTree = "<group>"; };
 		52AFE4AE2A2D0DA4008B69EC /* UITVAutoResizing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITVAutoResizing.storyboard; sourceTree = "<group>"; };
 		52AFE4B02A2D0DBD008B69EC /* TVAutoResizingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAutoResizingVC.swift; sourceTree = "<group>"; };
 		52B1F0B62A298FE400E1A2C8 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		52B2062B2A0807CA001380A2 /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCollectionViewCell.xib; sourceTree = "<group>"; };
+		52B3A5EB2A2FB4CF002E2B72 /* ExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +338,7 @@
 		5110E82229E672B4001165DB /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				52ABE6E82A2FA3A8005853F6 /* Autolayout */,
 				5167835B29F65D01000C73AD /* Storyboards */,
 				5222290C2A1909C7009DA1F3 /* ViewControllers */,
 				52CECDBC2A1907180032AE48 /* Custom */,
@@ -438,7 +467,7 @@
 		51B0AA342A133BFE00DF2189 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				51C4906A2A2DA5C3007AECDE /* MoviesJson.json */,
+				519BCAE32A3038C9009E678B /* MoviesJson.json */,
 				51B30C7E2A1212CC0047419D /* PublicArt.geojson */,
 			);
 			path = Json;
@@ -458,9 +487,8 @@
 			children = (
 				5110E82729E672B4001165DB /* ViewController.swift */,
 				52A9D2BA2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift */,
-				51B825342A03B9200048E1AC /* CollectionViewProjectVC.swift */,
 				51A559692A1E04FF0060156C /* ScheduleMeetingVC.swift */,
-				51B825342A03B9200048E1AC /* OrangeVC.swift */,
+				51B825342A03B9200048E1AC /* CollectionViewProjectVC.swift */,
 				51B8251B2A0373090048E1AC /* BasicCollectionViewVC.swift */,
 				51A94B622A026FB000CE076D /* CollectionViewVC.swift */,
 				51769CE629FF97C300A3AE29 /* AddContacts.swift */,
@@ -497,6 +525,10 @@
 				512FB3DD29F693920074CF93 /* ButtonVC.swift */,
 				5167835629F65680000C73AD /* LabelsVC.swift */,
 				52AFE4B02A2D0DBD008B69EC /* TVAutoResizingVC.swift */,
+				52B3A5EB2A2FB4CF002E2B72 /* ExerciseVC.swift */,
+				52ABE7052A2FAA69005853F6 /* SpotifyVC.swift */,
+				52ABE7032A2FA9D5005853F6 /* PagoVC.swift */,
+				52ABE7012A2FA92C005853F6 /* ShareScreenVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -519,6 +551,23 @@
 				51B8252E2A03A8140048E1AC /* HeaderSectionTitle.xib */,
 			);
 			path = CollectionHeader;
+			sourceTree = "<group>";
+		};
+		52ABE6E82A2FA3A8005853F6 /* Autolayout */ = {
+			isa = PBXGroup;
+			children = (
+				52ABE6F62A2FA3F8005853F6 /* CenterX.storyboard */,
+				52ABE6F42A2FA3F8005853F6 /* Exercise.storyboard */,
+				52ABE6ED2A2FA3F7005853F6 /* Instagram.storyboard */,
+				52ABE6F12A2FA3F7005853F6 /* Multiplier.storyboard */,
+				52ABE6F22A2FA3F7005853F6 /* PracticeAdvance.storyboard */,
+				52ABE6EE2A2FA3F7005853F6 /* PracticeBasics.storyboard */,
+				52ABE6F52A2FA3F8005853F6 /* Projects.storyboard */,
+				52ABE6F02A2FA3F7005853F6 /* SafeArea.storyboard */,
+				52ABE6F32A2FA3F8005853F6 /* SizeClass.storyboard */,
+				52ABE6EF2A2FA3F7005853F6 /* TilesScene.storyboard */,
+			);
+			path = Autolayout;
 			sourceTree = "<group>";
 		};
 		52CECDBB2A1905460032AE48 /* Models */ = {
@@ -622,13 +671,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				526E7F622A08059C00A39631 /* RecommendationCollectionViewCell.xib in Resources */,
+				52ABE6F92A2FA3F8005853F6 /* TilesScene.storyboard in Resources */,
 				5180AD1629F9187D008687FC /* UISlider.storyboard in Resources */,
+				52ABE6F72A2FA3F8005853F6 /* Instagram.storyboard in Resources */,
 				5110FBAB2A0B768000F2BB4E /* UIWebView.storyboard in Resources */,
 				529A467F2A0D6EB900283B82 /* StackItems.xib in Resources */,
 				51E2B91A29FBDCAD00846904 /* CompanyTableViewCell.xib in Resources */,
 				51B825332A03B9000048E1AC /* UIOrange.storyboard in Resources */,
 				526E7F5E2A08022700A39631 /* ContentTableViewCell.xib in Resources */,
 				51769CEB29FF97F900A3AE29 /* UIAddContacts.storyboard in Resources */,
+				52ABE7002A2FA3F8005853F6 /* CenterX.storyboard in Resources */,
 				5180AD2429F92DDD008687FC /* UISegmentedControl.storyboard in Resources */,
 				5191363329FA75EE000D9AFC /* UIImagePicker.storyboard in Resources */,
 				5110E83029E672B5001165DB /* LaunchScreen.storyboard in Resources */,
@@ -644,26 +696,31 @@
 				51B04EED2A010BEE00C2209F /* SectionHeader.xib in Resources */,
 				5180AD1B29F92562008687FC /* UIProgressView.storyboard in Resources */,
 				51AF9C462A0E3907006BE4C2 /* ScreenThirdViewController.storyboard in Resources */,
+				52ABE6FA2A2FA3F8005853F6 /* SafeArea.storyboard in Resources */,
 				51C444492A0CF4840043AB5A /* UITabBar.storyboard in Resources */,
 				51B8253E2A03C1A30048E1AC /* RecommendationTableViewCell.xib in Resources */,
 				51A94B612A026F9200CE076D /* UICollectionView.storyboard in Resources */,
 				51B30C7F2A1212CC0047419D /* PublicArt.geojson in Resources */,
 				5180AD3029F94102008687FC /* UIStepper.storyboard in Resources */,
 				512FB3DA29F692E80074CF93 /* UIButton.storyboard in Resources */,
+				519BCAE42A3038C9009E678B /* MoviesJson.json in Resources */,
 				52B2062C2A0807CA001380A2 /* ContentCollectionViewCell.xib in Resources */,
+				52ABE6FF2A2FA3F8005853F6 /* Projects.storyboard in Resources */,
 				51453EDA29FFAC6200B82915 /* UIListContacts.storyboard in Resources */,
 				51A8FB0E29FBA0E000A41B8D /* IndexTableViewCell.xib in Resources */,
 				51AF9C442A0E38EC006BE4C2 /* ScreenSecondViewController.storyboard in Resources */,
 				5194551729FFE9D10089E055 /* UserDataCell.xib in Resources */,
 				51B8251A2A0372AD0048E1AC /* UIBasicCollectionView.storyboard in Resources */,
-				51C4906B2A2DA5C3007AECDE /* MoviesJson.json in Resources */,
 				51AD16FB29FA3E1800C985FA /* UIScrollView.storyboard in Resources */,
 				51A94B712A0287E100CE076D /* UIProductDetails.storyboard in Resources */,
 				51A8FB1229FBBFF000A41B8D /* EvenTableViewCell.xib in Resources */,
+				52ABE6F82A2FA3F8005853F6 /* PracticeBasics.storyboard in Resources */,
 				5180AD2929F93737008687FC /* UIPageControl.storyboard in Resources */,
 				51AAB07429F7F36D00E3F8E8 /* UITextView.storyboard in Resources */,
+				52ABE6FC2A2FA3F8005853F6 /* PracticeAdvance.storyboard in Resources */,
 				51AF9C362A0E3012006BE4C2 /* UIPageViewController.storyboard in Resources */,
 				51B4CB702A0A0F4600FE136E /* UIPullToRefresh.storyboard in Resources */,
+				52ABE6FD2A2FA3F8005853F6 /* SizeClass.storyboard in Resources */,
 				5110E82B29E672B4001165DB /* Main.storyboard in Resources */,
 				51769CE029FF8F8900A3AE29 /* CustomSectionHeaderView.xib in Resources */,
 				5110FBAE2A0B916A00F2BB4E /* UISearchBar.storyboard in Resources */,
@@ -673,6 +730,8 @@
 				51A559682A1E04DE0060156C /* UIScheduleMeeting.storyboard in Resources */,
 				51B30C7B2A1204190047419D /* UIMapView.storyboard in Resources */,
 				52AFE4AF2A2D0DA4008B69EC /* UITVAutoResizing.storyboard in Resources */,
+				52ABE6FB2A2FA3F8005853F6 /* Multiplier.storyboard in Resources */,
+				52ABE6FE2A2FA3F8005853F6 /* Exercise.storyboard in Resources */,
 				5167835529F65667000C73AD /* UILabels.storyboard in Resources */,
 				5222290B2A190980009DA1F3 /* CustomCallout.xib in Resources */,
 				52A9D2B92A2BA0FC00D3BC88 /* UIStrongReferenceDemo.storyboard in Resources */,
@@ -709,6 +768,7 @@
 				51AF9C4D2A0E65F1006BE4C2 /* ToolbarVC.swift in Sources */,
 				51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */,
 				51E2B91929FBDCAD00846904 /* CompanyTableViewCell.swift in Sources */,
+				52B3A5EC2A2FB4D0002E2B72 /* ExerciseVC.swift in Sources */,
 				51A5596A2A1E04FF0060156C /* ScheduleMeetingVC.swift in Sources */,
 				51AAB07C29F7FE2100E3F8E8 /* SwitchVC.swift in Sources */,
 				515550952A20B9EF00A7B2C6 /* ScheduleMeeting.swift in Sources */,
@@ -716,6 +776,7 @@
 				51B4CB812A0A609700FE136E /* UITableView+Extension.swift in Sources */,
 				51AF9C3E2A0E322A006BE4C2 /* ScreenThirdViewController.swift in Sources */,
 				51B825202A0384560048E1AC /* HeaderCollectionViewCell.swift in Sources */,
+				52ABE7062A2FAA69005853F6 /* SpotifyVC.swift in Sources */,
 				51B4CB752A0A165700FE136E /* HelperOrange.swift in Sources */,
 				51AF9C402A0E3247006BE4C2 /* ScreenSecondViewController.swift in Sources */,
 				51B8251C2A0373090048E1AC /* BasicCollectionViewVC.swift in Sources */,
@@ -729,6 +790,7 @@
 				51C4444B2A0CF4A30043AB5A /* TabBarVC.swift in Sources */,
 				51B04EE92A00FB8800C2209F /* Constants.swift in Sources */,
 				5110FBB52A0BBB4800F2BB4E /* PickerViewVC.swift in Sources */,
+				52ABE7022A2FA92C005853F6 /* ShareScreenVC.swift in Sources */,
 				5180AD1D29F92573008687FC /* ProgressViewVC.swift in Sources */,
 				519D9A5A2A04E15300F2E277 /* Movie.swift in Sources */,
 				51E2B91D29FBE9FB00846904 /* Company.swift in Sources */,
@@ -758,9 +820,9 @@
 				51C444462A0CE2160043AB5A /* StackViewVC.swift in Sources */,
 				529A46812A0D700800283B82 /* StackItems.swift in Sources */,
 				51B825352A03B9200048E1AC /* CollectionViewProjectVC.swift in Sources */,
-				51B825352A03B9200048E1AC /* OrangeVC.swift in Sources */,
+				51B825352A03B9200048E1AC /* CollectionViewProjectVC.swift in Sources */,
 				5188F7B32A1F32EE0082D9F0 /* CustomTextView.swift in Sources */,
-				519D9A4F2A04CBCA00F2E277 /* MoviesData.swift in Sources */,
+				52ABE7042A2FA9D5005853F6 /* PagoVC.swift in Sources */,
 				51A94B662A02745800CE076D /* DemoCollectionViewCell.swift in Sources */,
 				5194551629FFE9D10089E055 /* UserDataCell.swift in Sources */,
 				51AF9C382A0E3059006BE4C2 /* PageViewVC.swift in Sources */,
@@ -923,8 +985,9 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To get current location";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To update profile picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Mu;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -934,6 +997,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.simform.iOS.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -955,8 +1021,9 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To get current location";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To update profile picture";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Mu;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -966,6 +1033,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.simform.iOS.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,6 +8,8 @@
 import Foundation
 
 enum Storyboards: String {
+    case uiAutolayout = "Projects"
+    case uiExercise = "Exercise"
     case uiLabel = "UILabels"
     case uiButton = "UIButton"
     case uiTextField = "UITextField"
