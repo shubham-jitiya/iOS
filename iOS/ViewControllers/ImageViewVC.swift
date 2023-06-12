@@ -46,7 +46,7 @@ extension ImageViewVC {
     }
     
     private func addImages() {
-        guard let imageOne = UIImage(systemName: Constants.Images.speakerWaveOneFilled.rawValue) else {
+        guard let imageFirst = UIImage(systemName: Constants.Images.speakerWaveOneFilled.rawValue) else {
             return
         }
         guard let imageSecond = UIImage(systemName: Constants.Images.speakerWaveTwoFilled.rawValue) else {
@@ -55,7 +55,7 @@ extension ImageViewVC {
         guard let imageThird = UIImage(systemName: Constants.Images.speakerWaveThreeFilled.rawValue) else {
             return
         }
-        images.append(imageOne)
+        images.append(imageFirst)
         images.append(imageSecond)
         images.append(imageThird)
     }
