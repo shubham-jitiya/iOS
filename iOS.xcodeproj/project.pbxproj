@@ -305,6 +305,7 @@
 		526E7F5D2A08022700A39631 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
 		526E7F5F2A08059B00A39631 /* RecommendationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationCollectionViewCell.swift; sourceTree = "<group>"; };
 		526E7F602A08059B00A39631 /* RecommendationCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendationCollectionViewCell.xib; sourceTree = "<group>"; };
+		5271E74C2A3F2D61009A601A /* SwiftBasicsPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftBasicsPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		529A467E2A0D6EB900283B82 /* StackItems.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StackItems.xib; sourceTree = "<group>"; };
 		529A46802A0D700800283B82 /* StackItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackItems.swift; sourceTree = "<group>"; };
 		52A9D2B82A2BA0FC00D3BC88 /* UIStrongReferenceDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIStrongReferenceDemo.storyboard; sourceTree = "<group>"; };
@@ -352,6 +353,7 @@
 		5110E82229E672B4001165DB /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5271E74B2A3F2D45009A601A /* SwiftPractice */,
 				52ABE6E82A2FA3A8005853F6 /* Autolayout */,
 				5167835B29F65D01000C73AD /* Storyboards */,
 				5222290C2A1909C7009DA1F3 /* ViewControllers */,
@@ -561,6 +563,14 @@
 				51B052422A149DE400D3723D /* CustomCallout.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		5271E74B2A3F2D45009A601A /* SwiftPractice */ = {
+			isa = PBXGroup;
+			children = (
+				5271E74C2A3F2D61009A601A /* SwiftBasicsPlayground.playground */,
+			);
+			path = SwiftPractice;
 			sourceTree = "<group>";
 		};
 		52845DC62A1A53520060F88D /* CollectionHeader */ = {
