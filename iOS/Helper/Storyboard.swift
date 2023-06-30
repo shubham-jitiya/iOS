@@ -51,4 +51,5 @@ enum Storyboards: String {
     case uiNavigation = "UINavigation"
     case uiURlSessionBasics = "UIURLSessionBasics"
     case uiCustomControl = "UICustomControl"
+    case uiLogin = "UILogin"
 }
