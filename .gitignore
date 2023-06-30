@@ -121,3 +121,6 @@ env-vars.sh
 
 ## Google Plist
 .env
+
+## Dependencies
+*.generated.swift

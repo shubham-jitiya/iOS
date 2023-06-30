@@ -1,0 +1,10 @@
+//
+//  Debug.xcconfig
+//  iOS
+//
+//  Created by Shubham Jitiya on 04/07/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+DummyJsonServerURL = https:/$()/dummyjson.com

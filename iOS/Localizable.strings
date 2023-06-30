@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  iOS
+
+  Created by Shubham Jitiya on 04/07/23.
+  
+*/
+
+"appName" = "DemoApp";
+// Products network layer
+"get" = "GET";
+"post" = "POST";
+"put" = "PUT";
+"patch" = "PATCH";
+"delete" = "DELETE";
+"emptyBody" = "Empty body";
+"somethingWentWrong" = "Something went wrong while encoding";
+"noData" = "No data found";
+"clientOrServerError" = "Server or client error:";
+"errorInResponseBody" = "Error in response body:";
+"canNotConverData" = "Can't convert data into type";
+"downloadCompleted" = "Download completed";
