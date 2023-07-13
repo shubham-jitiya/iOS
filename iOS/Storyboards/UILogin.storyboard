@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="Y6W-OH-hqX" customClass="LoginVC" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Km8-dZ-1MR">
+                                <rect key="frame" x="32" y="168" width="329" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxq-gM-L1V">
+                                <rect key="frame" x="32" y="279.33333333333331" width="329" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Sign up"/>
+                                <connections>
+                                    <action selector="buttonSignUpTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6GD-MK-ArA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvi-cg-ZUV">
+                                <rect key="frame" x="32" y="228.33333333333334" width="329" height="35.000000000000028"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <action selector="buttonLoginTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pAg-4X-sul"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xxq-gM-L1V" firstAttribute="top" secondItem="qvi-cg-ZUV" secondAttribute="bottom" constant="16" id="1Os-lT-vhe"/>
+                            <constraint firstItem="xxq-gM-L1V" firstAttribute="trailing" secondItem="qvi-cg-ZUV" secondAttribute="trailing" id="1oG-tR-P7q"/>
+                            <constraint firstItem="qvi-cg-ZUV" firstAttribute="top" secondItem="Km8-dZ-1MR" secondAttribute="bottom" constant="34" id="4jd-H5-6lT"/>
+                            <constraint firstItem="xxq-gM-L1V" firstAttribute="leading" secondItem="qvi-cg-ZUV" secondAttribute="leading" id="XRW-0c-G7a"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Km8-dZ-1MR" secondAttribute="trailing" constant="32" id="bSD-ti-5z5"/>
+                            <constraint firstItem="qvi-cg-ZUV" firstAttribute="trailing" secondItem="Km8-dZ-1MR" secondAttribute="trailing" id="p4e-Ec-Ei7"/>
+                            <constraint firstItem="Km8-dZ-1MR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="109" id="rcM-WI-CYq"/>
+                            <constraint firstItem="qvi-cg-ZUV" firstAttribute="leading" secondItem="Km8-dZ-1MR" secondAttribute="leading" id="tXA-na-hr4"/>
+                            <constraint firstItem="Km8-dZ-1MR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="uYg-ve-BdE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="-249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
