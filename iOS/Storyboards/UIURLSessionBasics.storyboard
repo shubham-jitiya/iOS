@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--URL Session BasicsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="URLSessionBasicsVC" id="Y6W-OH-hqX" customClass="URLSessionBasicsVC" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VSz-cX-AJZ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="vVX-Ww-xKf"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1ln-Vf-shu">
+                                <rect key="frame" x="0.0" y="115" width="393" height="636.66666666666663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="0km-Tz-c3R"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="s1d-IQ-TdL"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zoy-8q-asN">
+                                <rect key="frame" x="16" y="767.66666666666663" width="361" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0v-Wb-4CU">
+                                        <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Download"/>
+                                        <connections>
+                                            <action selector="downloadFileWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="quK-y5-VVY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00S-P5-ewJ">
+                                        <rect key="frame" x="184.66666666666663" y="0.0" width="176.33333333333337" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Upload"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VSz-cX-AJZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="2BF-AO-C26"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zoy-8q-asN" secondAttribute="bottom" constant="16" id="AyJ-4L-876"/>
+                            <constraint firstItem="1ln-Vf-shu" firstAttribute="top" secondItem="VSz-cX-AJZ" secondAttribute="bottom" id="Egp-Ua-I4c"/>
+                            <constraint firstItem="zoy-8q-asN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="IVe-Tf-OWO"/>
+                            <constraint firstItem="VSz-cX-AJZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Mrq-lN-Md0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1ln-Vf-shu" secondAttribute="trailing" id="SIt-0U-anD"/>
+                            <constraint firstItem="1ln-Vf-shu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SUo-3S-Jii"/>
+                            <constraint firstItem="VSz-cX-AJZ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="eRK-zZ-2gS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zoy-8q-asN" secondAttribute="trailing" constant="16" id="pBy-Fj-W9b"/>
+                            <constraint firstItem="zoy-8q-asN" firstAttribute="top" secondItem="1ln-Vf-shu" secondAttribute="bottom" constant="16" id="pLf-SS-le4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchProducts" destination="VSz-cX-AJZ" id="49W-j8-WbU"/>
+                        <outlet property="tableViewProducts" destination="1ln-Vf-shu" id="Mkq-d6-ceb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325.95419847328242" y="-30.281690140845072"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

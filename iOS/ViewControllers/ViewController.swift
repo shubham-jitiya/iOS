@@ -335,4 +335,12 @@ extension ViewController {
         }
         navigate(to: vcScheduleMeeting)
     }
+    
+    @IBAction private func btnWebService(_ sender: UIButton) {
+        guard let vcWebservice = URLSessionBasicsVC
+            .create(storyboardName: .uiURlSessionBasics) as? URLSessionBasicsVC else {
+            return
+        }
+        navigate(to: vcWebservice)
+    }
 }

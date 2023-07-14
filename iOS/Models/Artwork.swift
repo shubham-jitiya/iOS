@@ -47,15 +47,15 @@ class Artwork: NSObject, MKAnnotation {
         }
         switch name {
         case "Monument":
-            return #imageLiteral(resourceName: "sculpture")
+            return #imageLiteral(resourceName: "Monument")
         case "Sculpture":
-            return #imageLiteral(resourceName: "monument")
+            return #imageLiteral(resourceName: "Sculpture")
         case "Plaque":
-            return #imageLiteral(resourceName: "plaque")
+            return #imageLiteral(resourceName: "Plaque")
         case "Mural":
-            return #imageLiteral(resourceName: "mural")
+            return #imageLiteral(resourceName: "Mural")
         default:
-            return #imageLiteral(resourceName: "flag")
+            return #imageLiteral(resourceName: "Flag")
         }
     }
     
