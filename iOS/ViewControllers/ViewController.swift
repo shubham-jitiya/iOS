@@ -343,4 +343,12 @@ extension ViewController {
         }
         navigate(to: vcWebservice)
     }
+    
+    @IBAction private func btnCustomControl(_ sender: UIButton) {
+        guard let vcCustomControl = CustomControlVC
+            .create(storyboardName: .uiCustomControl) as? CustomControlVC else {
+            return
+        }
+        navigate(to: vcCustomControl)
+    }
 }

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom ControlVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CustomControlVC" id="Y6W-OH-hqX" customClass="CustomControlVC" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAv-Ve-hlf">
+                                <rect key="frame" x="16" y="115" width="361" height="25.666666666666657"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-wc-0dU" customClass="CustomTextField" customModule="iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="172.66666666666666" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="calendar_rounded"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.51692575340000002" blue="0.78039215689999997" alpha="0.24857648634752691" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" red="0.0" green="0.51692575344101099" blue="0.78039215689999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIx-dP-Ugy" customClass="CustomTextField" customModule="iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="214.66666666666666" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="person.fill" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.51692575340000002" blue="0.78039215689999997" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" red="0.0" green="0.51692575340000002" blue="0.78039215689999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i47-OJ-anj" customClass="CustomTextField" customModule="iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="256.66666666666669" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="mail" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.51692575340000002" blue="0.78039215689999997" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" red="0.0" green="0.51692575340000002" blue="0.78039215689999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-fj-Klc" customClass="CustomTextField" customModule="iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="340.66666666666669" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.51692575340000002" blue="0.78039215689999997" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" red="0.0" green="0.51692575340000002" blue="0.78039215689999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rtl" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="lock" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="clickableImage" value="eye" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="4B8-6q-on0"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txs-Yw-TvD">
+                                <rect key="frame" x="16" y="390.66666666666669" width="361" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SUBMIT"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBV-HC-mYW" customClass="CustomTextField" customModule="iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="298.66666666666669" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="phone.fill" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.51692575340000002" blue="0.78039215689999997" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" red="0.0" green="0.51692575340000002" blue="0.78039215689999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i47-OJ-anj" firstAttribute="top" secondItem="gIx-dP-Ugy" secondAttribute="bottom" constant="8" id="3Wh-5i-luE"/>
+                            <constraint firstItem="gIx-dP-Ugy" firstAttribute="top" secondItem="ha2-wc-0dU" secondAttribute="bottom" constant="8" id="4h4-Nw-Ay6"/>
+                            <constraint firstItem="i47-OJ-anj" firstAttribute="leading" secondItem="gIx-dP-Ugy" secondAttribute="leading" id="9iE-tr-QBa"/>
+                            <constraint firstItem="vAv-Ve-hlf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="IzZ-5I-sh7"/>
+                            <constraint firstItem="jyK-fj-Klc" firstAttribute="trailing" secondItem="DBV-HC-mYW" secondAttribute="trailing" id="Me5-XM-JWN"/>
+                            <constraint firstItem="ha2-wc-0dU" firstAttribute="leading" secondItem="vAv-Ve-hlf" secondAttribute="leading" id="Mjf-YL-lcz"/>
+                            <constraint firstItem="txs-Yw-TvD" firstAttribute="leading" secondItem="jyK-fj-Klc" secondAttribute="leading" id="Mr2-Cz-Xtl"/>
+                            <constraint firstItem="jyK-fj-Klc" firstAttribute="top" secondItem="DBV-HC-mYW" secondAttribute="bottom" constant="8" symbolic="YES" id="NMV-Zk-R77"/>
+                            <constraint firstItem="jyK-fj-Klc" firstAttribute="leading" secondItem="DBV-HC-mYW" secondAttribute="leading" id="R5J-rR-U80"/>
+                            <constraint firstItem="gIx-dP-Ugy" firstAttribute="leading" secondItem="ha2-wc-0dU" secondAttribute="leading" id="XXV-8k-56E"/>
+                            <constraint firstItem="txs-Yw-TvD" firstAttribute="top" secondItem="jyK-fj-Klc" secondAttribute="bottom" constant="16" id="dpX-q2-sQx"/>
+                            <constraint firstItem="DBV-HC-mYW" firstAttribute="leading" secondItem="i47-OJ-anj" secondAttribute="leading" id="ecG-Hd-7er"/>
+                            <constraint firstItem="DBV-HC-mYW" firstAttribute="trailing" secondItem="i47-OJ-anj" secondAttribute="trailing" id="fNu-g4-bbx"/>
+                            <constraint firstItem="gIx-dP-Ugy" firstAttribute="trailing" secondItem="ha2-wc-0dU" secondAttribute="trailing" id="oPf-Oh-Pd8"/>
+                            <constraint firstItem="txs-Yw-TvD" firstAttribute="trailing" secondItem="jyK-fj-Klc" secondAttribute="trailing" id="rEt-Oa-Mql"/>
+                            <constraint firstItem="ha2-wc-0dU" firstAttribute="top" secondItem="vAv-Ve-hlf" secondAttribute="bottom" constant="32" id="re7-on-AFH"/>
+                            <constraint firstItem="DBV-HC-mYW" firstAttribute="top" secondItem="i47-OJ-anj" secondAttribute="bottom" constant="8" id="s5N-OY-uK8"/>
+                            <constraint firstItem="vAv-Ve-hlf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="56" id="uxm-qr-6Q2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vAv-Ve-hlf" secondAttribute="trailing" constant="16" id="vSv-LI-Sj5"/>
+                            <constraint firstItem="i47-OJ-anj" firstAttribute="trailing" secondItem="gIx-dP-Ugy" secondAttribute="trailing" id="vvL-nT-Jxi"/>
+                            <constraint firstItem="ha2-wc-0dU" firstAttribute="trailing" secondItem="vAv-Ve-hlf" secondAttribute="trailing" id="yUM-wa-1a8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldPassword" destination="jyK-fj-Klc" id="lEZ-uO-m5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="-129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar_rounded" width="16" height="16"/>
+        <image name="eye" catalog="system" width="128" height="79"/>
+        <image name="lock" catalog="system" width="125" height="128"/>
+        <image name="mail" catalog="system" width="128" height="93"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

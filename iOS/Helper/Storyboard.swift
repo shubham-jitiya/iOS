@@ -50,4 +50,5 @@ enum Storyboards: String {
     case uiScreenFourthViewController = "ScreenFourthViewController"
     case uiNavigation = "UINavigation"
     case uiURlSessionBasics = "UIURLSessionBasics"
+    case uiCustomControl = "UICustomControl"
 }
