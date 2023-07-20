@@ -8,6 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK: Variabels
+    var coordinate: MainScreenCoordinator?
+    
     //MARK: - View life cycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -350,5 +353,11 @@ extension ViewController {
             return
         }
         navigate(to: vcCustomControl)
+    }
+    
+    @IBAction private func btnCoordinatePattern(_ sender: UIButton) {
+        guard let navigationController else { return }
+        let appCoordinator = AppCoordinator(navigationController: navigationController)
+        appCoordinator.goToLogin()
     }
 }
