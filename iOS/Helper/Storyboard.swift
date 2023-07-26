@@ -52,4 +52,5 @@ enum Storyboards: String {
     case uiURlSessionBasics = "UIURLSessionBasics"
     case uiCustomControl = "UICustomControl"
     case uiLogin = "UILogin"
+    case uiCoreData = "UICoreData"
 }

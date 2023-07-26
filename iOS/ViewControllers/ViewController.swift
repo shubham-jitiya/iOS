@@ -360,4 +360,9 @@ extension ViewController {
         let appCoordinator = AppCoordinator(navigationController: navigationController)
         appCoordinator.goToLogin()
     }
+    
+    @IBAction func btnCoreData(_ sender: UIButton) {
+        guard let vcCoreData = CoreDataVC.create(storyboardName: .uiCoreData) as? CoreDataVC else { return }
+        navigate(to: vcCoreData)
+    }
 }

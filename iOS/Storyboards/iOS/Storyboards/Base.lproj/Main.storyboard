@@ -26,10 +26,10 @@
                                 <rect key="frame" x="0.0" y="157.33333333333337" width="393" height="1842.6666666666665"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mcj-Ba-NcN">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1521.3333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1558.6666666666667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iAU-ZR-3cR">
-                                                <rect key="frame" x="16" y="16" width="361" height="1489.3333333333333"/>
+                                                <rect key="frame" x="16" y="16" width="361" height="1526.6666666666667"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="999-Ms-PIg">
                                                         <rect key="frame" x="0.0" y="0.0" width="361" height="33.333333333333336"/>
@@ -429,6 +429,16 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="btnCoordinatePattern:" destination="vr3-QX-sFP" eventType="touchUpInside" id="sZc-W4-Anj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDr-za-pga">
+                                                        <rect key="frame" x="0.0" y="1493.3333333333335" width="361" height="33.333333333333258"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Core data">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="btnCoreData:" destination="vr3-QX-sFP" eventType="touchUpInside" id="LBj-Fg-s46"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
