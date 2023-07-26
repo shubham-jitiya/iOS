@@ -78,12 +78,15 @@
 		519D9A582A04D54E00F2E277 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A572A04D54E00F2E277 /* ContentCollectionViewCell.swift */; };
 		519D9A5A2A04E15300F2E277 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9A592A04E15300F2E277 /* Movie.swift */; };
 		519E83692A70F64C00CE6D0A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519E83682A70F64C00CE6D0A /* CoreData.framework */; };
-		519E836F2A70F86500CE6D0A /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E836D2A70F86500CE6D0A /* Employee+CoreDataClass.swift */; };
-		519E83702A70F86500CE6D0A /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E836E2A70F86500CE6D0A /* Employee+CoreDataProperties.swift */; };
 		519E83742A71196D00CE6D0A /* CoreDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E83732A71196D00CE6D0A /* CoreDataVC.swift */; };
 		519E83762A71199400CE6D0A /* UICoreData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519E83752A71199400CE6D0A /* UICoreData.storyboard */; };
 		519E83792A711CB900CE6D0A /* PersistantStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E83782A711CB900CE6D0A /* PersistantStorage.swift */; };
 		519E837B2A71249B00CE6D0A /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 519E836A2A70F69D00CE6D0A /* CoreDataDemo.xcdatamodeld */; };
+		519E838D2A712B6100CE6D0A /* CDEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E838B2A712B6100CE6D0A /* CDEmployee+CoreDataClass.swift */; };
+		519E838E2A712B6100CE6D0A /* CDEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E838C2A712B6100CE6D0A /* CDEmployee+CoreDataProperties.swift */; };
+		519E83912A712BEF00CE6D0A /* EmployeeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E83902A712BEF00CE6D0A /* EmployeeDataRepository.swift */; };
+		519E83942A71303600CE6D0A /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E83932A71303600CE6D0A /* Employee.swift */; };
+		519E83972A71406B00CE6D0A /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519E83962A71406B00CE6D0A /* EmployeeManager.swift */; };
 		51A559682A1E04DE0060156C /* UIScheduleMeeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A559672A1E04DE0060156C /* UIScheduleMeeting.storyboard */; };
 		51A5596A2A1E04FF0060156C /* ScheduleMeetingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A559692A1E04FF0060156C /* ScheduleMeetingVC.swift */; };
 		51A8FB0D29FBA0E000A41B8D /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8FB0B29FBA0DF00A41B8D /* IndexTableViewCell.swift */; };
@@ -294,11 +297,14 @@
 		519D9A592A04E15300F2E277 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		519E83682A70F64C00CE6D0A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		519E836B2A70F69D00CE6D0A /* Employee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Employee.xcdatamodel; sourceTree = "<group>"; };
-		519E836D2A70F86500CE6D0A /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Employee+CoreDataClass.swift"; path = "iOS/Screens/CoreData/Model/Employee+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		519E836E2A70F86500CE6D0A /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Employee+CoreDataProperties.swift"; path = "iOS/Screens/CoreData/Model/Employee+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		519E83732A71196D00CE6D0A /* CoreDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataVC.swift; sourceTree = "<group>"; };
 		519E83752A71199400CE6D0A /* UICoreData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UICoreData.storyboard; sourceTree = "<group>"; };
 		519E83782A711CB900CE6D0A /* PersistantStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantStorage.swift; sourceTree = "<group>"; };
+		519E838B2A712B6100CE6D0A /* CDEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		519E838C2A712B6100CE6D0A /* CDEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		519E83902A712BEF00CE6D0A /* EmployeeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataRepository.swift; sourceTree = "<group>"; };
+		519E83932A71303600CE6D0A /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		519E83962A71406B00CE6D0A /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
 		51A559672A1E04DE0060156C /* UIScheduleMeeting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIScheduleMeeting.storyboard; sourceTree = "<group>"; };
 		51A559692A1E04FF0060156C /* ScheduleMeetingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleMeetingVC.swift; sourceTree = "<group>"; };
 		51A8FB0B29FBA0DF00A41B8D /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
@@ -617,21 +623,24 @@
 		519E83672A70F4E400CE6D0A /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				519E83952A71405B00CE6D0A /* Managers */,
+				519E83922A71302D00CE6D0A /* Model */,
+				519E838F2A712BD700CE6D0A /* Repository */,
 				519E83772A711CAE00CE6D0A /* Utility */,
 				519E83722A71194100CE6D0A /* View */,
-				519E83712A71192E00CE6D0A /* Model */,
+				519E83712A71192E00CE6D0A /* CDSupportFiles */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		519E83712A71192E00CE6D0A /* Model */ = {
+		519E83712A71192E00CE6D0A /* CDSupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				519E836D2A70F86500CE6D0A /* Employee+CoreDataClass.swift */,
-				519E836E2A70F86500CE6D0A /* Employee+CoreDataProperties.swift */,
+				519E838B2A712B6100CE6D0A /* CDEmployee+CoreDataClass.swift */,
+				519E838C2A712B6100CE6D0A /* CDEmployee+CoreDataProperties.swift */,
 				519E836A2A70F69D00CE6D0A /* CoreDataDemo.xcdatamodeld */,
 			);
-			path = Model;
+			path = CDSupportFiles;
 			sourceTree = "<group>";
 		};
 		519E83722A71194100CE6D0A /* View */ = {
@@ -648,6 +657,30 @@
 				519E83782A711CB900CE6D0A /* PersistantStorage.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		519E838F2A712BD700CE6D0A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				519E83902A712BEF00CE6D0A /* EmployeeDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		519E83922A71302D00CE6D0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				519E83932A71303600CE6D0A /* Employee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		519E83952A71405B00CE6D0A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				519E83962A71406B00CE6D0A /* EmployeeManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		51A8FB0A29FB9EBE00A41B8D /* Cell */ = {
@@ -1212,6 +1245,7 @@
 				51B8252F2A03A8140048E1AC /* HeaderSectionTitle.swift in Sources */,
 				5197C9962A6017A5000DBC61 /* HomePageCoordinator.swift in Sources */,
 				51B1D5582A53E7ED004F6CCD /* APIManager+FakeDataProvider.swift in Sources */,
+				519E838E2A712B6100CE6D0A /* CDEmployee+CoreDataProperties.swift in Sources */,
 				51B1D55B2A53E7ED004F6CCD /* APIManager+EndPointType.swift in Sources */,
 				519E83792A711CB900CE6D0A /* PersistantStorage.swift in Sources */,
 				51A94B632A026FB000CE076D /* CollectionViewVC.swift in Sources */,
@@ -1220,6 +1254,7 @@
 				512FB3DE29F693920074CF93 /* ButtonVC.swift in Sources */,
 				521BE6692A3609C500FE266B /* CustomUIView.swift in Sources */,
 				51AD16FD29FA3E2400C985FA /* ScrollViewVC.swift in Sources */,
+				519E83912A712BEF00CE6D0A /* EmployeeDataRepository.swift in Sources */,
 				51A8FB1129FBBFF000A41B8D /* EvenTableViewCell.swift in Sources */,
 				51AF9C4D2A0E65F1006BE4C2 /* ToolbarVC.swift in Sources */,
 				51F7ED4F29F2894D00E6C265 /* CustomTextField.swift in Sources */,
@@ -1245,8 +1280,8 @@
 				52AFE4B12A2D0DBD008B69EC /* TVAutoResizingVC.swift in Sources */,
 				5167835E29F65D34000C73AD /* Storyboard.swift in Sources */,
 				51AFDFED2A56BDAC00E71164 /* ProductsRequestMethods.swift in Sources */,
-				519E83702A70F86500CE6D0A /* Employee+CoreDataProperties.swift in Sources */,
 				5167836029F68377000C73AD /* AttributedString+Extension.swift in Sources */,
+				519E838D2A712B6100CE6D0A /* CDEmployee+CoreDataClass.swift in Sources */,
 				51C4444B2A0CF4A30043AB5A /* TabBarVC.swift in Sources */,
 				51B04EE92A00FB8800C2209F /* Constants.swift in Sources */,
 				51B1D5612A53E850004F6CCD /* DynamicAsync.swift in Sources */,
@@ -1263,6 +1298,7 @@
 				51AFDFE52A56B56D00E71164 /* ProductsNetworkManager.swift in Sources */,
 				5180AD2C29F93755008687FC /* PageControlVC.swift in Sources */,
 				51B30C812A12220A0047419D /* Artwork.swift in Sources */,
+				519E83942A71303600CE6D0A /* Employee.swift in Sources */,
 				52A9D2BB2A2BA13100D3BC88 /* StrongReferenceDemoVC.swift in Sources */,
 				51AAB07129F7CE4C00E3F8E8 /* UITextField+Extension.swift in Sources */,
 				515510922A61795E000212A8 /* LiveData.swift in Sources */,
@@ -1285,11 +1321,11 @@
 				51C4444F2A0D01D30043AB5A /* SearchVC.swift in Sources */,
 				517CD01F2A28BE710051F633 /* CustomLabel.swift in Sources */,
 				519E83742A71196D00CE6D0A /* CoreDataVC.swift in Sources */,
-				519E836F2A70F86500CE6D0A /* Employee+CoreDataClass.swift in Sources */,
 				51AFDFE72A56B61A00E71164 /* ProductsRequestType.swift in Sources */,
 				51AFDFEB2A56BA5F00E71164 /* ProductsEndpoint.swift in Sources */,
 				51A912162A5542B300253BDD /* ProductsTableViewCell.swift in Sources */,
 				51B1D5592A53E7ED004F6CCD /* APIManager+Request.swift in Sources */,
+				519E83972A71406B00CE6D0A /* EmployeeManager.swift in Sources */,
 				51AFDFE32A56A16B00E71164 /* ProductsAPIManager.swift in Sources */,
 				5191363529FA760D000D9AFC /* ImagePickerVC.swift in Sources */,
 				5197C97D2A5FF23D000DBC61 /* LoginVC.swift in Sources */,

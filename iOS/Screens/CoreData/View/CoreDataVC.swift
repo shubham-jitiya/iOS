@@ -8,34 +8,32 @@
 import UIKit
 
 class CoreDataVC: UIViewController {
+    
 
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // addEmployee()
-        fetchEmployee()
+        testQueries()
     }
 }
 
 // MARK: - Functions
 extension CoreDataVC {
-    func addEmployee() {
-        let employee = Employee(context: PersistantStorage.shared.context)
-        employee.name = "Shubham J."
-        PersistantStorage.shared.saveContext()
-    }
-    
-    func fetchEmployee() {
-        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        debugPrint(path[0])
+    func testQueries() {
+        let employeeManager = EmployeeManager()
         
-        do {
-            let records = try PersistantStorage.shared.context.fetch(Employee.fetchRequest())
-            records.forEach { employee in
-                debugPrint(employee.name ?? "")
-            }
-        } catch (let error) {
-                debugPrint(error)
-        }
+        // create
+//        let newEmployee = Employee(name: "Shubham J", email: "simform@gmail.com", uuid: UUID())
+//        employeeManager.addEmployee(employee: newEmployee)
+        
+      
+        // update
+//        let newEmployee = Employee(name: "Shubham", email: "simform@gmail.com", uuid: UUID())
+//        employeeManager.updateEmployee(employee: newEmployee)
+//
+        
+        // fetch
+        let employees = employeeManager.fetchEmployees()
+        debugPrint("Employees: ", employees)
     }
 }
